@@ -17,6 +17,9 @@ public class UnityChan2DController : MonoBehaviour
 
     private State m_state = State.Normal;
 
+	//ジャンプする回数
+	private int restJumps = 1;
+
     void Reset()
     {
         Awake();
@@ -53,15 +56,17 @@ public class UnityChan2DController : MonoBehaviour
     {
         if (m_state != State.Damaged)
         {
-            float x = Input.GetAxis("Horizontal");
+            //float x = Input.GetAxis("Horizontal");
             bool jump = Input.GetButtonDown("Jump");
-            Move(x, jump);
+            //Move(x, jump);
+			Move(jump);
         }
     }
 
-    void Move(float move, bool jump)
+    //void Move(float move, bool jump)
+	void Move(bool jump)
     {
-        if (Mathf.Abs(move) > 0)
+      /*  if (Mathf.Abs(move) > 0)
         {
             Quaternion rot = transform.rotation;
             transform.rotation = Quaternion.Euler(rot.x, Mathf.Sign(move) == 1 ? 0 : 180, rot.z);
@@ -72,13 +77,19 @@ public class UnityChan2DController : MonoBehaviour
         m_animator.SetFloat("Horizontal", move);
         m_animator.SetFloat("Vertical", m_rigidbody2D.velocity.y);
         m_animator.SetBool("isGround", m_isGround);
-
-        if (jump && m_isGround)
+*/
+        //if (jump && m_isGround)
+		if (jump && restJumps > 0)
         {
             m_animator.SetTrigger("Jump");
             SendMessage("Jump", SendMessageOptions.DontRequireReceiver);
             m_rigidbody2D.AddForce(Vector2.up * jumpPower);
+
+			restJumps--;
         }
+		if(m_isGround){
+			restJumps = 1;
+		}
     }
 
     void FixedUpdate()

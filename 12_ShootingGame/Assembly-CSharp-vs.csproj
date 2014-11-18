@@ -46,6 +46,9 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\CameraControl2.cs" />
+     <Compile Include="Assets\FloorControl.cs" />
+     <Compile Include="Assets\Move.cs" />
      <Compile Include="Assets\Scripts\Background.cs" />
      <Compile Include="Assets\Scripts\Bullet.cs" />
      <Compile Include="Assets\Scripts\DestroyArea.cs" />

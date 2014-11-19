@@ -8,7 +8,6 @@ public class CameraControl2 : MonoBehaviour {
 	
 	public Vector3		offset;
 	
-	// Use this for initialization
 	void Start () {
 		
 		// プレイヤーのインスタンスを探しておく.
@@ -17,7 +16,6 @@ public class CameraControl2 : MonoBehaviour {
 		this.offset = this.transform.position - this.player.transform.position;
 	}
 	
-	// Update is called once per frame
 	void Update () {
 		
 		// プレイヤーと一緒に移動.

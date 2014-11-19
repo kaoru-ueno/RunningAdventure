@@ -7,11 +7,13 @@ public class Move : MonoBehaviour {
 	public float speed = 1;
 	
 	void Start () {
-		Moves (transform.right);
+		//Moves (transform.right);
 		
 	}
 	
 	void Update () {
+		Moves (transform.right);
+		print (transform.position);
 	}
 	
 	public void Moves (Vector2 direction)

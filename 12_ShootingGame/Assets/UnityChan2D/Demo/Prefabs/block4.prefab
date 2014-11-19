@@ -11,7 +11,7 @@ GameObject:
   - 212: {fileID: 21200000}
   - 61: {fileID: 6100000}
   - 114: {fileID: 11400000}
-  m_Layer: 8
+  m_Layer: 4
   m_Name: block
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +26,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400002}
-  m_Layer: 8
+  - 114: {fileID: 11400008}
+  m_Layer: 4
   m_Name: block4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +45,7 @@ GameObject:
   - 212: {fileID: 21200002}
   - 61: {fileID: 6100002}
   - 114: {fileID: 11400002}
-  m_Layer: 8
+  m_Layer: 4
   m_Name: block
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62,7 +63,7 @@ GameObject:
   - 212: {fileID: 21200004}
   - 61: {fileID: 6100004}
   - 114: {fileID: 11400004}
-  m_Layer: 8
+  m_Layer: 4
   m_Name: block
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80,7 +81,7 @@ GameObject:
   - 212: {fileID: 21200006}
   - 61: {fileID: 6100006}
   - 114: {fileID: 11400006}
-  m_Layer: 8
+  m_Layer: 4
   m_Name: block
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +107,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.03228557, y: -1.92218709, z: 0}
+  m_LocalPosition: {x: -6.69999981, y: -2.79999995, z: 0}
   m_LocalScale: {x: .5, y: .5, z: 1}
   m_Children:
   - {fileID: 400004}
@@ -263,6 +264,17 @@ MonoBehaviour:
   brokenBlock: {fileID: 0}
   hitClip: {fileID: 8300000, guid: 7f8143aad405640449bf253091449c6b, type: 3}
   canBreak: 0
+--- !u!114 &11400008
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f1c4fb1bd0d78b4987d0a3fa2a54df9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -17,7 +17,7 @@ public class UnityChan2DController : MonoBehaviour
 
     private State m_state = State.Normal;
 
-	//ジャンプする回数
+	//空中でジャンプする回数
 	private int restJumps = 1;
 
     void Reset()
@@ -90,6 +90,17 @@ public class UnityChan2DController : MonoBehaviour
 		if(m_isGround){
 			restJumps = 1;
 		}
+
+		//高さ制限
+		Vector2 pos = transform.position;
+		
+		Vector2 min = new Vector2(0, -5);
+		
+		Vector2 max = new Vector2(0, 1.5f);
+		
+		pos.y = Mathf.Clamp (pos.y, min.y, max.y);
+		
+		transform.position = pos;
     }
 
     void FixedUpdate()

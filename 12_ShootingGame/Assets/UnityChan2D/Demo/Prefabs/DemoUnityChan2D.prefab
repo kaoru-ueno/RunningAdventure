@@ -16,7 +16,7 @@ GameObject:
   - 114: {fileID: 11400000}
   - 114: {fileID: 11400002}
   - 114: {fileID: 11400004}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: DemoUnityChan2D
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -150,7 +150,7 @@ MonoBehaviour:
   backwardForce: {x: -4.5, y: 5.4000001}
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 8192
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1

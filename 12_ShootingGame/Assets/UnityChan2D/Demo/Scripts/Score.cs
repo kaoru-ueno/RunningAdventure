@@ -45,11 +45,11 @@ public class Score : MonoBehaviour
 	}
 	
 	// ポイントの追加
-	public void AddPoint (int point)
+	public void AddPoint (int coin)
 	{
-		score = score + point;
+		score = score + coin;
 	}
-	
+
 	// ハイスコアの保存
 	public void Save ()
 	{

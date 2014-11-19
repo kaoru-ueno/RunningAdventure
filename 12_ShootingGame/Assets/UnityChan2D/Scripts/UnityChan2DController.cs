@@ -6,6 +6,7 @@ public class UnityChan2DController : MonoBehaviour
     public float maxSpeed = 10f;
     public float jumpPower = 1000f;
     public Vector2 backwardForce = new Vector2(-4.5f, 5.4f);
+	public int coin = 1;
 
     public LayerMask whatIsGround;
 
@@ -140,6 +141,13 @@ public class UnityChan2DController : MonoBehaviour
         m_animator.SetTrigger("Invincible Mode");
         m_state = State.Invincible;
     }
+	void OnTrigerEnter2D(Collider2D c)
+	{
+				string layerName = LayerMask.LayerToName (c.gameObject.layer);
+				if (layerName == "Coin") {
+						Destroy (c.gameObject);
+				}
+		}
 
     void OnFinishedInvincibleMode()
     {

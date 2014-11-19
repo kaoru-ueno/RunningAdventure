@@ -72,7 +72,7 @@ public class Enemy : MonoBehaviour
 		if(hp <= 0 )
 		{
 			// スコアコンポーネントを取得してポイントを追加
-			FindObjectOfType<Score>().AddPoint(point);
+			//FindObjectOfType<Score>().AddPoint(point);
 
 			// 爆発
 			spaceship.Explosion ();

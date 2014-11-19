@@ -4,8 +4,8 @@ using UnityEngine;
 public class PointController : MonoBehaviour
 {
 
-    public GUIText total;
-    public GUIText coin;
+    public GUIText higthscore;
+    public GUIText score;
 
     private static PointController m_instance;
 
@@ -23,7 +23,7 @@ public class PointController : MonoBehaviour
 
     public void AddCoin()
     {
-        coin.text = (Convert.ToInt32(coin.text) + 1).ToString("00");
-        total.text = (Convert.ToInt32(total.text) + 100).ToString("0000000");
+        score.text = (Convert.ToInt32(score.text) + 1).ToString();
+        higthscore.text = (Convert.ToInt32(higthscore.text) + 100).ToString("0000000");
     }
 }

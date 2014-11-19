@@ -7,7 +7,7 @@ public class FloorControl : MonoBehaviour {
 	private GameObject		main_camera = null;
 	
 	// 初期位置.
-	private Vector3	initial_position;
+	//private Vector3	initial_position;
 	
 	// 床の幅（X方向）.
 	public	static float	WIDTH = 4.0f;
@@ -20,9 +20,9 @@ public class FloorControl : MonoBehaviour {
 		// カメラのインスタンスを探しておく.
 		this.main_camera = GameObject.FindGameObjectWithTag("MainCamera");
 		
-		this.initial_position = this.transform.position;
+		//this.initial_position = this.transform.position;
 
-		print (this.main_camera);
+		//print (this.main_camera);
 		
 	}
 	
@@ -53,7 +53,7 @@ public class FloorControl : MonoBehaviour {
 			
 			this.transform.position = floor_position;
 
-			print (this.transform.position);
+			//print (this.transform.position);
 		}
 		
 		if(camera_position.x < floor_position.x - total_width/2.0f) {
@@ -63,7 +63,7 @@ public class FloorControl : MonoBehaviour {
 			
 			this.transform.position = floor_position;
 
-			print (this.transform.position);
+			//print (this.transform.position);
 		}
 		#else
 		// プレイヤーがワープしても対応できる方法.

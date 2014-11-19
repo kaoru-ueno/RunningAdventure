@@ -17,8 +17,8 @@ public class UnityChan2DController : MonoBehaviour
 
     private State m_state = State.Normal;
 
-	//空中でジャンプする回数
-	private int restJumps = 1;
+	//ジャンプする回数
+	private int restJumps = 2;
 
     void Reset()
     {
@@ -56,14 +56,13 @@ public class UnityChan2DController : MonoBehaviour
     {
         if (m_state != State.Damaged)
         {
-            //float x = Input.GetAxis("Horizontal");
-            bool jump = Input.GetButtonDown("Jump");
+			//float x = Input.GetAxis("Horizontal");
+			bool jump = Input.GetButtonDown("Jump");
             //Move(x, jump);
 			Move(jump);
         }
     }
 
-    //void Move(float move, bool jump)
 	void Move(bool jump)
     {
       /*  if (Mathf.Abs(move) > 0)
@@ -81,15 +80,30 @@ public class UnityChan2DController : MonoBehaviour
         //if (jump && m_isGround)
 		if (jump && restJumps > 0)
         {
-            m_animator.SetTrigger("Jump");
-            SendMessage("Jump", SendMessageOptions.DontRequireReceiver);
-            m_rigidbody2D.AddForce(Vector2.up * jumpPower);
+			if(restJumps == 1){
+				m_animator.SetTrigger("Jump");
+           	 	SendMessage("Jump", SendMessageOptions.DontRequireReceiver);
+           		m_rigidbody2D.AddForce(Vector2.up * jumpPower * 0.5f);
 
-			restJumps--;
+				restJumps--;
+	
+
+				print ("restJumps:"+restJumps);}
+			else{
+				m_animator.SetTrigger("Jump");
+				SendMessage("Jump", SendMessageOptions.DontRequireReceiver);
+				m_rigidbody2D.AddForce(Vector2.up * jumpPower);
+				
+				restJumps--;
+				
+				
+				print ("restJumps:"+restJumps);
+			}
         }
-		if(m_isGround){
-			restJumps = 1;
-		}
+
+	//	if(m_isGround){
+	//		restJumps = 1;
+	//	}
 
 		//高さ制限
 		Vector2 pos = transform.position;
@@ -113,14 +127,25 @@ public class UnityChan2DController : MonoBehaviour
         m_animator.SetBool("isGround", m_isGround);
     }
 
-    void OnTriggerStay2D(Collider2D other)
+		void OnTriggerEnter2D(Collider2D c){
+			if(c.tag == "Ground"){
+			restJumps = 2;
+			print ("error");
+		}
+	}
+
+	void OnTriggerStay2D(Collider2D other)
     {
         if (other.tag == "DamageObject" && m_state == State.Normal)
         {
             m_state = State.Damaged;
             StartCoroutine(INTERNAL_OnDamage());
         }
-    }
+		//if(other.tag == "Ground"){
+		//	restJumps = 2;
+		//	print ("error");
+		//}
+}
 
     IEnumerator INTERNAL_OnDamage()
     {

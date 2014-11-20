@@ -24,6 +24,8 @@ public class UnityChan2DController : MonoBehaviour
 	// 床の移動スピード
 	public float speed = 1;
 
+	private GameObject main_camera = null;
+
     void Reset()
     {
         Awake();
@@ -58,6 +60,8 @@ public class UnityChan2DController : MonoBehaviour
 
 	void Start () {
 		Moves (transform.right);
+
+		this.main_camera = GameObject.FindGameObjectWithTag("MainCamera");
 		
 	}
 
@@ -83,6 +87,9 @@ public class UnityChan2DController : MonoBehaviour
 			//Move(x, jump);
 			Move(jump);
         }
+		if(transform.position.y < -6){
+			FindObjectOfType<StageControl>().gameEnd();
+		}
     }
 
 		void Moves (Vector2 direction)
@@ -115,7 +122,9 @@ public class UnityChan2DController : MonoBehaviour
 				restJumps--;
 	
 
-				print ("restJumps:"+restJumps);}
+				print ("restJumps:"+restJumps);
+			}
+
 			else{
 				m_animator.SetTrigger("Jump");
 				SendMessage("Jump", SendMessageOptions.DontRequireReceiver);
@@ -135,7 +144,7 @@ public class UnityChan2DController : MonoBehaviour
 		//高さ制限
 		Vector2 pos = transform.position;
 		
-		Vector2 min = new Vector2(0, -5);
+		Vector2 min = new Vector2(0, -2000);
 		
 		Vector2 max = new Vector2(0, 1.5f);
 		
@@ -172,27 +181,36 @@ public class UnityChan2DController : MonoBehaviour
         {
             m_state = State.Damaged;
             StartCoroutine(INTERNAL_OnDamage());
+
+			FindObjectOfType<StageControl>().gameEnd();
+
+			gameObject.collider2D.isTrigger = true;
+
+			main_camera.GetComponent<CameraControl2>().enabled = false;
+
         }
+
 		if (other.tag == "Coin") {
 			Destroy (other.gameObject);
-			//				FindObjectOfType<Score>().AddPoint();
+			//FindObjectOfType<Score>().AddPoint();
 			//if(other.tag == "Ground"){
 			//	restJumps = 2;
 			//	print ("error");
 			//}
 		}
-		}
+	}
 
     IEnumerator INTERNAL_OnDamage()
     {
         m_animator.Play(m_isGround ? "Damage" : "AirDamage");
         m_animator.Play("Idle");
+	
 
         SendMessage("OnDamage", SendMessageOptions.DontRequireReceiver);
 
         m_rigidbody2D.velocity = new Vector2(transform.right.x * backwardForce.x, transform.up.y * backwardForce.y);
 
-        yield return new WaitForSeconds(.2f);
+        yield return new WaitForSeconds(.5f);
 
         while (m_isGround == false)
         {

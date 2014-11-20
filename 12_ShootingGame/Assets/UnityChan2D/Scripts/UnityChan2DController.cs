@@ -132,9 +132,14 @@ public class UnityChan2DController : MonoBehaviour
 			if(c.tag == "Ground"){
 			restJumps = 2;
 			print ("error");
+//			string layerName = LayerMask.LayerToName (c.gameObject.layer);
+			if (c.tag == "Coin") {
+			Destroy (c.gameObject);
+//				FindObjectOfType<Score>().AddPoint();
+
+			}
 		}
 	}
-
 	void OnTriggerStay2D(Collider2D other)
     {
         if (other.tag == "DamageObject" && m_state == State.Normal)
@@ -142,11 +147,15 @@ public class UnityChan2DController : MonoBehaviour
             m_state = State.Damaged;
             StartCoroutine(INTERNAL_OnDamage());
         }
-		//if(other.tag == "Ground"){
-		//	restJumps = 2;
-		//	print ("error");
-		//}
-}
+		if (other.tag == "Coin") {
+			Destroy (other.gameObject);
+			//				FindObjectOfType<Score>().AddPoint();
+			//if(other.tag == "Ground"){
+			//	restJumps = 2;
+			//	print ("error");
+			//}
+		}
+		}
 
     IEnumerator INTERNAL_OnDamage()
     {
@@ -166,13 +175,6 @@ public class UnityChan2DController : MonoBehaviour
         m_animator.SetTrigger("Invincible Mode");
         m_state = State.Invincible;
     }
-	void OnTrigerEnter2D(Collider2D c)
-	{
-				string layerName = LayerMask.LayerToName (c.gameObject.layer);
-				if (layerName == "Coin") {
-						Destroy (c.gameObject);
-				}
-		}
 
     void OnFinishedInvincibleMode()
     {

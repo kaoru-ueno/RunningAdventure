@@ -30,8 +30,8 @@ public class Score : MonoBehaviour
 		}
 		
 		// スコア・ハイスコアを表示する
-		scoreGUIText.text = score.ToString ();
-		highScoreGUIText.text = "HighScore : " + highScore.ToString ();
+		scoreGUIText.text = "Score:" + score.ToString ();
+		highScoreGUIText.text = "HighScore:" + highScore.ToString ();
 	}
 	
 	// ゲーム開始前の状態に戻す

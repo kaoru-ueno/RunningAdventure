@@ -21,6 +21,9 @@ public class UnityChan2DController : MonoBehaviour
 	//ジャンプする回数
 	private int restJumps = 2;
 
+	// 床の移動スピード
+	public float speed = 1;
+
     void Reset()
     {
         Awake();
@@ -53,16 +56,39 @@ public class UnityChan2DController : MonoBehaviour
         m_rigidbody2D = GetComponent<Rigidbody2D>();
     }
 
+	void Start () {
+		Moves (transform.right);
+		
+	}
+
     void Update()
     {
         if (m_state != State.Damaged)
         {
+
+			for (int i = 0; i < Input.touchCount; i++) {
+				
+				// タッチ情報を取得する
+				Touch touch = Input.GetTouch (i);
+				
+				// ゲーム中ではなく、タッチ直後であればtrueを返す。
+				if (touch.phase == TouchPhase.Began) {
+					Move(true);
+				}
+			}
+			
+			
 			//float x = Input.GetAxis("Horizontal");
 			bool jump = Input.GetButtonDown("Jump");
-            //Move(x, jump);
+			//Move(x, jump);
 			Move(jump);
         }
     }
+
+		void Moves (Vector2 direction)
+	{
+		rigidbody2D.velocity = direction * speed;
+	}
 
 	void Move(bool jump)
     {

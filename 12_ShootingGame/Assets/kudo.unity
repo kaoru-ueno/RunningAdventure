@@ -2559,7 +2559,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 11400004, guid: e3ff126a806b2454eaff021fe39cea19, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: e3ff126a806b2454eaff021fe39cea19, type: 2}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 11400004, guid: e3ff126a806b2454eaff021fe39cea19, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: e3ff126a806b2454eaff021fe39cea19, type: 2}
   m_RootGameObject: {fileID: 1908787712}
   m_IsPrefabParent: 0
@@ -2828,7 +2837,6 @@ GameObject:
   - 82: {fileID: 1908787715}
   - 114: {fileID: 1908787714}
   - 114: {fileID: 1908787713}
-  - 114: {fileID: 1908787721}
   m_Layer: 8
   m_Name: DemoUnityChan2D
   m_TagString: Player
@@ -2869,9 +2877,11 @@ MonoBehaviour:
   maxSpeed: 10
   jumpPower: 600
   backwardForce: {x: -4.5, y: 5.4000001}
+  coin: 1
   whatIsGround:
     serializedVersion: 2
     m_Bits: 8192
+  speed: 5
 --- !u!82 &1908787715
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3010,16 +3020,3 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
---- !u!114 &1908787721
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400004, guid: e3ff126a806b2454eaff021fe39cea19,
-    type: 2}
-  m_PrefabInternal: {fileID: 1814734353}
-  m_GameObject: {fileID: 1908787712}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6613abeb80f21b4085f95b62ffb77c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5

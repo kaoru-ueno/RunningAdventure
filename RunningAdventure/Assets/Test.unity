@@ -2000,7 +2000,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 10
-  jumpPower: 600
+  jumpPower: 700
   backwardForce: {x: -4.5, y: 5.4000001}
   coin: 1
   whatIsGround:
@@ -14592,6 +14592,10 @@ Prefab:
     - target: {fileID: 6100000, guid: e3ff126a806b2454eaff021fe39cea19, type: 2}
       propertyPath: m_IsTrigger
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: e3ff126a806b2454eaff021fe39cea19, type: 2}
+      propertyPath: jumpPower
+      value: 700
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11400004, guid: e3ff126a806b2454eaff021fe39cea19, type: 2}

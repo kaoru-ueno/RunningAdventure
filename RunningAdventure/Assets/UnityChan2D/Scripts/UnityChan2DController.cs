@@ -187,8 +187,17 @@ public class UnityChan2DController : MonoBehaviour
 			main_camera.GetComponent<CameraControl2>().enabled = false;
 
         }
+<<<<<<< HEAD
 
 		if (other.tag == "Coin" || other.tag == "Scoin" || other.tag == "Goldcoin") {
+=======
+
+		//if (other.tag == "Coin" || other.tag == "Scoin") {}
+
+
+		if (other.tag == "Coin") {
+
+>>>>>>> origin/master
 			Destroy (other.gameObject);
 			//FindObjectOfType<Score>().AddPoint();
 			//if(other.tag == "Ground"){

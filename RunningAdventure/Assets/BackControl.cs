@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class FloorControl : MonoBehaviour {
+public class BackControl : MonoBehaviour {
 
 	// カメラ.
 	private GameObject		main_camera = null;
@@ -10,10 +10,10 @@ public class FloorControl : MonoBehaviour {
 	//private Vector3	initial_position;
 	
 	// 床の幅（X方向）.
-	public	static float	WIDTH = 5.0f;
+	public	static float	WIDTH = 18.6f;
 	
 	// 床モデルの数.
-	public static int		MODEL_NUM = 10;
+	public static int		MODEL_NUM = 3;
 	
 	void	Start() 
 	{
@@ -21,7 +21,7 @@ public class FloorControl : MonoBehaviour {
 		this.main_camera = GameObject.FindGameObjectWithTag("MainCamera");
 		
 		//this.initial_position = this.transform.position;
-
+		
 		//print (this.main_camera);
 		
 	}
@@ -46,25 +46,25 @@ public class FloorControl : MonoBehaviour {
 		// カメラの位置.
 		Vector3	camera_position = this.main_camera.transform.position;
 		
-		if(floor_position.x + total_width/2.0f < camera_position.x) {
-			
+		//if(floor_position.x + total_width/2.0f < camera_position.x) {
+		if(total_width < camera_position.x) {
 			// 前にワープ.
 			floor_position.x += total_width;
 			
 			this.transform.position = floor_position;
-
+			
 			//print (this.transform.position);
 		}
 		
-		if(camera_position.x < floor_position.x - total_width/2.0f) {
+		//if(camera_position.x < floor_position.x - total_width/2.0f) {
 			
 			// 後ろにワープ.
-			floor_position.x -= total_width;
+		//	floor_position.x -= total_width;
 			
-			this.transform.position = floor_position;
-
+		//	this.transform.position = floor_position;
+			
 			//print (this.transform.position);
-		}
+	//	}
 		#else
 		// プレイヤーがワープしても対応できる方法.
 		

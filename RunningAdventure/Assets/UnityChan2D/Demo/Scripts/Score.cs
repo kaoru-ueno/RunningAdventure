@@ -45,11 +45,30 @@ public class Score : MonoBehaviour
 	}
 	
 	// ポイントの追加
-	public void AddPoint (int coin)
+	public void AddPoint (int point)
 	{
-		score = score + coin;
-	}
+//				switch (score) {
+//				case coin:
 
+//		if (other.tag == coin) {
+						score = score + point;
+//						break;
+//				}
+//		Debug.Log ("coin" + coin);
+//		 if (other.tag = coin) {
+//				case scoin:
+//					score = score + ;
+//						break;
+//				}
+				}
+/*	public void AddPoint (int scoin)
+	{
+		score = score + scoin;
+		//		Debug.Log ("coin" + coin);
+		//		score = score + coin;
+	}
+*/
+		
 	// ハイスコアの保存
 	public void Save ()
 	{

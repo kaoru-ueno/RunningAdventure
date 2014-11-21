@@ -8,6 +8,7 @@ TagManager:
   - 
   - Ground
   - Coin
+  - Scoin
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
@@ -23,7 +24,7 @@ TagManager:
   User Layer 11: Bullet (Enemy)
   User Layer 12: DestroyArea
   User Layer 13: Coin
-  User Layer 14: 
+  User Layer 14: Scoin
   User Layer 15: 
   User Layer 16: 
   User Layer 17: 

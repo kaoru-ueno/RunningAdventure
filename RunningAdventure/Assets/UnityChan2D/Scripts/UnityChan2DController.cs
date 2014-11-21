@@ -155,17 +155,15 @@ public class UnityChan2DController : MonoBehaviour
     }
 
 		void OnTriggerEnter2D(Collider2D c){
-			if(c.tag == "Ground"){
-			restJumps = 2;
-			print ("error");
-//			string layerName = LayerMask.LayerToName (c.gameObject.layer);
-			if (c.tag == "Coin") {
-			Destroy (c.gameObject);
-//				FindObjectOfType<Score>().AddPoint();
-
-			}
-		}
-	}
+//				print ("c.tag:"+c.tag);
+//		if (c.tag == "Scoin" || c.tag == "Coin") {
+//			Destroy (c.gameObject);
+//		}
+		if (c.tag == "Ground") {
+						restJumps = 2;
+						print ("error");
+								}
+						}
 	void OnTriggerStay2D(Collider2D other)
     {
         if (other.tag == "DamageObject" && m_state == State.Normal)
@@ -173,7 +171,7 @@ public class UnityChan2DController : MonoBehaviour
             m_state = State.Damaged;
             StartCoroutine(INTERNAL_OnDamage());
         }
-		if (other.tag == "Coin") {
+		if (other.tag == "Coin" || other.tag == "Scoin") {
 			Destroy (other.gameObject);
 			//				FindObjectOfType<Score>().AddPoint();
 			//if(other.tag == "Ground"){

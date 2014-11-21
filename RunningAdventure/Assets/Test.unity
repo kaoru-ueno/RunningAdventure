@@ -500,7 +500,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 48976201}
-  - 114: {fileID: 48976203}
   - 61: {fileID: 48976202}
   m_Layer: 13
   m_Name: stage1
@@ -537,18 +536,6 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: 6.5999999, y: 1.60000002}
   m_Center: {x: 2.4000001, y: -.0399999991}
---- !u!114 &48976203
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400038, guid: 66c856a778f62544d82ee17e3a59e7a0,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 48976200}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f1c4fb1bd0d78b4987d0a3fa2a54df9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &56352340
 GameObject:
   m_ObjectHideFlags: 0
@@ -2166,7 +2153,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 160319067}
-  - 114: {fileID: 160319069}
   - 61: {fileID: 160319068}
   m_Layer: 13
   m_Name: stage1
@@ -2203,18 +2189,6 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: 6.5999999, y: 1.60000002}
   m_Center: {x: 2.4000001, y: -.0399999991}
---- !u!114 &160319069
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400050, guid: 66c856a778f62544d82ee17e3a59e7a0,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 160319066}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f1c4fb1bd0d78b4987d0a3fa2a54df9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &161233223
 GameObject:
   m_ObjectHideFlags: 0
@@ -4206,7 +4180,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 334221630}
-  - 114: {fileID: 334221632}
   - 61: {fileID: 334221631}
   m_Layer: 13
   m_Name: stage1
@@ -4243,18 +4216,6 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: 6.5999999, y: 1.60000002}
   m_Center: {x: 2.4000001, y: -.0399999991}
---- !u!114 &334221632
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400050, guid: 66c856a778f62544d82ee17e3a59e7a0,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 334221629}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f1c4fb1bd0d78b4987d0a3fa2a54df9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &339682303
 GameObject:
   m_ObjectHideFlags: 0
@@ -4732,7 +4693,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 386108354}
-  - 114: {fileID: 386108353}
   - 61: {fileID: 386108352}
   m_Layer: 13
   m_Name: stage1
@@ -4753,18 +4713,6 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: 6.5999999, y: 1.60000002}
   m_Center: {x: 2.4000001, y: -.0399999991}
---- !u!114 &386108353
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400014, guid: cf726133c93278b4d9c0f87b6a8b3493,
-    type: 2}
-  m_PrefabInternal: {fileID: 900249295}
-  m_GameObject: {fileID: 386108351}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f1c4fb1bd0d78b4987d0a3fa2a54df9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &386108354
 Transform:
   m_ObjectHideFlags: 0
@@ -4983,7 +4931,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 426897166}
-  - 114: {fileID: 426897168}
   - 61: {fileID: 426897167}
   m_Layer: 13
   m_Name: stage1
@@ -5020,18 +4967,6 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: 6.5999999, y: 1.60000002}
   m_Center: {x: 2.4000001, y: -.0399999991}
---- !u!114 &426897168
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400030, guid: 66c856a778f62544d82ee17e3a59e7a0,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 426897165}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f1c4fb1bd0d78b4987d0a3fa2a54df9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &428395099
 GameObject:
   m_ObjectHideFlags: 0
@@ -5123,7 +5058,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 429122940}
-  - 114: {fileID: 429122942}
   - 61: {fileID: 429122941}
   m_Layer: 13
   m_Name: stage1
@@ -5160,18 +5094,6 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: 6.5999999, y: 1.60000002}
   m_Center: {x: 2.4000001, y: -.0399999991}
---- !u!114 &429122942
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400016, guid: 66c856a778f62544d82ee17e3a59e7a0,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 429122939}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f1c4fb1bd0d78b4987d0a3fa2a54df9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &459673912
 GameObject:
   m_ObjectHideFlags: 0
@@ -5825,7 +5747,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 528722979}
-  - 114: {fileID: 528722981}
   - 61: {fileID: 528722980}
   m_Layer: 13
   m_Name: stage1
@@ -5862,18 +5783,6 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: 6.5999999, y: 1.60000002}
   m_Center: {x: 2.4000001, y: -.0399999991}
---- !u!114 &528722981
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: cf726133c93278b4d9c0f87b6a8b3493,
-    type: 2}
-  m_PrefabInternal: {fileID: 900249295}
-  m_GameObject: {fileID: 528722978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f1c4fb1bd0d78b4987d0a3fa2a54df9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &535579531
 GameObject:
   m_ObjectHideFlags: 0
@@ -5992,7 +5901,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 547932045}
-  - 114: {fileID: 547932047}
   - 61: {fileID: 547932046}
   m_Layer: 13
   m_Name: stage1
@@ -6029,18 +5937,6 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: 6.5999999, y: 1.60000002}
   m_Center: {x: 2.4000001, y: -.0399999991}
---- !u!114 &547932047
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400042, guid: 66c856a778f62544d82ee17e3a59e7a0,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 547932044}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f1c4fb1bd0d78b4987d0a3fa2a54df9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &548418938
 GameObject:
   m_ObjectHideFlags: 0
@@ -7557,7 +7453,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 730118541}
-  - 114: {fileID: 730118543}
   - 61: {fileID: 730118542}
   m_Layer: 13
   m_Name: stage1
@@ -7594,18 +7489,6 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: 6.5999999, y: 1.60000002}
   m_Center: {x: 2.4000001, y: -.0399999991}
---- !u!114 &730118543
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400030, guid: 66c856a778f62544d82ee17e3a59e7a0,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 730118540}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f1c4fb1bd0d78b4987d0a3fa2a54df9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &730334159
 GameObject:
   m_ObjectHideFlags: 0
@@ -9859,6 +9742,10 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5000000, guid: cf726133c93278b4d9c0f87b6a8b3493, type: 2}
+    - {fileID: 11400014, guid: cf726133c93278b4d9c0f87b6a8b3493, type: 2}
+    - {fileID: 11400000, guid: cf726133c93278b4d9c0f87b6a8b3493, type: 2}
+    - {fileID: 11400012, guid: cf726133c93278b4d9c0f87b6a8b3493, type: 2}
+    - {fileID: 11400038, guid: cf726133c93278b4d9c0f87b6a8b3493, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: cf726133c93278b4d9c0f87b6a8b3493, type: 2}
   m_RootGameObject: {fileID: 239566715}
   m_IsPrefabParent: 0
@@ -10560,7 +10447,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 958743896}
-  - 114: {fileID: 958743898}
   - 61: {fileID: 958743897}
   m_Layer: 13
   m_Name: stage1
@@ -10597,18 +10483,6 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: 6.5999999, y: 1.60000002}
   m_Center: {x: 2.4000001, y: -.0399999991}
---- !u!114 &958743898
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400014, guid: cf726133c93278b4d9c0f87b6a8b3493,
-    type: 2}
-  m_PrefabInternal: {fileID: 1697638362}
-  m_GameObject: {fileID: 958743895}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f1c4fb1bd0d78b4987d0a3fa2a54df9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &969917694
 GameObject:
   m_ObjectHideFlags: 0
@@ -11692,7 +11566,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1074505849}
-  - 114: {fileID: 1074505851}
   - 61: {fileID: 1074505850}
   m_Layer: 13
   m_Name: stage1
@@ -11729,18 +11602,6 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: 6.5999999, y: 1.60000002}
   m_Center: {x: 2.4000001, y: -.0399999991}
---- !u!114 &1074505851
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400038, guid: 66c856a778f62544d82ee17e3a59e7a0,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1074505848}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f1c4fb1bd0d78b4987d0a3fa2a54df9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1075902571
 GameObject:
   m_ObjectHideFlags: 0
@@ -11915,7 +11776,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1080885510}
-  - 114: {fileID: 1080885512}
   - 61: {fileID: 1080885511}
   m_Layer: 13
   m_Name: stage1
@@ -11952,18 +11812,6 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: 6.5999999, y: 1.60000002}
   m_Center: {x: 2.4000001, y: -.0399999991}
---- !u!114 &1080885512
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400042, guid: 66c856a778f62544d82ee17e3a59e7a0,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1080885509}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f1c4fb1bd0d78b4987d0a3fa2a54df9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1081114150
 GameObject:
   m_ObjectHideFlags: 0
@@ -12165,7 +12013,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1136690402}
-  - 114: {fileID: 1136690404}
   - 61: {fileID: 1136690403}
   m_Layer: 13
   m_Name: stage2
@@ -12200,18 +12047,6 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: 3.4000001, y: 1.60000002}
   m_Center: {x: .800000012, y: -.0399999991}
---- !u!114 &1136690404
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400038, guid: cf726133c93278b4d9c0f87b6a8b3493,
-    type: 2}
-  m_PrefabInternal: {fileID: 1697638362}
-  m_GameObject: {fileID: 1136690401}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f1c4fb1bd0d78b4987d0a3fa2a54df9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1202573603
 GameObject:
   m_ObjectHideFlags: 0
@@ -14926,7 +14761,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1413584065}
-  - 114: {fileID: 1413584067}
   - 61: {fileID: 1413584066}
   m_Layer: 13
   m_Name: stage1
@@ -14963,18 +14797,6 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: 6.5999999, y: 1.60000002}
   m_Center: {x: 2.4000001, y: -.0399999991}
---- !u!114 &1413584067
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400012, guid: cf726133c93278b4d9c0f87b6a8b3493,
-    type: 2}
-  m_PrefabInternal: {fileID: 900249295}
-  m_GameObject: {fileID: 1413584064}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f1c4fb1bd0d78b4987d0a3fa2a54df9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1432300811
 GameObject:
   m_ObjectHideFlags: 0
@@ -15342,7 +15164,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1463133743}
-  - 114: {fileID: 1463133745}
   - 61: {fileID: 1463133744}
   m_Layer: 13
   m_Name: stage1
@@ -15379,18 +15200,6 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: 6.5999999, y: 1.60000002}
   m_Center: {x: 2.4000001, y: -.0399999991}
---- !u!114 &1463133745
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: cf726133c93278b4d9c0f87b6a8b3493,
-    type: 2}
-  m_PrefabInternal: {fileID: 1697638362}
-  m_GameObject: {fileID: 1463133742}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f1c4fb1bd0d78b4987d0a3fa2a54df9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1481783247
 GameObject:
   m_ObjectHideFlags: 0
@@ -16005,7 +15814,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1549839857}
-  - 114: {fileID: 1549839859}
   - 61: {fileID: 1549839858}
   m_Layer: 13
   m_Name: stage1
@@ -16042,18 +15850,6 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: 6.5999999, y: 1.60000002}
   m_Center: {x: 2.4000001, y: -.0399999991}
---- !u!114 &1549839859
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400030, guid: 66c856a778f62544d82ee17e3a59e7a0,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1549839856}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f1c4fb1bd0d78b4987d0a3fa2a54df9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1550437287
 GameObject:
   m_ObjectHideFlags: 0
@@ -17620,7 +17416,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1688960467}
-  - 114: {fileID: 1688960469}
   - 61: {fileID: 1688960468}
   m_Layer: 13
   m_Name: stage1
@@ -17657,18 +17452,6 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: 6.5999999, y: 1.60000002}
   m_Center: {x: 2.4000001, y: -.0399999991}
---- !u!114 &1688960469
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400016, guid: 66c856a778f62544d82ee17e3a59e7a0,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1688960466}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f1c4fb1bd0d78b4987d0a3fa2a54df9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1691196974
 GameObject:
   m_ObjectHideFlags: 0
@@ -17907,6 +17690,10 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5000000, guid: cf726133c93278b4d9c0f87b6a8b3493, type: 2}
+    - {fileID: 11400014, guid: cf726133c93278b4d9c0f87b6a8b3493, type: 2}
+    - {fileID: 11400038, guid: cf726133c93278b4d9c0f87b6a8b3493, type: 2}
+    - {fileID: 11400000, guid: cf726133c93278b4d9c0f87b6a8b3493, type: 2}
+    - {fileID: 11400012, guid: cf726133c93278b4d9c0f87b6a8b3493, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: cf726133c93278b4d9c0f87b6a8b3493, type: 2}
   m_RootGameObject: {fileID: 822522778}
   m_IsPrefabParent: 0
@@ -18415,7 +18202,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1750689655}
-  - 114: {fileID: 1750689657}
   - 61: {fileID: 1750689656}
   m_Layer: 13
   m_Name: stage2
@@ -18450,18 +18236,6 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: 3.4000001, y: 1.60000002}
   m_Center: {x: .800000012, y: -.0399999991}
---- !u!114 &1750689657
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400038, guid: cf726133c93278b4d9c0f87b6a8b3493,
-    type: 2}
-  m_PrefabInternal: {fileID: 900249295}
-  m_GameObject: {fileID: 1750689654}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f1c4fb1bd0d78b4987d0a3fa2a54df9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1773399202
 GameObject:
   m_ObjectHideFlags: 0
@@ -18553,7 +18327,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1780964578}
-  - 114: {fileID: 1780964580}
   - 61: {fileID: 1780964579}
   m_Layer: 13
   m_Name: stage2
@@ -18587,18 +18360,6 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: 3.4000001, y: 1.60000002}
   m_Center: {x: .800000012, y: -.0399999991}
---- !u!114 &1780964580
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400008, guid: 7f9ef8986a3ef6c4f83eb907d3cb2e43,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1780964577}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f1c4fb1bd0d78b4987d0a3fa2a54df9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1823367223
 GameObject:
   m_ObjectHideFlags: 0
@@ -19844,7 +19605,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1965892786}
-  - 114: {fileID: 1965892788}
   - 61: {fileID: 1965892787}
   m_Layer: 13
   m_Name: stage1
@@ -19881,18 +19641,6 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: 6.5999999, y: 1.60000002}
   m_Center: {x: 2.4000001, y: -.0399999991}
---- !u!114 &1965892788
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400012, guid: cf726133c93278b4d9c0f87b6a8b3493,
-    type: 2}
-  m_PrefabInternal: {fileID: 1697638362}
-  m_GameObject: {fileID: 1965892785}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f1c4fb1bd0d78b4987d0a3fa2a54df9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1975788858
 GameObject:
   m_ObjectHideFlags: 0
@@ -20318,7 +20066,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1986318599}
-  - 114: {fileID: 1986318601}
   - 61: {fileID: 1986318600}
   m_Layer: 13
   m_Name: stage1
@@ -20355,18 +20102,6 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: 6.5999999, y: 1.60000002}
   m_Center: {x: 2.4000001, y: -.0399999991}
---- !u!114 &1986318601
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400038, guid: 66c856a778f62544d82ee17e3a59e7a0,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1986318598}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f1c4fb1bd0d78b4987d0a3fa2a54df9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1988296926
 GameObject:
   m_ObjectHideFlags: 0
@@ -21617,7 +21352,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2071577057}
-  - 114: {fileID: 2071577059}
   - 61: {fileID: 2071577058}
   m_Layer: 13
   m_Name: stage1
@@ -21654,18 +21388,6 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: 6.5999999, y: 1.60000002}
   m_Center: {x: 2.4000001, y: -.0399999991}
---- !u!114 &2071577059
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400016, guid: 66c856a778f62544d82ee17e3a59e7a0,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2071577056}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f1c4fb1bd0d78b4987d0a3fa2a54df9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2085787483
 GameObject:
   m_ObjectHideFlags: 0
@@ -21757,7 +21479,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2089797616}
-  - 114: {fileID: 2089797618}
   - 61: {fileID: 2089797617}
   m_Layer: 13
   m_Name: stage1
@@ -21794,18 +21515,6 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: 6.5999999, y: 1.60000002}
   m_Center: {x: 2.4000001, y: -.0399999991}
---- !u!114 &2089797618
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400050, guid: 66c856a778f62544d82ee17e3a59e7a0,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2089797615}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f1c4fb1bd0d78b4987d0a3fa2a54df9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2091982933
 GameObject:
   m_ObjectHideFlags: 0
@@ -22271,7 +21980,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2121676483}
-  - 114: {fileID: 2121676485}
   - 61: {fileID: 2121676484}
   m_Layer: 13
   m_Name: stage1
@@ -22308,18 +22016,6 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: 6.5999999, y: 1.60000002}
   m_Center: {x: 2.4000001, y: -.0399999991}
---- !u!114 &2121676485
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400042, guid: 66c856a778f62544d82ee17e3a59e7a0,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2121676482}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f1c4fb1bd0d78b4987d0a3fa2a54df9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2129895369
 GameObject:
   m_ObjectHideFlags: 0

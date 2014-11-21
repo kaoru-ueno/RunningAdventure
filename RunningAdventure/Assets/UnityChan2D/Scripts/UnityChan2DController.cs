@@ -192,7 +192,7 @@ public class UnityChan2DController : MonoBehaviour
 						//カメラを止める
 						main_camera.GetComponent<CameraControl2> ().enabled = false;
 
-<<<<<<< HEAD
+
 				}
 
 
@@ -213,28 +213,15 @@ public class UnityChan2DController : MonoBehaviour
 								//}
 						}
 				}
-=======
-        }
+
+        
 
 
-		if (other.tag == "Coin" || other.tag == "Scoin" || other.tag == "Goldcoin")
-		{
-		
-		//if (other.tag == "Coin" || other.tag == "Scoin") {}
-
-
-		//if (other.tag == "Coin") 
-			//{
-
-			Destroy (other.gameObject);
-			//FindObjectOfType<Score>().AddPoint();
-			//if(other.tag == "Ground"){
-			//	restJumps = 2;
-			//	print ("error");
-			//}
-			//}
->>>>>>> origin/master
+				if (other.tag == "Coin" || other.tag == "Scoin" || other.tag == "Goldcoin") {
+						Destroy (other.gameObject);
+				}
 		}
+
 	IEnumerator INTERNAL_OnDamage()
     {
         m_animator.Play(m_isGround ? "Damage" : "AirDamage");

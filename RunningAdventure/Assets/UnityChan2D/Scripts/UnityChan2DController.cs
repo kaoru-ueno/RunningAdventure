@@ -179,40 +179,40 @@ public class UnityChan2DController : MonoBehaviour
 						}
 	void OnTriggerStay2D(Collider2D other)
     {
-        if (other.tag == "DamageObject" && m_state == State.Normal)
-        {
-            m_state = State.Damaged;
-            StartCoroutine(INTERNAL_OnDamage());
+				if (other.tag == "DamageObject" && m_state == State.Normal) {
+						m_state = State.Damaged;
+						StartCoroutine (INTERNAL_OnDamage ());
 
-			//ゲームオーバー画面表示
-			FindObjectOfType<StageControl>().gameEnd();
+						//ゲームオーバー画面表示
+						FindObjectOfType<StageControl> ().gameEnd ();
 
-			//地面をすり抜ける
-			gameObject.collider2D.isTrigger = true;
+						//地面をすり抜ける
+						gameObject.collider2D.isTrigger = true;
 
-			//カメラを止める
-			main_camera.GetComponent<CameraControl2>().enabled = false;
+						//カメラを止める
+						main_camera.GetComponent<CameraControl2> ().enabled = false;
 
-        }
-<<<<<<< HEAD
-
-		if (other.tag == "Coin" || other.tag == "Scoin" || other.tag == "Goldcoin") {
-=======
-
-		//if (other.tag == "Coin" || other.tag == "Scoin") {}
+				}
 
 
-		if (other.tag == "Coin") {
+				if (other.tag == "Coin" || other.tag == "Scoin" || other.tag == "Goldcoin") {
 
->>>>>>> origin/master
-			Destroy (other.gameObject);
-			//FindObjectOfType<Score>().AddPoint();
-			//if(other.tag == "Ground"){
-			//	restJumps = 2;
-			//	print ("error");
-			//}
+
+						//if (other.tag == "Coin" || other.tag == "Scoin") {}
+
+
+						if (other.tag == "Coin") {
+
+
+								Destroy (other.gameObject);
+								//FindObjectOfType<Score>().AddPoint();
+								//if(other.tag == "Ground"){
+								//	restJumps = 2;
+								//	print ("error");
+								//}
+						}
+				}
 		}
-	}
 	IEnumerator INTERNAL_OnDamage()
     {
         m_animator.Play(m_isGround ? "Damage" : "AirDamage");

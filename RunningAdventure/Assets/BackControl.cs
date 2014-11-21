@@ -13,7 +13,7 @@ public class BackControl : MonoBehaviour {
 	public	static float	WIDTH = 18.6f;
 	
 	// 床モデルの数.
-	public static int		MODEL_NUM = 3;
+	public static float		MODEL_NUM = 3.0f;
 	
 	void	Start() 
 	{
@@ -38,7 +38,7 @@ public class BackControl : MonoBehaviour {
 		
 		// 背景全体（すべてのモデルを並べた）の幅.
 		//
-		float	total_width = FloorControl.WIDTH*FloorControl.MODEL_NUM;
+		float	total_width = BackControl.WIDTH * BackControl.MODEL_NUM;
 		
 		// 背景の位置.
 		Vector3	floor_position = this.transform.position;
@@ -46,8 +46,8 @@ public class BackControl : MonoBehaviour {
 		// カメラの位置.
 		Vector3	camera_position = this.main_camera.transform.position;
 		
-		//if(floor_position.x + total_width/2.0f < camera_position.x) {
-		if(total_width < camera_position.x) {
+		if(floor_position.x + total_width/2.0f < camera_position.x) {
+
 			// 前にワープ.
 			floor_position.x += total_width;
 			

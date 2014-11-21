@@ -10,10 +10,10 @@ public class FloorControl : MonoBehaviour {
 	//private Vector3	initial_position;
 	
 	// 床の幅（X方向）.
-	public	static float	WIDTH = 5.0f;
+	public	static float	WIDTH = 32f;
 	
 	// 床モデルの数.
-	public static int		MODEL_NUM = 10;
+	public static int		MODEL_NUM = 2;
 	
 	void	Start() 
 	{

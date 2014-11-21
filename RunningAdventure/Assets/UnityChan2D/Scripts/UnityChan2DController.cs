@@ -88,7 +88,11 @@ public class UnityChan2DController : MonoBehaviour
 			Move(jump);
         }
 		if(transform.position.y < -6){
+			//ゲームオーバー画面表示
 			FindObjectOfType<StageControl>().gameEnd();
+
+			//カメラを止める
+			main_camera.GetComponent<CameraControl2>().enabled = false;
 		}
     }
 
@@ -180,10 +184,13 @@ public class UnityChan2DController : MonoBehaviour
             m_state = State.Damaged;
             StartCoroutine(INTERNAL_OnDamage());
 
+			//ゲームオーバー画面表示
 			FindObjectOfType<StageControl>().gameEnd();
 
+			//地面をすり抜ける
 			gameObject.collider2D.isTrigger = true;
 
+			//カメラを止める
 			main_camera.GetComponent<CameraControl2>().enabled = false;
 
         }

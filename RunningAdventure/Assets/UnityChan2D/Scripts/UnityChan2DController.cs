@@ -187,12 +187,8 @@ public class UnityChan2DController : MonoBehaviour
 			main_camera.GetComponent<CameraControl2>().enabled = false;
 
         }
-<<<<<<< HEAD
-		if (other.tag == "Coin" || other.tag == "Scoin") {
-=======
 
-		if (other.tag == "Coin") {
->>>>>>> origin/master
+		if (other.tag == "Coin" || other.tag == "Scoin" || other.tag == "Goldcoin") {
 			Destroy (other.gameObject);
 			//FindObjectOfType<Score>().AddPoint();
 			//if(other.tag == "Ground"){
@@ -201,8 +197,7 @@ public class UnityChan2DController : MonoBehaviour
 			//}
 		}
 	}
-
-    IEnumerator INTERNAL_OnDamage()
+	IEnumerator INTERNAL_OnDamage()
     {
         m_animator.Play(m_isGround ? "Damage" : "AirDamage");
         m_animator.Play("Idle");

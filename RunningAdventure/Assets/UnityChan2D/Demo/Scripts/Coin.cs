@@ -6,6 +6,7 @@ public class Coin : MonoBehaviour {
 	public int point = 0;
 	public int coin = 1;
 	public int scoin = 2;
+	public int goldcoin = 4;
 
 /*	void GetPoint(){
 				if (coin == coin) {
@@ -16,17 +17,21 @@ public class Coin : MonoBehaviour {
 				}
 		}*/
 	void OnTriggerEnter2D(Collider2D c){
-				if (c.tag == "Player") {
-//			if (coin == coin) {
+			if (c.tag == "Player") {
+			if (gameObject.name == "Coin") {
 				point += coin;
-//			}else{
+				}
+			if (gameObject.name == "Scoin"){
 				point += scoin;
+				}
+			if (gameObject.name == "Goldcoin"){
+				point += goldcoin;
 			}
+//			Debug.Log ("coin" + coin);
+//			Debug.Log ("scoin" + scoin);
 			FindObjectOfType<Score> ().AddPoint(point);
 				}
-//		}
-
-
+		}
 /*	private CircleCollider2D m_CircleCollider2D;
 	
 	private void Awake()

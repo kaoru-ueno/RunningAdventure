@@ -13,7 +13,7 @@ public class FloorControl : MonoBehaviour {
 	public	static float	WIDTH = 32f;
 	
 	// 床モデルの数.
-	public static int		MODEL_NUM = 2;
+	public static int		MODEL_NUM = 5;
 	
 	void	Start() 
 	{
@@ -38,7 +38,7 @@ public class FloorControl : MonoBehaviour {
 		
 		// 背景全体（すべてのモデルを並べた）の幅.
 		//
-		float	total_width = FloorControl.WIDTH*FloorControl.MODEL_NUM;
+		float	total_width = FloorControl.WIDTH * FloorControl.MODEL_NUM;
 		
 		// 背景の位置.
 		Vector3	floor_position = this.transform.position;
@@ -56,15 +56,15 @@ public class FloorControl : MonoBehaviour {
 			//print (this.transform.position);
 		}
 		
-		if(camera_position.x < floor_position.x - total_width/2.0f) {
+		//if(camera_position.x < floor_position.x - total_width/2.0f) {
 			
 			// 後ろにワープ.
-			floor_position.x -= total_width;
+		//	floor_position.x -= total_width;
 			
-			this.transform.position = floor_position;
+		//	this.transform.position = floor_position;
 
 			//print (this.transform.position);
-		}
+		//}
 		#else
 		// プレイヤーがワープしても対応できる方法.
 		

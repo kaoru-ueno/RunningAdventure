@@ -121,7 +121,7 @@ public class UnityChan2DController : MonoBehaviour
 			if(restJumps == 1){
 				m_animator.SetTrigger("Jump");
            	 	SendMessage("Jump", SendMessageOptions.DontRequireReceiver);
-           		m_rigidbody2D.AddForce(Vector2.up * jumpPower * 0.5f);
+           		m_rigidbody2D.AddForce(Vector2.up * jumpPower * 0.4f);
 
 				restJumps--;
 	
@@ -146,15 +146,15 @@ public class UnityChan2DController : MonoBehaviour
 	//	}
 
 		//高さ制限
-		Vector2 pos = transform.position;
+		//Vector2 pos = transform.position;
 		
-		Vector2 min = new Vector2(0, -2000);
+		//Vector2 min = new Vector2(0, -2000);
 		
-		Vector2 max = new Vector2(0, 1.5f);
+		//Vector2 max = new Vector2(0, 1.5f);
 		
-		pos.y = Mathf.Clamp (pos.y, min.y, max.y);
+		//pos.y = Mathf.Clamp (pos.y, min.y, max.y);
 		
-		transform.position = pos;
+		//transform.position = pos;
     }
 
     void FixedUpdate()
@@ -194,22 +194,23 @@ public class UnityChan2DController : MonoBehaviour
 			main_camera.GetComponent<CameraControl2>().enabled = false;
 
         }
-<<<<<<< HEAD
 
-		if (other.tag == "Coin" || other.tag == "Scoin" || other.tag == "Goldcoin") {
-=======
 
+		if (other.tag == "Coin" || other.tag == "Scoin" || other.tag == "Goldcoin")
+		{
+		
 		//if (other.tag == "Coin" || other.tag == "Scoin") {}
 
 
-		if (other.tag == "Coin") {
+		//if (other.tag == "Coin") 
+			//{
 
->>>>>>> origin/master
 			Destroy (other.gameObject);
 			//FindObjectOfType<Score>().AddPoint();
 			//if(other.tag == "Ground"){
 			//	restJumps = 2;
 			//	print ("error");
+			//}
 			//}
 		}
 	}

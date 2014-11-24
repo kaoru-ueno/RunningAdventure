@@ -2007,6 +2007,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8192
   speed: 5
+  speedometer: 10
 --- !u!82 &153431670
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8752,6 +8753,68 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5c0dcc5480f541e4cad5c50400877299, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &819686785
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 819686788}
+  - 131: {fileID: 819686787}
+  - 114: {fileID: 819686786}
+  m_Layer: 0
+  m_Name: UnityWatermark-small
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &819686786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 819686785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7001717b6827c0046ba3d599e29f76ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  icon: {fileID: 2800000, guid: 4f002bf1aa1444ef689a878337c3d985, type: 3}
+  skin: {fileID: 11400000, guid: 4a4008133e012a149ba702697328dab4, type: 2}
+  animator: {fileID: 153431673}
+--- !u!131 &819686787
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 819686785}
+  m_Enabled: 0
+  m_Texture: {fileID: 2800000, guid: 4f002bf1aa1444ef689a878337c3d985, type: 3}
+  m_Color: {r: .5, g: .5, b: .5, a: .5}
+  m_PixelInset:
+    serializedVersion: 2
+    x: -64
+    y: -29
+    width: 128
+    height: 58
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
+--- !u!4 &819686788
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 819686785}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .899999976, y: .899999976, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
 --- !u!1 &820293704
 GameObject:
   m_ObjectHideFlags: 0
@@ -14596,6 +14659,10 @@ Prefab:
     - target: {fileID: 11400000, guid: e3ff126a806b2454eaff021fe39cea19, type: 2}
       propertyPath: jumpPower
       value: 700
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: e3ff126a806b2454eaff021fe39cea19, type: 2}
+      propertyPath: speedometer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11400004, guid: e3ff126a806b2454eaff021fe39cea19, type: 2}

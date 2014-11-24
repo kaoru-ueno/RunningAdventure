@@ -2822,7 +2822,6 @@ GameObject:
   - 81: {fileID: 1473740752}
   - 114: {fileID: 1473740751}
   - 114: {fileID: 1473740757}
-  - 114: {fileID: 1473740758}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2920,19 +2919,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DistGUIText: {fileID: 1628971923}
   GameEndGUIText: {fileID: 1111434059}
---- !u!114 &1473740758
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1473740750}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d2354ad387d40e4ba508dc093393d42, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  icon: {fileID: 2800000, guid: 4f002bf1aa1444ef689a878337c3d985, type: 3}
-  skin: {fileID: 11400000, guid: 4a4008133e012a149ba702697328dab4, type: 2}
 --- !u!1 &1490470464
 GameObject:
   m_ObjectHideFlags: 0
@@ -3812,7 +3798,6 @@ GameObject:
   - 82: {fileID: 1908787715}
   - 114: {fileID: 1908787714}
   - 114: {fileID: 1908787713}
-  - 111: {fileID: 1908787721}
   m_Layer: 8
   m_Name: DemoUnityChan2D
   m_TagString: Player
@@ -3858,6 +3843,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8192
   speed: 5
+  speedometer: 100
 --- !u!82 &1908787715
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3996,20 +3982,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
---- !u!111 &1908787721
-Animation:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1908787712}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 0}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!1 &1935723910
 GameObject:
   m_ObjectHideFlags: 0

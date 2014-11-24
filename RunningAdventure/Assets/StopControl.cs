@@ -15,11 +15,20 @@ public class StopControl : MonoBehaviour {
 
 	public Animator animator;
 
+	//UnityChan2DController unityChan2DController;
+
+	//public int speed = 0;
+
 	void Start () 
 	{
 			this.Player = GameObject.FindGameObjectWithTag("Player");
+			//unityChan2DController = Player.GetComponent<UnityChan2DController> ();
 	}
-	
+
+	void Update () 
+	{
+		//speed = unityChan2DController.speedlevel;
+	}
 	/*void Update () 
 	{
 	for (int i = 0; i < Input.touchCount; i++)
@@ -97,7 +106,20 @@ public class StopControl : MonoBehaviour {
 			{
 				Player.rigidbody2D.gravityScale = 3.5f;
 				Player.GetComponent<UnityChan2DController>().enabled = true;
-				Player.rigidbody2D.velocity = transform.right * 5;
+				if(UnityChan2DController.speedlevel == 1)
+				{
+					Player.rigidbody2D.velocity = transform.right * 5;
+				}
+
+				if(UnityChan2DController.speedlevel == 2)
+				{
+					Player.rigidbody2D.velocity = transform.right * 5 * 1.5f;
+				}
+
+				if(UnityChan2DController.speedlevel == 3)
+				{
+					Player.rigidbody2D.velocity = transform.right * 5 * 2f;
+				}
 				//Player.animation.Play();
 				animator.SetBool("Stop", false);
 

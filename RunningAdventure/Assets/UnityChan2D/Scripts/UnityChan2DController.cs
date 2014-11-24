@@ -256,6 +256,8 @@ public class UnityChan2DController : MonoBehaviour
 
         yield return new WaitForSeconds(.5f);
 
+		Moves (transform.right);
+
         while (m_isGround == false)
         {
             yield return new WaitForFixedUpdate();

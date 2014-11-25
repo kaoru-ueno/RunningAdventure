@@ -73,21 +73,27 @@ public class UnityChan2DController : MonoBehaviour
     {
 
 		Vector3	camera_position = this.main_camera.transform.position;
-		if(camera_position.x > speedometer && camera_position.x < speedometer + 0.5f )
-		{
-			Moves (transform.right * 1.5f);
-			speedlevel = 2;
-			print ("speedup");
 
+		if(speedlevel != 2)
+		{
+			if(camera_position.x > speedometer && camera_position.x < speedometer + 1.0f )
+			{
+				Moves (transform.right * 1.5f);
+				speedlevel = 2;
+				print ("speedup");
+
+			}
 		}
 
-		if(camera_position.x > speedometer * 2 && camera_position.x < speedometer * 2 + 0.5f )
+		if (speedlevel != 3) 
 		{
-			Moves (transform.right * 2f);
-			speedlevel = 3;
-			print ("speedup2");
+			if(camera_position.x > speedometer * 2 && camera_position.x < speedometer * 2 + 1.0f )
+			{
+				Moves (transform.right * 2f);
+				speedlevel = 3;
+				print ("speedup2");
+			}
 		}
-
 
         if (m_state != State.Damaged)
         {
@@ -141,21 +147,30 @@ public class UnityChan2DController : MonoBehaviour
 		if (jump && restJumps > 0)
         {
 			if(restJumps == 1){
-				m_animator.SetTrigger("Jump");
+				/*m_animator.SetTrigger("Jump");
            	 	SendMessage("Jump", SendMessageOptions.DontRequireReceiver);
-           		m_rigidbody2D.AddForce(Vector2.up * jumpPower * 0.4f);
+				m_rigidbody2D.AddForce(Vector2.up * jumpPower );//* 0.4f);*/
+
+				/*for(int i = 0; i < 10; i++ )
+				{
+					transform.Translate(transform.up * 0.1);
+				}*/
 
 				restJumps--;
 	
-
 				print ("restJumps:"+restJumps);
 			}
 
 			else{
-				m_animator.SetTrigger("Jump");
+			/*m_animator.SetTrigger("Jump");
 				SendMessage("Jump", SendMessageOptions.DontRequireReceiver);
-				m_rigidbody2D.AddForce(Vector2.up * jumpPower);
-				
+				m_rigidbody2D.AddForce(Vector2.up * jumpPower);*/
+
+				/*for(int i = 0; i < 10; i++ )
+				{
+					transform.Translate(transform.forward * 0.1);
+				}*/
+
 				restJumps--;
 				
 				

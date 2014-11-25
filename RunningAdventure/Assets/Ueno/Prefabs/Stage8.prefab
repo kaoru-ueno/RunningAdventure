@@ -25,9 +25,11 @@ GameObject:
   - 4: {fileID: 400002}
   - 212: {fileID: 21200002}
   - 95: {fileID: 9500002}
+  - 58: {fileID: 5800008}
+  - 50: {fileID: 5000008}
   m_Layer: 0
   m_Name: Fire
-  m_TagString: Untagged
+  m_TagString: DamageObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42,9 +44,11 @@ GameObject:
   - 4: {fileID: 400004}
   - 212: {fileID: 21200014}
   - 95: {fileID: 9500004}
+  - 58: {fileID: 5800010}
+  - 50: {fileID: 5000010}
   m_Layer: 0
   m_Name: Fire
-  m_TagString: Untagged
+  m_TagString: DamageObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -505,9 +509,9 @@ GameObject:
   - 58: {fileID: 5800000}
   - 50: {fileID: 5000000}
   - 114: {fileID: 11400044}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: partsCrystal5
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -525,9 +529,9 @@ GameObject:
   - 58: {fileID: 5800002}
   - 50: {fileID: 5000002}
   - 114: {fileID: 11400046}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: partsCrystal4
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -545,9 +549,9 @@ GameObject:
   - 58: {fileID: 5800004}
   - 50: {fileID: 5000004}
   - 114: {fileID: 11400048}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: partsCrystal3
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1060,6 +1064,36 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!50 &5000008
+Rigidbody2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 0
+  m_FixedAngle: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+--- !u!50 &5000010
+Rigidbody2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 0
+  m_FixedAngle: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!58 &5800000
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -1103,6 +1137,28 @@ CircleCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Radius: .300000012
+  m_Center: {x: 0, y: 0}
+--- !u!58 &5800008
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Radius: .5
+  m_Center: {x: 0, y: 0}
+--- !u!58 &5800010
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Radius: .5
   m_Center: {x: 0, y: 0}
 --- !u!61 &6100002
 BoxCollider2D:
@@ -1624,10 +1680,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!114 &11400046
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1639,10 +1692,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!114 &11400048
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1654,10 +1704,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!114 &11400050
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1669,10 +1716,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

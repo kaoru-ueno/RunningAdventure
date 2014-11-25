@@ -28,9 +28,9 @@ GameObject:
   - 58: {fileID: 5800000}
   - 50: {fileID: 5000000}
   - 114: {fileID: 11400000}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: partsCrystal10
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48,9 +48,9 @@ GameObject:
   - 58: {fileID: 5800002}
   - 50: {fileID: 5000002}
   - 114: {fileID: 11400002}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: partsCrystal10
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68,9 +68,9 @@ GameObject:
   - 58: {fileID: 5800004}
   - 50: {fileID: 5000004}
   - 114: {fileID: 11400004}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: partsCrystal10
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -88,9 +88,9 @@ GameObject:
   - 58: {fileID: 5800006}
   - 50: {fileID: 5000006}
   - 114: {fileID: 11400006}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: partsCrystal10
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -108,9 +108,9 @@ GameObject:
   - 58: {fileID: 5800008}
   - 50: {fileID: 5000008}
   - 114: {fileID: 11400010}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: partsCrystal10
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -128,9 +128,9 @@ GameObject:
   - 58: {fileID: 5800010}
   - 50: {fileID: 5000010}
   - 114: {fileID: 11400030}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: partsCrystal10
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -165,9 +165,9 @@ GameObject:
   - 58: {fileID: 5800012}
   - 50: {fileID: 5000012}
   - 114: {fileID: 11400040}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: partsCrystal10
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -338,9 +338,9 @@ GameObject:
   - 58: {fileID: 5800014}
   - 50: {fileID: 5000014}
   - 114: {fileID: 11400048}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: partsCrystal10
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -426,9 +426,9 @@ GameObject:
   - 58: {fileID: 5800016}
   - 50: {fileID: 5000016}
   - 114: {fileID: 11400052}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: partsCrystal10
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -497,9 +497,9 @@ GameObject:
   - 58: {fileID: 5800018}
   - 50: {fileID: 5000018}
   - 114: {fileID: 11400054}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: partsCrystal10
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -598,6 +598,21 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400066}
+  m_Layer: 0
+  m_Name: FloorCol
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100068
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400068}
   - 61: {fileID: 6100000}
   m_Layer: 0
   m_Name: FloorCol
@@ -996,6 +1011,7 @@ Transform:
   - {fileID: 400042}
   - {fileID: 400034}
   - {fileID: 400000}
+  - {fileID: 400068}
   - {fileID: 400066}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -1041,6 +1057,18 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100066}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.19458008, y: -1.99668205, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400058}
+  m_RootOrder: 7
+--- !u!4 &400068
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100068}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.19458008, y: -1.99668205, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -1312,7 +1340,7 @@ BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100066}
+  m_GameObject: {fileID: 100068}
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -1534,10 +1562,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1549,10 +1574,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1564,10 +1586,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1579,10 +1598,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!114 &11400008
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1611,10 +1627,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!114 &11400012
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1769,10 +1782,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!114 &11400032
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1852,10 +1862,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!114 &11400042
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1918,10 +1925,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!114 &11400050
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1950,10 +1954,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!114 &11400054
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1965,10 +1966,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

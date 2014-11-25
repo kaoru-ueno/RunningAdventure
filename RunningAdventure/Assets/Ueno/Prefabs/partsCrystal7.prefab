@@ -13,9 +13,9 @@ GameObject:
   - 58: {fileID: 5800000}
   - 50: {fileID: 5000000}
   - 114: {fileID: 11400000}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: partsCrystal7
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -84,10 +84,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

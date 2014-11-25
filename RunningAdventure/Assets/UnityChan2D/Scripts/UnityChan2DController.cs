@@ -26,6 +26,10 @@ public class UnityChan2DController : MonoBehaviour
 
 	private GameObject main_camera = null;
 
+	public float speedometer = 100;
+
+	public static int speedlevel = 1;
+
     void Reset()
     {
         Awake();
@@ -67,6 +71,24 @@ public class UnityChan2DController : MonoBehaviour
 
     void Update()
     {
+
+		Vector3	camera_position = this.main_camera.transform.position;
+		if(camera_position.x > speedometer && camera_position.x < speedometer + 0.5f )
+		{
+			Moves (transform.right * 1.5f);
+			speedlevel = 2;
+			print ("speedup");
+
+		}
+
+		if(camera_position.x > speedometer * 2 && camera_position.x < speedometer * 2 + 0.5f )
+		{
+			Moves (transform.right * 2f);
+			speedlevel = 3;
+			print ("speedup2");
+		}
+
+
         if (m_state != State.Damaged)
         {
 
@@ -233,6 +255,8 @@ public class UnityChan2DController : MonoBehaviour
         m_rigidbody2D.velocity = new Vector2(transform.right.x * backwardForce.x, transform.up.y * backwardForce.y);
 
         yield return new WaitForSeconds(.5f);
+
+		Moves (transform.right);
 
         while (m_isGround == false)
         {

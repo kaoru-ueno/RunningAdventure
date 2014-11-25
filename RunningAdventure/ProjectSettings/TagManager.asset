@@ -22,7 +22,7 @@ TagManager:
   Builtin Layer 7: 
   User Layer 8: Player
   User Layer 9: Enemy
-  User Layer 10: Bullet (Player)
+  User Layer 10: Stage
   User Layer 11: Bullet (Enemy)
   User Layer 12: DestroyArea
   User Layer 13: Coin
@@ -52,6 +52,10 @@ TagManager:
   - name: Bullet
     userID: 1
     uniqueID: 3799605449
+    locked: 0
+  - name: Stage
+    userID: 3
+    uniqueID: 1602230041
     locked: 0
   - name: Player
     userID: 2

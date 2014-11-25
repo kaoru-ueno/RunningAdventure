@@ -3,18 +3,33 @@ using System.Collections;
 
 public class StopControl : MonoBehaviour {
 
-	Rect _rect = new Rect(-140,-5,350,410);
+	//Rect _rect = new Rect(-140,-5,350,410);
 
 	private GameObject Player = null;
 
 	private int Count = 0;
 
+	public Texture2D icon;
+	
+	public GUISkin skin;
+
+	public Animator animator;
+
+	//UnityChan2DController unityChan2DController;
+
+	//public int speed = 0;
+
 	void Start () 
 	{
 			this.Player = GameObject.FindGameObjectWithTag("Player");
+			//unityChan2DController = Player.GetComponent<UnityChan2DController> ();
 	}
-	
+
 	void Update () 
+	{
+		//speed = unityChan2DController.speedlevel;
+	}
+	/*void Update () 
 	{
 	for (int i = 0; i < Input.touchCount; i++)
 		{
@@ -64,7 +79,7 @@ public class StopControl : MonoBehaviour {
 				}
 			}
 		}
-	}
+	}*/
 
 /*public IEnumerator Stop()
 	{
@@ -81,4 +96,49 @@ public class StopControl : MonoBehaviour {
 		print ("Count2");
 		yield return new WaitForSeconds (2.0f);
 	}*/
+	void OnGUI ()
+	{
+		GUI.skin = skin;
+		
+		if (GUI.Button (new Rect (630,10, 100, 50), icon))
+		{	
+			if(Count == 1)
+			{
+				Player.rigidbody2D.gravityScale = 3.5f;
+				Player.GetComponent<UnityChan2DController>().enabled = true;
+				if(UnityChan2DController.speedlevel == 1)
+				{
+					Player.rigidbody2D.velocity = transform.right * 5;
+				}
+
+				if(UnityChan2DController.speedlevel == 2)
+				{
+					Player.rigidbody2D.velocity = transform.right * 5 * 1.5f;
+				}
+
+				if(UnityChan2DController.speedlevel == 3)
+				{
+					Player.rigidbody2D.velocity = transform.right * 5 * 2f;
+				}
+				//Player.animation.Play();
+				animator.SetBool("Stop", false);
+
+				Count = 0;
+
+				//print ("アイコンをクリックしました");
+			}
+			else
+			{
+				Player.rigidbody2D.gravityScale = 0.0f;
+				Player.GetComponent<UnityChan2DController>().enabled = false;
+				Player.rigidbody2D.velocity = transform.right * 0;
+				//Player.animation.Stop();
+				animator.SetBool("Stop", true);
+
+				Count++;
+
+				//print ("アイコンをクリックしました");
+			}
+		}
+	}
 }

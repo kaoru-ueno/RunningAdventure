@@ -190,10 +190,6 @@ public class UnityChan2DController : MonoBehaviour
     }
 
 		void OnTriggerEnter2D(Collider2D c){
-//				print ("c.tag:"+c.tag);
-//		if (c.tag == "Scoin" || c.tag == "Coin") {
-//			Destroy (c.gameObject);
-//		}
 		if (c.tag == "Ground") {
 						restJumps = 2;
 						print ("error");
@@ -213,37 +209,11 @@ public class UnityChan2DController : MonoBehaviour
 
 						//カメラを止める
 						main_camera.GetComponent<CameraControl2> ().enabled = false;
-
-
 				}
-
-
-				if (other.tag == "Coin" || other.tag == "Scoin" || other.tag == "Goldcoin") {
-
-
-						//if (other.tag == "Coin" || other.tag == "Scoin") {}
-
-
-						if (other.tag == "Coin") {
-
-
-								Destroy (other.gameObject);
-								//FindObjectOfType<Score>().AddPoint();
-								//if(other.tag == "Ground"){
-								//	restJumps = 2;
-								//	print ("error");
-								//}
-						}
-				}
-
-        
-
-
 				if (other.tag == "Coin" || other.tag == "Scoin" || other.tag == "Goldcoin") {
 						Destroy (other.gameObject);
+						}
 				}
-		}
-
 	IEnumerator INTERNAL_OnDamage()
     {
         m_animator.Play(m_isGround ? "Damage" : "AirDamage");

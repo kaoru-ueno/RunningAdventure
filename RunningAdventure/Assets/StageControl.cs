@@ -5,6 +5,7 @@ public class StageControl : MonoBehaviour {
 
 	public GUIText DistGUIText;
 	public GUIText GameEndGUIText;
+	public GUITexture GameEndSCGUITexture;
 	private GameObject main_camera = null;
 
 	void Start () {
@@ -13,6 +14,7 @@ public class StageControl : MonoBehaviour {
 
 		GameObject.Find("Dist").guiText.text = "";
 		GameObject.Find("GameEnd").guiText.text = "";
+		GameObject.Find("GameEndSC").guiTexture.enabled = false;
 	}
 	
 	void Update () {
@@ -24,6 +26,11 @@ public class StageControl : MonoBehaviour {
 	public void gameEnd(){
 		GameEndGUIText.guiText.color = Color.red;
 		GameEndGUIText.text = "GAME OVER";
+	}
+
+	public void gameEndSC()
+	{
+		GameObject.Find("GameEndSC").guiTexture.enabled = true;
 	}
 }
 

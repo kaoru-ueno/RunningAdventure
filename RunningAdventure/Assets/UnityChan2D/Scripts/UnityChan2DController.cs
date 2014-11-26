@@ -32,6 +32,14 @@ public class UnityChan2DController : MonoBehaviour
 
 	public static int speedlevel = 1;
 
+	private bool gameflg = true;
+
+	public static bool bonusflg = false;
+
+	public int bonuscount = 100;
+
+	private bool ypos = false;
+
     void Reset()
     {
         Awake();
@@ -68,11 +76,65 @@ public class UnityChan2DController : MonoBehaviour
 		Moves (transform.right);
 
 		this.main_camera = GameObject.FindGameObjectWithTag("MainCamera");
-		
+
 	}
 
     void Update()
     {
+		if(bonusflg == false && transform.position.y > 8)
+		{
+			gameObject.collider2D.isTrigger = true;
+			ypos = false;
+		}
+
+		if(bonusflg == false && transform.position.y < 7)
+		{
+			gameObject.collider2D.isTrigger = false;
+		}
+
+		if(bonusflg == true && transform.position.y < 5)
+		{
+			gameObject.collider2D.isTrigger = true;
+
+			jumpPower = 12;
+		}
+
+		if(bonusflg == true && transform.position.y > 10)
+		{
+			gameObject.collider2D.isTrigger = false;
+		}
+		//if(bonusflg == true && ypos == false && transform.position.y < 15)
+		//{
+
+		//	if(transform.position.y > 13) ypos = true;
+		//}
+
+
+		if(Score.bonusgauge == bonuscount)
+		{
+			bonusflg = true;
+
+			Score.bonusgauge = 0;
+
+			jumpPower = 50;
+
+			m_animator.SetTrigger("Jump");
+			SendMessage("Jump", SendMessageOptions.DontRequireReceiver);
+			float jumpHeight = jumpPower;
+			float gravity = Mathf.Abs(Physics.gravity.y);
+			float velocity = Mathf.Sqrt(2 * gravity * jumpHeight);
+			m_rigidbody2D.velocity = Vector2.up * velocity;
+
+			print("bonusflg"+bonusflg);
+		}
+
+
+
+		if(gameflg == false)
+		{
+			GameScreen();
+		}
+
 		transform.Translate (transform.right * speed);
 
 		Vector3	camera_position = this.main_camera.transform.position;
@@ -101,13 +163,15 @@ public class UnityChan2DController : MonoBehaviour
         if (m_state != State.Damaged)
         {
 
-			for (int i = 0; i < Input.touchCount; i++) {
+			for (int i = 0; i < Input.touchCount; i++)
+			{
 				
 				// タッチ情報を取得する
 				Touch touch = Input.GetTouch (i);
 				
 				// ゲーム中ではなく、タッチ直後であればtrueを返す。
-				if (touch.phase == TouchPhase.Began) {
+				if (gameflg != false && touch.phase == TouchPhase.Began)
+				{
 					Move(true);
 				}
 			}
@@ -118,12 +182,16 @@ public class UnityChan2DController : MonoBehaviour
 			//Move(x, jump);
 			Move(jump);
         }
-		if(transform.position.y < -6){
+
+		if(transform.position.y < -6)
+		{
 			//ゲームオーバー画面表示
 			FindObjectOfType<StageControl>().gameEnd();
 
 			//カメラを止める
 			main_camera.GetComponent<CameraControl2>().enabled = false;
+
+			gameflg = false;
 		}
     }
 
@@ -171,7 +239,7 @@ public class UnityChan2DController : MonoBehaviour
 			}
 
 			else{
-			m_animator.SetTrigger("Jump");
+				m_animator.SetTrigger("Jump");
 				SendMessage("Jump", SendMessageOptions.DontRequireReceiver);
 				float jumpHeight = jumpPower;
 				float gravity = Mathf.Abs(Physics.gravity.y);
@@ -195,15 +263,15 @@ public class UnityChan2DController : MonoBehaviour
 	//	}
 
 		//高さ制限
-		Vector2 pos = transform.position;
+		//Vector2 pos = transform.position;
 		
-		Vector2 min = new Vector2(0, -2000);
+		//Vector2 min = new Vector2(0, -2000);
+
+		//Vector2 max = new Vector2(0, 4.0f);
 		
-		Vector2 max = new Vector2(0, 4.0f);
+		//pos.y = Mathf.Clamp (pos.y, min.y, max.y);
 		
-		pos.y = Mathf.Clamp (pos.y, min.y, max.y);
-		
-		transform.position = pos;
+		//transform.position = pos;
     }
 
     void FixedUpdate()
@@ -216,12 +284,15 @@ public class UnityChan2DController : MonoBehaviour
         m_animator.SetBool("isGround", m_isGround);
     }
 
-		void OnTriggerEnter2D(Collider2D c){
-		if (c.tag == "Ground") {
-						restJumps = 2;
-						print ("error");
-								}
-						}
+		void OnTriggerEnter2D(Collider2D c)
+	{
+		if (c.tag == "Ground") 
+		{
+			restJumps = 2;
+			print ("error");
+		}
+	}
+
 	void OnTriggerStay2D(Collider2D other)
     {
 				if (other.tag == "DamageObject" && m_state == State.Normal) {
@@ -236,6 +307,9 @@ public class UnityChan2DController : MonoBehaviour
 
 						//カメラを止める
 						main_camera.GetComponent<CameraControl2> ().enabled = false;
+
+						gameflg = false;
+
 				}
 				if (other.tag == "Coin" || other.tag == "Scoin" || other.tag == "Goldcoin") {
 						Destroy (other.gameObject);
@@ -267,6 +341,28 @@ public class UnityChan2DController : MonoBehaviour
     {
         m_state = State.Normal;
     }
+
+	public void GameScreen()
+	{
+
+		if (gameflg != true && Input.GetMouseButtonDown (0)) 
+		{
+			FindObjectOfType<StageControl> ().gameEndSC ();
+		}
+
+		for (int i = 0; i < Input.touchCount; i++)
+		{
+			
+			// タッチ情報を取得する
+			Touch touch = Input.GetTouch (i);
+			
+			// ゲーム中ではなく、タッチ直後であればtrueを返す。
+			if (gameflg != true && touch.phase == TouchPhase.Began)
+			{
+				FindObjectOfType<StageControl> ().gameEndSC ();
+			}
+		}
+	}
 
     enum State
     {

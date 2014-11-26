@@ -100,7 +100,7 @@ public class StopControl : MonoBehaviour {
 	{
 		GUI.skin = skin;
 		
-		if (GUI.Button (new Rect (630,10, 100, 50), icon))
+		if (GUI.Button (new Rect (630,10, 100, 50), "button"))
 		{	
 			if(Count == 1)
 			{

@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12001, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GUISkin
+  m_Name: New GUISkin
   m_EditorClassIdentifier: 
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   m_box:
@@ -74,14 +74,14 @@ MonoBehaviour:
   m_button:
     m_Name: button
     m_Normal:
-      m_Background: {fileID: 2800000, guid: cd3f327dc1fb6467cb9baf34e8c91300, type: 3}
+      m_Background: {fileID: 11006, guid: 0000000000000000e000000000000000, type: 0}
       m_TextColor: {r: .899999976, g: .899999976, b: .899999976, a: 1}
     m_Hover:
-      m_Background: {fileID: 2800000, guid: a53c6c9ec8de28f499969f6ac02f5339, type: 3}
-      m_TextColor: {r: 1, g: 1, b: 1, a: 1}
+      m_Background: {fileID: 11003, guid: 0000000000000000e000000000000000, type: 0}
+      m_TextColor: {r: 1, g: .100000024, b: .100000024, a: 1}
     m_Active:
-      m_Background: {fileID: 2800000, guid: a53c6c9ec8de28f499969f6ac02f5339, type: 3}
-      m_TextColor: {r: .90196079, g: .861510694, b: .401217014, a: 1}
+      m_Background: {fileID: 11002, guid: 0000000000000000e000000000000000, type: 0}
+      m_TextColor: {r: .899999976, g: .899999976, b: .899999976, a: 1}
     m_Focused:
       m_Background: {fileID: 0}
       m_TextColor: {r: 1, g: 1, b: 1, a: 1}

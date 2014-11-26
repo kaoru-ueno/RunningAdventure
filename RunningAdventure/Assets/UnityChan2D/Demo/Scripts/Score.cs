@@ -13,6 +13,8 @@ public class Score : MonoBehaviour
 	
 	// ハイスコア
 	private int highScore;
+
+	public static int bonusgauge = 0;
 	
 	// PlayerPrefsで保存するためのキー
 	private string highScoreKey = "highScore";
@@ -52,6 +54,8 @@ public class Score : MonoBehaviour
 
 //		if (other.tag == coin) {
 						score = score + point;
+
+						bonusgauge = bonusgauge + point;
 //						break;
 //				}
 //		Debug.Log ("coin" + coin);

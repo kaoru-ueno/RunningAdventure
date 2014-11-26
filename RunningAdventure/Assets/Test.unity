@@ -119,9 +119,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &552567
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -386,9 +383,9 @@ GameObject:
   - 58: {fileID: 14998445}
   - 50: {fileID: 14998444}
   - 114: {fileID: 14998443}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: partsCrystal10
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -417,10 +414,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &14998444
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -488,6 +482,58 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: ff3c1c80b70242d449ff0d5be465120c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &25397037
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100004, guid: 42dc9cb6baaebf44484f7fae6c5d0972, type: 2}
+  m_PrefabInternal: {fileID: 2137077577}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 25397039}
+  - 132: {fileID: 25397038}
+  m_Layer: 0
+  m_Name: EndScore GUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!132 &25397038
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13200002, guid: 42dc9cb6baaebf44484f7fae6c5d0972,
+    type: 2}
+  m_PrefabInternal: {fileID: 2137077577}
+  m_GameObject: {fileID: 25397037}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: "\u4ECA\u56DE\u306E\u30B9\u30B3\u30A2"
+  m_Anchor: 0
+  m_Alignment: 0
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Material: {fileID: 0}
+  m_FontSize: 25
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278321690
+  m_PixelCorrect: 1
+  m_RichText: 1
+--- !u!4 &25397039
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400004, guid: 42dc9cb6baaebf44484f7fae6c5d0972, type: 2}
+  m_PrefabInternal: {fileID: 2137077577}
+  m_GameObject: {fileID: 25397037}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.200982094, y: .483870894, z: 0}
+  m_LocalScale: {x: 4, y: 3.22580647, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1110977166}
+  m_RootOrder: 1
 --- !u!1 &27282081
 GameObject:
   m_ObjectHideFlags: 0
@@ -558,6 +604,58 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c58befdfc340a094e914ffef13aa20c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &27758866
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100104, guid: cf726133c93278b4d9c0f87b6a8b3493, type: 2}
+  m_PrefabInternal: {fileID: 7861735}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 27758867}
+  - 212: {fileID: 27758868}
+  - 114: {fileID: 1691196976}
+  m_Layer: 13
+  m_Name: stage_block1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &27758867
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400104, guid: cf726133c93278b4d9c0f87b6a8b3493, type: 2}
+  m_PrefabInternal: {fileID: 7861735}
+  m_GameObject: {fileID: 27758866}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.89999998, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 747403300}
+  m_RootOrder: 0
+--- !u!212 &27758868
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21200076, guid: cf726133c93278b4d9c0f87b6a8b3493,
+    type: 2}
+  m_PrefabInternal: {fileID: 7861735}
+  m_GameObject: {fileID: 27758866}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: c58befdfc340a094e914ffef13aa20c5, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &33967619
 GameObject:
   m_ObjectHideFlags: 0
@@ -607,11 +705,10 @@ GameObject:
   - 212: {fileID: 44444077}
   - 95: {fileID: 44444076}
   - 58: {fileID: 44444075}
-  - 50: {fileID: 44444074}
-  - 114: {fileID: 44444073}
-  m_Layer: 0
+  - 114: {fileID: 361372400}
+  m_Layer: 13
   m_Name: partsCrystal10
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -634,32 +731,13 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 11400014, guid: cf726133c93278b4d9c0f87b6a8b3493,
     type: 2}
   m_PrefabInternal: {fileID: 1032857828}
-  m_GameObject: {fileID: 44444071}
+  m_GameObject: {fileID: 361372398}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
---- !u!50 &44444074
-Rigidbody2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 5000000, guid: cf726133c93278b4d9c0f87b6a8b3493,
-    type: 2}
-  m_PrefabInternal: {fileID: 1032857828}
-  m_GameObject: {fileID: 44444071}
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: .0500000007
-  m_GravityScale: 0
-  m_FixedAngle: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
+  point: 1
 --- !u!58 &44444075
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -837,10 +915,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &53587765
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -947,7 +1022,7 @@ Transform:
   - {fileID: 459673913}
   - {fileID: 515649675}
   m_Father: {fileID: 239566716}
-  m_RootOrder: 5
+  m_RootOrder: 9
 --- !u!1 &62467203
 GameObject:
   m_ObjectHideFlags: 0
@@ -1072,7 +1147,7 @@ Transform:
   - {fileID: 49595101}
   - {fileID: 792479516}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
 --- !u!114 &63578765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1214,9 +1289,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &70193940
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -1399,9 +1471,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &70706882
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -1584,9 +1653,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &76556343
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -1662,7 +1728,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 76753426}
-  - 61: {fileID: 76753427}
   m_Layer: 0
   m_Name: FloorCol
   m_TagString: Untagged
@@ -1681,14 +1746,14 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1652458618}
-  m_RootOrder: 15
+  m_RootOrder: 18
 --- !u!61 &76753427
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 6100000, guid: eee7093b7c8925b419fe304921610b2b,
     type: 2}
   m_PrefabInternal: {fileID: 1883531758}
-  m_GameObject: {fileID: 76753425}
+  m_GameObject: {fileID: 374480593}
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -1739,9 +1804,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &76861567
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -1822,9 +1884,9 @@ GameObject:
   - 58: {fileID: 80055454}
   - 50: {fileID: 80055453}
   - 114: {fileID: 80055452}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: partsCrystal10
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1853,10 +1915,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &80055453
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -2047,9 +2106,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!212 &85988694
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2084,7 +2140,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 12
 --- !u!1 &97824791
 GameObject:
   m_ObjectHideFlags: 0
@@ -2340,9 +2396,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &103968246
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -2463,9 +2516,9 @@ GameObject:
   - 58: {fileID: 112937652}
   - 50: {fileID: 112937651}
   - 114: {fileID: 112937650}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: partsCrystal10
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2494,10 +2547,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &112937651
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -2578,9 +2628,9 @@ GameObject:
   - 58: {fileID: 112990999}
   - 50: {fileID: 112990998}
   - 114: {fileID: 112990997}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: partsCrystal10
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2609,10 +2659,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &112990998
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -2795,9 +2842,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &122190332
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -2910,9 +2954,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &122287606
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -2988,7 +3029,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 129807101}
-  - 61: {fileID: 129807102}
   m_Layer: 0
   m_Name: FloorCol
   m_TagString: Untagged
@@ -3007,14 +3047,14 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1606295862}
-  m_RootOrder: 6
+  m_RootOrder: 7
 --- !u!61 &129807102
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 6100000, guid: 621f2f92c5de3e444b7859cae679e04f,
     type: 2}
   m_PrefabInternal: {fileID: 1579317111}
-  m_GameObject: {fileID: 129807100}
+  m_GameObject: {fileID: 701745931}
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -3205,9 +3245,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &137525264
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -3452,7 +3489,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400046, guid: 66c856a778f62544d82ee17e3a59e7a0, type: 2}
       propertyPath: m_RootOrder
-      value: 16
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 100046, guid: 66c856a778f62544d82ee17e3a59e7a0, type: 2}
       propertyPath: m_Name
@@ -3786,7 +3823,7 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
+  m_SortingLayerID: 979189183
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300002, guid: 37426dfe5cfb14626a6e1c60f8d927eb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3847,9 +3884,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &157852635
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -4006,9 +4040,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &161233226
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -4121,9 +4152,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &166596562
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -4306,9 +4334,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &169479068
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -4386,9 +4411,11 @@ GameObject:
   - 4: {fileID: 169730363}
   - 212: {fileID: 169730365}
   - 95: {fileID: 169730364}
+  - 50: {fileID: 169730367}
+  - 58: {fileID: 169730366}
   m_Layer: 0
   m_Name: Fire
-  m_TagString: Untagged
+  m_TagString: DamageObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4444,6 +4471,34 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17a7df2d21bbe144cbb2129e90534eaa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!58 &169730366
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5800000, guid: 86de4d0a774046b42b096b30ad128ebb,
+    type: 2}
+  m_PrefabInternal: {fileID: 1887113770}
+  m_GameObject: {fileID: 169730362}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Radius: .5
+  m_Center: {x: 0, y: 0}
+--- !u!50 &169730367
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5000000, guid: 86de4d0a774046b42b096b30ad128ebb,
+    type: 2}
+  m_PrefabInternal: {fileID: 1887113770}
+  m_GameObject: {fileID: 169730362}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 0
+  m_FixedAngle: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!1 &171788734
 GameObject:
   m_ObjectHideFlags: 0
@@ -4629,9 +4684,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &172390257
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -4733,7 +4785,7 @@ Transform:
   - {fileID: 709221672}
   - {fileID: 794189871}
   m_Father: {fileID: 239566716}
-  m_RootOrder: 4
+  m_RootOrder: 8
 --- !u!1 &176030104
 GameObject:
   m_ObjectHideFlags: 0
@@ -4843,10 +4895,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &176734431
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -4959,9 +5008,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &180439700
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -5214,9 +5260,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &184468341
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -5329,9 +5372,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &187470877
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -5444,9 +5484,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &188009359
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -5551,7 +5588,7 @@ Transform:
   - {fileID: 378492022}
   - {fileID: 1792004681}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 21
 --- !u!212 &189441642
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5716,9 +5753,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &196932159
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -6041,9 +6075,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &206679625
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -6266,9 +6297,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &224845213
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -6368,9 +6396,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &226247684
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -6479,9 +6504,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &233604194
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -6558,8 +6580,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 239566716}
   - 114: {fileID: 239566717}
-  - 114: {fileID: 239566719}
   - 114: {fileID: 239566718}
+  - 114: {fileID: 239566719}
+  - 212: {fileID: 239566720}
   m_Layer: 0
   m_Name: Stage4
   m_TagString: Untagged
@@ -6581,6 +6604,10 @@ Transform:
   - {fileID: 1750689655}
   - {fileID: 528722979}
   - {fileID: 386108354}
+  - {fileID: 1646765796}
+  - {fileID: 274245944}
+  - {fileID: 1856820703}
+  - {fileID: 1258541816}
   - {fileID: 173596768}
   - {fileID: 56352341}
   - {fileID: 1537933014}
@@ -6590,7 +6617,7 @@ Transform:
   - {fileID: 983546194}
   - {fileID: 543359425}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
 --- !u!114 &239566717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6629,6 +6656,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f1c4fb1bd0d78b4987d0a3fa2a54df9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!212 &239566720
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21200074, guid: cf726133c93278b4d9c0f87b6a8b3493,
+    type: 2}
+  m_PrefabInternal: {fileID: 1032857828}
+  m_GameObject: {fileID: 239566715}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 1602230041
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &241104700
 GameObject:
   m_ObjectHideFlags: 0
@@ -6782,9 +6832,9 @@ GameObject:
   - 58: {fileID: 243714088}
   - 50: {fileID: 243714087}
   - 114: {fileID: 243714086}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: partsCrystal10
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6813,10 +6863,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &243714087
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -6929,9 +6976,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &245204733
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -7182,9 +7226,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &252170778
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -7260,7 +7301,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 253462927}
-  - 61: {fileID: 253462928}
   m_Layer: 0
   m_Name: FloorCol
   m_TagString: Untagged
@@ -7279,19 +7319,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 239566716}
-  m_RootOrder: 7
---- !u!61 &253462928
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6100014, guid: cf726133c93278b4d9c0f87b6a8b3493,
-    type: 2}
-  m_PrefabInternal: {fileID: 1032857828}
-  m_GameObject: {fileID: 253462926}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Size: {x: 7, y: 1}
-  m_Center: {x: 0, y: 0}
+  m_RootOrder: 11
 --- !u!1 &256567729
 GameObject:
   m_ObjectHideFlags: 0
@@ -7337,9 +7365,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &256567732
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -7521,10 +7546,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &261544218
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -7637,9 +7659,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &269727512
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -7707,6 +7726,34 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5c0dcc5480f541e4cad5c50400877299, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &274245943
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100102, guid: cf726133c93278b4d9c0f87b6a8b3493, type: 2}
+  m_PrefabInternal: {fileID: 1032857828}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 274245944}
+  - 61: {fileID: 1552606733}
+  m_Layer: 0
+  m_Name: FloorCol
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &274245944
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400102, guid: cf726133c93278b4d9c0f87b6a8b3493, type: 2}
+  m_PrefabInternal: {fileID: 1032857828}
+  m_GameObject: {fileID: 274245943}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.29970169, y: -3.75, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 239566716}
+  m_RootOrder: 5
 --- !u!1 &274307522
 GameObject:
   m_ObjectHideFlags: 0
@@ -7752,9 +7799,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &274307525
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -7937,9 +7981,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &276978798
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -8052,9 +8093,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &278340452
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -8167,9 +8205,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &289633825
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -8352,9 +8387,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &297393575
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -8537,9 +8569,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &305530798
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -8652,9 +8681,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &312854850
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -8870,7 +8896,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 320073125}
-  - 61: {fileID: 320073126}
   m_Layer: 13
   m_Name: stage2
   m_TagString: Ground
@@ -8890,14 +8915,14 @@ Transform:
   m_Children:
   - {fileID: 1980987585}
   m_Father: {fileID: 239566716}
-  m_RootOrder: 8
+  m_RootOrder: 12
 --- !u!61 &320073126
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 6100006, guid: cf726133c93278b4d9c0f87b6a8b3493,
     type: 2}
   m_PrefabInternal: {fileID: 1032857828}
-  m_GameObject: {fileID: 320073124}
+  m_GameObject: {fileID: 1646765795}
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -8948,9 +8973,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &325427807
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -9062,10 +9084,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &325710420
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -9178,9 +9197,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &325957991
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -9293,9 +9309,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &326045373
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -9408,9 +9421,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &328043379
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -9561,9 +9571,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &332344161
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -9857,10 +9864,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &337215332
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -10113,9 +10117,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &347188506
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -10297,10 +10298,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &356566157
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -10404,9 +10402,10 @@ Transform:
   - {fileID: 532960478}
   - {fileID: 818792360}
   - {fileID: 1508792961}
+  - {fileID: 1115907627}
   - {fileID: 1408613824}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 20
 --- !u!212 &359679889
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10468,7 +10467,7 @@ GameObject:
   - 95: {fileID: 361372403}
   - 58: {fileID: 361372402}
   - 50: {fileID: 361372401}
-  - 114: {fileID: 361372400}
+  - 114: {fileID: 44444073}
   m_Layer: 13
   m_Name: partsCrystal1
   m_TagString: Coin
@@ -10494,16 +10493,13 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 11400038, guid: cf726133c93278b4d9c0f87b6a8b3493,
     type: 2}
   m_PrefabInternal: {fileID: 1032857828}
-  m_GameObject: {fileID: 361372398}
+  m_GameObject: {fileID: 44444071}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &361372401
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -10754,9 +10750,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &372369705
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -10824,6 +10817,34 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5c0dcc5480f541e4cad5c50400877299, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &374480593
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100070, guid: eee7093b7c8925b419fe304921610b2b, type: 2}
+  m_PrefabInternal: {fileID: 1883531758}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 374480594}
+  - 61: {fileID: 76753427}
+  m_Layer: 0
+  m_Name: FloorCol
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &374480594
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400070, guid: eee7093b7c8925b419fe304921610b2b, type: 2}
+  m_PrefabInternal: {fileID: 1883531758}
+  m_GameObject: {fileID: 374480593}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 11.7374268, y: -1.99668193, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1652458618}
+  m_RootOrder: 15
 --- !u!1 &378492021
 GameObject:
   m_ObjectHideFlags: 0
@@ -10937,9 +10958,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &378880783
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -11052,9 +11070,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &380904878
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -11166,10 +11181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &381616963
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -11320,9 +11332,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &383753550
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -11620,9 +11629,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &392609173
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -11945,9 +11951,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &405198056
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -12015,6 +12018,34 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5c0dcc5480f541e4cad5c50400877299, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &407606838
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100102, guid: cf726133c93278b4d9c0f87b6a8b3493, type: 2}
+  m_PrefabInternal: {fileID: 7861735}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 407606839}
+  - 61: {fileID: 1605166813}
+  m_Layer: 0
+  m_Name: FloorCol
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &407606839
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400102, guid: cf726133c93278b4d9c0f87b6a8b3493, type: 2}
+  m_PrefabInternal: {fileID: 7861735}
+  m_GameObject: {fileID: 407606838}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.29970169, y: -3.75, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 822522779}
+  m_RootOrder: 5
 --- !u!1 &411016114
 GameObject:
   m_ObjectHideFlags: 0
@@ -12198,9 +12229,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &417116095
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -12313,9 +12341,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &417185436
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -12428,9 +12453,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &419251773
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -12608,7 +12630,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 7
 --- !u!1 &426897165
 GameObject:
   m_ObjectHideFlags: 0
@@ -12812,9 +12834,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &430425836
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -13045,9 +13064,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &457492102
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -13159,10 +13175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &459673915
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -13275,9 +13288,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &467463066
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -13358,9 +13368,9 @@ GameObject:
   - 58: {fileID: 477317098}
   - 50: {fileID: 477317097}
   - 114: {fileID: 477317096}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: partsCrystal9
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13389,10 +13399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &477317097
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -13504,10 +13511,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &478898511
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -13575,6 +13579,66 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5c0dcc5480f541e4cad5c50400877299, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1001 &487028524
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 9dafe31f9610cc54c88ccdbfcf41a564, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: .670775414
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9dafe31f9610cc54c88ccdbfcf41a564, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: .447183609
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9dafe31f9610cc54c88ccdbfcf41a564, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9dafe31f9610cc54c88ccdbfcf41a564, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9dafe31f9610cc54c88ccdbfcf41a564, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9dafe31f9610cc54c88ccdbfcf41a564, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9dafe31f9610cc54c88ccdbfcf41a564, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9dafe31f9610cc54c88ccdbfcf41a564, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 13100000, guid: 9dafe31f9610cc54c88ccdbfcf41a564, type: 2}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 13100000, guid: 9dafe31f9610cc54c88ccdbfcf41a564, type: 2}
+      propertyPath: m_Color.r
+      value: .952941179
+      objectReference: {fileID: 0}
+    - target: {fileID: 13100000, guid: 9dafe31f9610cc54c88ccdbfcf41a564, type: 2}
+      propertyPath: m_Color.g
+      value: .627451003
+      objectReference: {fileID: 0}
+    - target: {fileID: 13100000, guid: 9dafe31f9610cc54c88ccdbfcf41a564, type: 2}
+      propertyPath: m_Color.b
+      value: .576470613
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 9dafe31f9610cc54c88ccdbfcf41a564, type: 2}
+  m_RootGameObject: {fileID: 1528473518}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &488042933
 GameObject:
   m_ObjectHideFlags: 0
@@ -13671,9 +13735,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &498867026
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -13826,9 +13887,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &512987779
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -13940,10 +13998,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &515649677
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -14164,9 +14219,9 @@ GameObject:
   - 58: {fileID: 520150870}
   - 50: {fileID: 520150869}
   - 114: {fileID: 520150868}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: partsCrystal3
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14195,10 +14250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &520150869
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -14380,9 +14432,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &527974224
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -14591,9 +14640,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &535579534
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -14669,7 +14715,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 543359425}
-  - 61: {fileID: 543359426}
   m_Layer: 0
   m_Name: FloorCol
   m_TagString: Untagged
@@ -14688,14 +14733,14 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 239566716}
-  m_RootOrder: 11
+  m_RootOrder: 15
 --- !u!61 &543359426
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 6100008, guid: cf726133c93278b4d9c0f87b6a8b3493,
     type: 2}
   m_PrefabInternal: {fileID: 1032857828}
-  m_GameObject: {fileID: 543359424}
+  m_GameObject: {fileID: 1258541815}
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -14860,9 +14905,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &548752031
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -15121,9 +15163,9 @@ GameObject:
   - 58: {fileID: 561014127}
   - 50: {fileID: 561014126}
   - 114: {fileID: 561014125}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: partsCrystal10
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15152,10 +15194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &561014126
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -15355,7 +15394,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 3
 --- !u!1 &580391557
 GameObject:
   m_ObjectHideFlags: 0
@@ -15400,10 +15439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &580391560
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -15516,9 +15552,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &589772484
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -15630,10 +15663,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &590750020
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -15884,9 +15914,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &608721724
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -16037,9 +16064,9 @@ GameObject:
   - 58: {fileID: 629823053}
   - 50: {fileID: 629823052}
   - 114: {fileID: 629823051}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: partsCrystal6
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16068,10 +16095,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &629823052
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -16152,9 +16176,9 @@ GameObject:
   - 58: {fileID: 638504085}
   - 50: {fileID: 638504084}
   - 114: {fileID: 638504083}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: partsCrystal6
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16183,10 +16207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &638504084
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -16298,10 +16319,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &639787780
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -16414,9 +16432,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &640629445
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -16568,10 +16583,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &653113019
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -16639,6 +16651,58 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5c0dcc5480f541e4cad5c50400877299, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &656092710
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100004, guid: 9dafe31f9610cc54c88ccdbfcf41a564, type: 2}
+  m_PrefabInternal: {fileID: 487028524}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 656092711}
+  - 132: {fileID: 656092712}
+  m_Layer: 0
+  m_Name: EndScore GUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &656092711
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400004, guid: 9dafe31f9610cc54c88ccdbfcf41a564, type: 2}
+  m_PrefabInternal: {fileID: 487028524}
+  m_GameObject: {fileID: 656092710}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .365181446, y: -.269651026, z: 0}
+  m_LocalScale: {x: 4, y: 3.22580647, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1528473520}
+  m_RootOrder: 0
+--- !u!132 &656092712
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13200002, guid: 9dafe31f9610cc54c88ccdbfcf41a564,
+    type: 2}
+  m_PrefabInternal: {fileID: 487028524}
+  m_GameObject: {fileID: 656092710}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: "\u70B9"
+  m_Anchor: 0
+  m_Alignment: 0
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Material: {fileID: 0}
+  m_FontSize: 25
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278321690
+  m_PixelCorrect: 1
+  m_RichText: 1
 --- !u!1 &659412005
 GameObject:
   m_ObjectHideFlags: 0
@@ -16683,10 +16747,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &659412008
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -16834,9 +16895,11 @@ GameObject:
   - 4: {fileID: 665793721}
   - 212: {fileID: 665793723}
   - 95: {fileID: 665793722}
+  - 58: {fileID: 665793725}
+  - 50: {fileID: 665793724}
   m_Layer: 0
   m_Name: Fire
-  m_TagString: Untagged
+  m_TagString: DamageObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16892,6 +16955,34 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17a7df2d21bbe144cbb2129e90534eaa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!50 &665793724
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5000010, guid: 1d493a96da34da84e9b77dc84e43de07,
+    type: 2}
+  m_PrefabInternal: {fileID: 1404040990}
+  m_GameObject: {fileID: 665793720}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 0
+  m_FixedAngle: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+--- !u!58 &665793725
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5800010, guid: 1d493a96da34da84e9b77dc84e43de07,
+    type: 2}
+  m_PrefabInternal: {fileID: 1404040990}
+  m_GameObject: {fileID: 665793720}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Radius: .5
+  m_Center: {x: 0, y: 0}
 --- !u!1 &670320801
 GameObject:
   m_ObjectHideFlags: 0
@@ -16975,9 +17066,9 @@ GameObject:
   - 58: {fileID: 670597095}
   - 50: {fileID: 670597094}
   - 114: {fileID: 670597093}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: partsCrystal3
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17006,10 +17097,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &670597094
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -17122,9 +17210,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &674449813
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -17205,9 +17290,9 @@ GameObject:
   - 58: {fileID: 678986988}
   - 50: {fileID: 678986987}
   - 114: {fileID: 678986986}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: partsCrystal4
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17236,10 +17321,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &678986987
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -17352,9 +17434,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &689659063
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -17435,9 +17514,9 @@ GameObject:
   - 58: {fileID: 694500321}
   - 50: {fileID: 694500320}
   - 114: {fileID: 694500319}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: partsCrystal10
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17466,10 +17545,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &694500320
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -17747,6 +17823,34 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c58befdfc340a094e914ffef13aa20c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &701745931
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100068, guid: 621f2f92c5de3e444b7859cae679e04f, type: 2}
+  m_PrefabInternal: {fileID: 1579317111}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 701745932}
+  - 61: {fileID: 129807102}
+  m_Layer: 0
+  m_Name: FloorCol
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &701745932
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400068, guid: 621f2f92c5de3e444b7859cae679e04f, type: 2}
+  m_PrefabInternal: {fileID: 1579317111}
+  m_GameObject: {fileID: 701745931}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.19458008, y: -1.99668205, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1606295862}
+  m_RootOrder: 6
 --- !u!1 &709221671
 GameObject:
   m_ObjectHideFlags: 0
@@ -17791,10 +17895,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &709221674
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -17945,9 +18046,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &713689319
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -18129,10 +18227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &717523654
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -18245,9 +18340,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &721123694
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -18493,9 +18585,9 @@ GameObject:
   - 58: {fileID: 730850725}
   - 50: {fileID: 730850724}
   - 114: {fileID: 730850723}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: partsCrystal10
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18524,10 +18616,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &730850724
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -18640,9 +18729,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &742911104
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -18710,6 +18796,35 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5c0dcc5480f541e4cad5c50400877299, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &747403299
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100106, guid: cf726133c93278b4d9c0f87b6a8b3493, type: 2}
+  m_PrefabInternal: {fileID: 7861735}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 747403300}
+  - 61: {fileID: 1780964579}
+  m_Layer: 13
+  m_Name: stage2
+  m_TagString: Ground
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &747403300
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400106, guid: cf726133c93278b4d9c0f87b6a8b3493, type: 2}
+  m_PrefabInternal: {fileID: 7861735}
+  m_GameObject: {fileID: 747403299}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 12.0355759, y: -3.7705555, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 27758867}
+  m_Father: {fileID: 822522779}
+  m_RootOrder: 4
 --- !u!1 &753051260
 GameObject:
   m_ObjectHideFlags: 0
@@ -18755,9 +18870,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &753051263
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -19077,10 +19189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &774115036
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -19401,9 +19510,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &785757970
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -19586,9 +19692,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &791294528
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -19741,9 +19844,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &793329447
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -19855,10 +19955,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &794189873
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -20111,9 +20208,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &807701458
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -20226,9 +20320,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &812773642
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -20493,7 +20584,7 @@ Transform:
   m_LocalScale: {x: 0, y: 0, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 17
 --- !u!1 &819920017
 GameObject:
   m_ObjectHideFlags: 0
@@ -20539,9 +20630,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &819920020
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -20654,9 +20742,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &820293707
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -20733,8 +20818,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 822522779}
   - 114: {fileID: 822522781}
-  - 114: {fileID: 822522780}
   - 114: {fileID: 822522782}
+  - 114: {fileID: 822522780}
+  - 212: {fileID: 822522783}
   m_Layer: 0
   m_Name: Stage2
   m_TagString: Untagged
@@ -20756,6 +20842,10 @@ Transform:
   - {fileID: 1136690402}
   - {fileID: 1463133743}
   - {fileID: 958743896}
+  - {fileID: 747403300}
+  - {fileID: 407606839}
+  - {fileID: 2049144731}
+  - {fileID: 1424388028}
   - {fileID: 1561580543}
   - {fileID: 1429463859}
   - {fileID: 845080524}
@@ -20765,7 +20855,7 @@ Transform:
   - {fileID: 1400694328}
   - {fileID: 1806565181}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
 --- !u!114 &822522780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20804,6 +20894,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f1c4fb1bd0d78b4987d0a3fa2a54df9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!212 &822522783
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21200074, guid: cf726133c93278b4d9c0f87b6a8b3493,
+    type: 2}
+  m_PrefabInternal: {fileID: 7861735}
+  m_GameObject: {fileID: 822522778}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 1602230041
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &836641464
 GameObject:
   m_ObjectHideFlags: 0
@@ -20848,10 +20961,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &836641467
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -20956,7 +21066,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: fdbcc4a37ef1f1249b6d803f58799750, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fdbcc4a37ef1f1249b6d803f58799750, type: 2}
@@ -21008,9 +21118,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &842899432
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -21091,9 +21198,9 @@ GameObject:
   - 58: {fileID: 843646600}
   - 50: {fileID: 843646599}
   - 114: {fileID: 843646598}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: partsCrystal10
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21122,10 +21229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &843646599
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -21201,7 +21305,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 845080524}
-  - 61: {fileID: 845080525}
   m_Layer: 0
   m_Name: FloorCol
   m_TagString: Untagged
@@ -21220,19 +21323,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 822522779}
-  m_RootOrder: 6
---- !u!61 &845080525
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6100016, guid: cf726133c93278b4d9c0f87b6a8b3493,
-    type: 2}
-  m_PrefabInternal: {fileID: 7861735}
-  m_GameObject: {fileID: 845080523}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Size: {x: 10, y: 1}
-  m_Center: {x: 0, y: 0}
+  m_RootOrder: 10
 --- !u!1 &847864833
 GameObject:
   m_ObjectHideFlags: 0
@@ -21278,9 +21369,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &847864836
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -21609,9 +21697,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &866931208
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -21829,9 +21914,11 @@ GameObject:
   - 4: {fileID: 873188818}
   - 212: {fileID: 873188820}
   - 95: {fileID: 873188819}
+  - 50: {fileID: 873188822}
+  - 58: {fileID: 873188821}
   m_Layer: 0
   m_Name: Fire
-  m_TagString: Untagged
+  m_TagString: DamageObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21887,6 +21974,34 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17a7df2d21bbe144cbb2129e90534eaa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!58 &873188821
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5800002, guid: 86de4d0a774046b42b096b30ad128ebb,
+    type: 2}
+  m_PrefabInternal: {fileID: 1887113770}
+  m_GameObject: {fileID: 873188817}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Radius: .5
+  m_Center: {x: 0, y: 0}
+--- !u!50 &873188822
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5000002, guid: 86de4d0a774046b42b096b30ad128ebb,
+    type: 2}
+  m_PrefabInternal: {fileID: 1887113770}
+  m_GameObject: {fileID: 873188817}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 0
+  m_FixedAngle: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!1 &890477332
 GameObject:
   m_ObjectHideFlags: 0
@@ -21949,7 +22064,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 2
 --- !u!1 &890796829
 GameObject:
   m_ObjectHideFlags: 0
@@ -21995,9 +22110,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &890796832
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -22065,6 +22177,34 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5c0dcc5480f541e4cad5c50400877299, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &891374717
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100092, guid: a5cd0d053ec38044aa8fef7929438677, type: 2}
+  m_PrefabInternal: {fileID: 1016872344}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 891374718}
+  - 61: {fileID: 1725583206}
+  m_Layer: 0
+  m_Name: FloorCol
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &891374718
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400092, guid: a5cd0d053ec38044aa8fef7929438677, type: 2}
+  m_PrefabInternal: {fileID: 1016872344}
+  m_GameObject: {fileID: 891374717}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.23794556, y: -3.75, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1059330245}
+  m_RootOrder: 10
 --- !u!1 &899470788
 GameObject:
   m_ObjectHideFlags: 0
@@ -22110,9 +22250,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &899470791
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -22190,9 +22327,11 @@ GameObject:
   - 4: {fileID: 902820486}
   - 212: {fileID: 902820488}
   - 95: {fileID: 902820487}
+  - 58: {fileID: 902820490}
+  - 50: {fileID: 902820489}
   m_Layer: 0
   m_Name: Fire
-  m_TagString: Untagged
+  m_TagString: DamageObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22248,6 +22387,34 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17a7df2d21bbe144cbb2129e90534eaa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!50 &902820489
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5000008, guid: 1d493a96da34da84e9b77dc84e43de07,
+    type: 2}
+  m_PrefabInternal: {fileID: 1404040990}
+  m_GameObject: {fileID: 902820485}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 0
+  m_FixedAngle: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+--- !u!58 &902820490
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5800008, guid: 1d493a96da34da84e9b77dc84e43de07,
+    type: 2}
+  m_PrefabInternal: {fileID: 1404040990}
+  m_GameObject: {fileID: 902820485}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Radius: .5
+  m_Center: {x: 0, y: 0}
 --- !u!1 &904189611
 GameObject:
   m_ObjectHideFlags: 0
@@ -22362,10 +22529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &922656667
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -22478,9 +22642,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &928167070
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -22548,6 +22709,58 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5c0dcc5480f541e4cad5c50400877299, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &931710990
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100104, guid: cf726133c93278b4d9c0f87b6a8b3493, type: 2}
+  m_PrefabInternal: {fileID: 1032857828}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 931710991}
+  - 212: {fileID: 931710992}
+  - 114: {fileID: 1980987586}
+  m_Layer: 13
+  m_Name: stage_block1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &931710991
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400104, guid: cf726133c93278b4d9c0f87b6a8b3493, type: 2}
+  m_PrefabInternal: {fileID: 1032857828}
+  m_GameObject: {fileID: 931710990}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.89999998, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1646765796}
+  m_RootOrder: 0
+--- !u!212 &931710992
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21200076, guid: cf726133c93278b4d9c0f87b6a8b3493,
+    type: 2}
+  m_PrefabInternal: {fileID: 1032857828}
+  m_GameObject: {fileID: 931710990}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: c58befdfc340a094e914ffef13aa20c5, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &932553802
 GameObject:
   m_ObjectHideFlags: 0
@@ -22561,7 +22774,7 @@ GameObject:
   - 50: {fileID: 932553804}
   m_Layer: 0
   m_Name: Trap
-  m_TagString: Untagged
+  m_TagString: DamageObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22603,7 +22816,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 932553802}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Radius: 3.11999989
   m_Center: {x: 0, y: 0}
 --- !u!212 &932553806
@@ -22814,9 +23027,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &940657573
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -22929,9 +23139,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &944486290
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -23114,9 +23321,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &953867367
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -23484,9 +23688,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &971755897
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -23669,9 +23870,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &977222943
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -23784,9 +23982,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &979974541
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -23862,7 +24057,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 983546194}
-  - 61: {fileID: 983546195}
   m_Layer: 0
   m_Name: FloorCol
   m_TagString: Untagged
@@ -23881,14 +24075,14 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 239566716}
-  m_RootOrder: 10
+  m_RootOrder: 14
 --- !u!61 &983546195
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 6100002, guid: cf726133c93278b4d9c0f87b6a8b3493,
     type: 2}
   m_PrefabInternal: {fileID: 1032857828}
-  m_GameObject: {fileID: 983546193}
+  m_GameObject: {fileID: 1856820702}
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -23974,9 +24168,11 @@ GameObject:
   - 4: {fileID: 992741728}
   - 212: {fileID: 992741730}
   - 95: {fileID: 992741729}
+  - 50: {fileID: 992741732}
+  - 58: {fileID: 992741731}
   m_Layer: 0
   m_Name: Fire
-  m_TagString: Untagged
+  m_TagString: DamageObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24032,6 +24228,34 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17a7df2d21bbe144cbb2129e90534eaa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!58 &992741731
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5800004, guid: 86de4d0a774046b42b096b30ad128ebb,
+    type: 2}
+  m_PrefabInternal: {fileID: 1887113770}
+  m_GameObject: {fileID: 992741727}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Radius: .5
+  m_Center: {x: 0, y: 0}
+--- !u!50 &992741732
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5000004, guid: 86de4d0a774046b42b096b30ad128ebb,
+    type: 2}
+  m_PrefabInternal: {fileID: 1887113770}
+  m_GameObject: {fileID: 992741727}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 0
+  m_FixedAngle: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!1 &995463970
 GameObject:
   m_ObjectHideFlags: 0
@@ -24145,9 +24369,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &999239277
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -24298,9 +24519,9 @@ GameObject:
   - 58: {fileID: 1003399656}
   - 50: {fileID: 1003399655}
   - 114: {fileID: 1003399654}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: partsCrystal10
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24329,10 +24550,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &1003399655
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -24413,9 +24631,9 @@ GameObject:
   - 58: {fileID: 1006080982}
   - 50: {fileID: 1006080981}
   - 114: {fileID: 1006080980}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: partsCrystal10
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24444,10 +24662,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &1006080981
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -24560,9 +24775,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1012782507
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -24667,13 +24879,60 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400062, guid: a5cd0d053ec38044aa8fef7929438677, type: 2}
       propertyPath: m_RootOrder
-      value: 21
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a5cd0d053ec38044aa8fef7929438677, type: 2}
   m_RootGameObject: {fileID: 1059330244}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &1017927410
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1017927412}
+  - 131: {fileID: 1017927411}
+  m_Layer: 0
+  m_Name: Circle_Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!131 &1017927411
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1017927410}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 5b0dade72ef3748c48e97fe993ced70d, type: 3}
+  m_Color: {r: .5, g: .5, b: .5, a: .5}
+  m_PixelInset:
+    serializedVersion: 2
+    x: -68
+    y: -68.5
+    width: 136
+    height: 137
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
+--- !u!4 &1017927412
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1017927410}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .5, y: .753292084, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 26
 --- !u!1 &1021842077
 GameObject:
   m_ObjectHideFlags: 0
@@ -24686,7 +24945,7 @@ GameObject:
   - 95: {fileID: 1021842082}
   - 58: {fileID: 1021842081}
   - 50: {fileID: 1021842080}
-  - 114: {fileID: 1021842079}
+  - 114: {fileID: 1779776446}
   m_Layer: 13
   m_Name: partsCrystal1
   m_TagString: Coin
@@ -24712,16 +24971,13 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 11400038, guid: cf726133c93278b4d9c0f87b6a8b3493,
     type: 2}
   m_PrefabInternal: {fileID: 7861735}
-  m_GameObject: {fileID: 1021842077}
+  m_GameObject: {fileID: 1779776444}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &1021842080
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -24834,9 +25090,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1023671751
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -24987,9 +25240,9 @@ GameObject:
   - 58: {fileID: 1026883088}
   - 50: {fileID: 1026883087}
   - 114: {fileID: 1026883086}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: partsCrystal10
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25018,10 +25271,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &1026883087
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -25252,9 +25502,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1036962461
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -25497,9 +25744,10 @@ Transform:
   - {fileID: 1304028571}
   - {fileID: 62467204}
   - {fileID: 1836787685}
+  - {fileID: 891374718}
   - {fileID: 1725583205}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 23
 --- !u!212 &1059330246
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25594,9 +25842,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1061371980
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -25874,6 +26119,34 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c58befdfc340a094e914ffef13aa20c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1065547781
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100074, guid: eee7093b7c8925b419fe304921610b2b, type: 2}
+  m_PrefabInternal: {fileID: 1883531758}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1065547782}
+  - 61: {fileID: 1464621769}
+  m_Layer: 0
+  m_Name: FloorCol
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1065547782
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400074, guid: eee7093b7c8925b419fe304921610b2b, type: 2}
+  m_PrefabInternal: {fileID: 1883531758}
+  m_GameObject: {fileID: 1065547781}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.48500061, y: -3.93789744, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1652458618}
+  m_RootOrder: 14
 --- !u!1 &1067173858
 GameObject:
   m_ObjectHideFlags: 0
@@ -26027,9 +26300,9 @@ GameObject:
   - 58: {fileID: 1073303986}
   - 50: {fileID: 1073303985}
   - 114: {fileID: 1073303984}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: partsCrystal10
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26058,10 +26331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &1073303985
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -26370,9 +26640,9 @@ GameObject:
   - 58: {fileID: 1081114154}
   - 50: {fileID: 1081114153}
   - 114: {fileID: 1081114152}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: partsCrystal10
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26401,10 +26671,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &1081114153
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -26657,9 +26924,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1092266280
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -26797,6 +27061,84 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c58befdfc340a094e914ffef13aa20c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1110977165
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 42dc9cb6baaebf44484f7fae6c5d0972, type: 2}
+  m_PrefabInternal: {fileID: 2137077577}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1110977166}
+  - 131: {fileID: 1110977167}
+  m_Layer: 0
+  m_Name: UnityWatermark-small-R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1110977166
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 42dc9cb6baaebf44484f7fae6c5d0972, type: 2}
+  m_PrefabInternal: {fileID: 2137077577}
+  m_GameObject: {fileID: 1110977165}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .335387707, y: .447184563, z: 0}
+  m_LocalScale: {x: .25, y: .310000002, z: 1}
+  m_Children:
+  - {fileID: 1502123651}
+  - {fileID: 25397039}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!131 &1110977167
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13100000, guid: 42dc9cb6baaebf44484f7fae6c5d0972,
+    type: 2}
+  m_PrefabInternal: {fileID: 2137077577}
+  m_GameObject: {fileID: 1110977165}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 353c87c3b668b469e8cf62afbc95e274, type: 3}
+  m_Color: {r: .5, g: .5, b: .5, a: .5}
+  m_PixelInset:
+    serializedVersion: 2
+    x: -64
+    y: -29
+    width: 128
+    height: 58
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
+--- !u!1 &1115907626
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100060, guid: 86de4d0a774046b42b096b30ad128ebb, type: 2}
+  m_PrefabInternal: {fileID: 1887113770}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1115907627}
+  - 61: {fileID: 1408613825}
+  m_Layer: 0
+  m_Name: FloorCol
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1115907627
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400060, guid: 86de4d0a774046b42b096b30ad128ebb, type: 2}
+  m_PrefabInternal: {fileID: 1887113770}
+  m_GameObject: {fileID: 1115907626}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 23.5270996, y: -3.75, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 359679888}
+  m_RootOrder: 8
 --- !u!1 &1126670014
 GameObject:
   m_ObjectHideFlags: 0
@@ -27094,9 +27436,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1161049831
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -27276,9 +27615,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1182408859
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -27461,9 +27797,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1187288401
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -27544,9 +27877,9 @@ GameObject:
   - 58: {fileID: 1194564378}
   - 50: {fileID: 1194564377}
   - 114: {fileID: 1194564376}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: partsCrystal4
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27575,10 +27908,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &1194564377
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -27863,7 +28193,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 696e3c184c944d849a519fe158915fa5, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 696e3c184c944d849a519fe158915fa5, type: 2}
@@ -27915,9 +28245,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1209745014
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -28100,9 +28427,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1219652456
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -28215,9 +28539,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1220652374
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -28330,9 +28651,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1220654940
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -28445,9 +28763,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1221104645
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -28560,9 +28875,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1223151275
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -28675,9 +28987,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1228308415
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -28930,9 +29239,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1234378951
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -29044,10 +29350,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &1235008980
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -29160,9 +29463,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1236364787
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -29267,7 +29567,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 696e3c184c944d849a519fe158915fa5, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 696e3c184c944d849a519fe158915fa5, type: 2}
@@ -29324,7 +29624,35 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 8
+--- !u!1 &1258541815
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100108, guid: cf726133c93278b4d9c0f87b6a8b3493, type: 2}
+  m_PrefabInternal: {fileID: 1032857828}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1258541816}
+  - 61: {fileID: 543359426}
+  m_Layer: 0
+  m_Name: FloorCol
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1258541816
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400108, guid: cf726133c93278b4d9c0f87b6a8b3493, type: 2}
+  m_PrefabInternal: {fileID: 1032857828}
+  m_GameObject: {fileID: 1258541815}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 16.952034, y: -3.70000005, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 239566716}
+  m_RootOrder: 7
 --- !u!1 &1260436122
 GameObject:
   m_ObjectHideFlags: 0
@@ -29580,9 +29908,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1267390447
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -29765,9 +30090,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1276870762
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -29950,9 +30272,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1285488648
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -30064,10 +30383,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &1286206285
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -30148,9 +30464,9 @@ GameObject:
   - 58: {fileID: 1291454031}
   - 50: {fileID: 1291454030}
   - 114: {fileID: 1291454029}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: partsCrystal10
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30179,10 +30495,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &1291454030
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -30362,9 +30675,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1299779799
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -30445,7 +30755,7 @@ GameObject:
   - 50: {fileID: 1304028572}
   m_Layer: 0
   m_Name: Trap
-  m_TagString: Untagged
+  m_TagString: DamageObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30487,7 +30797,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 1304028570}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Radius: 3.11999989
   m_Center: {x: 0, y: 0}
 --- !u!212 &1304028574
@@ -30528,7 +30838,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!132 &1307962271
 GUIText:
   m_ObjectHideFlags: 0
@@ -30563,7 +30873,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
 --- !u!1 &1309894406
 GameObject:
   m_ObjectHideFlags: 0
@@ -30679,9 +30989,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1313026358
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -30864,9 +31171,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1317359729
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -31047,9 +31351,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1328897561
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -31162,9 +31463,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1338237424
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -31277,9 +31575,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1348553630
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -31386,7 +31681,7 @@ Transform:
   - {fileID: 1576370651}
   - {fileID: 499658582}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 18
 --- !u!114 &1351693016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31598,9 +31893,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1367884340
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -31712,9 +32004,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1368967623
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -31779,9 +32068,9 @@ GameObject:
   - 58: {fileID: 1370715486}
   - 50: {fileID: 1370715485}
   - 114: {fileID: 1370715484}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: partsCrystal3
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31810,10 +32099,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &1370715485
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -31881,6 +32167,53 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 397c540ad9b828c43ad13fcd572fcd92, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1370918643
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1370918645}
+  - 131: {fileID: 1370918644}
+  m_Layer: 0
+  m_Name: UnityWatermark-small
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!131 &1370918644
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1370918643}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: ce00ebfc0e20c4261b60b7563b672ba9, type: 3}
+  m_Color: {r: .5, g: .5, b: .5, a: .5}
+  m_PixelInset:
+    serializedVersion: 2
+    x: -64
+    y: -29
+    width: 128
+    height: 58
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
+--- !u!4 &1370918645
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1370918643}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .5, y: .5, z: 0}
+  m_LocalScale: {x: 2, y: 3, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 25
 --- !u!1 &1379288516
 GameObject:
   m_ObjectHideFlags: 0
@@ -31926,9 +32259,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1379288519
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -32041,9 +32371,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1379758404
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -32226,9 +32553,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1382680885
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -32341,9 +32665,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1387340535
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -32513,9 +32834,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1395583694
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -32578,7 +32896,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 10
 --- !u!1 &1400694327
 GameObject:
   m_ObjectHideFlags: 0
@@ -32587,7 +32905,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1400694328}
-  - 61: {fileID: 1400694329}
   m_Layer: 0
   m_Name: FloorCol
   m_TagString: Untagged
@@ -32606,14 +32923,14 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 822522779}
-  m_RootOrder: 10
+  m_RootOrder: 14
 --- !u!61 &1400694329
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 6100002, guid: cf726133c93278b4d9c0f87b6a8b3493,
     type: 2}
   m_PrefabInternal: {fileID: 7861735}
-  m_GameObject: {fileID: 1400694327}
+  m_GameObject: {fileID: 2049144730}
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -32632,9 +32949,9 @@ GameObject:
   - 58: {fileID: 1403898857}
   - 50: {fileID: 1403898856}
   - 114: {fileID: 1403898855}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: partsCrystal10
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32663,10 +32980,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &1403898856
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -32771,7 +33085,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400050, guid: 1d493a96da34da84e9b77dc84e43de07, type: 2}
       propertyPath: m_RootOrder
-      value: 19
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1d493a96da34da84e9b77dc84e43de07, type: 2}
@@ -32815,7 +33129,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e3ff126a806b2454eaff021fe39cea19, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: e3ff126a806b2454eaff021fe39cea19, type: 2}
       propertyPath: m_Enabled
@@ -32837,6 +33151,10 @@ Prefab:
       propertyPath: speedometer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e3ff126a806b2454eaff021fe39cea19, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11400004, guid: e3ff126a806b2454eaff021fe39cea19, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: e3ff126a806b2454eaff021fe39cea19, type: 2}
@@ -32851,7 +33169,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1408613824}
-  - 61: {fileID: 1408613825}
   m_Layer: 0
   m_Name: FloorCol
   m_TagString: Untagged
@@ -32870,14 +33187,14 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 359679888}
-  m_RootOrder: 8
+  m_RootOrder: 9
 --- !u!61 &1408613825
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 6100000, guid: 86de4d0a774046b42b096b30ad128ebb,
     type: 2}
   m_PrefabInternal: {fileID: 1887113770}
-  m_GameObject: {fileID: 1408613823}
+  m_GameObject: {fileID: 1115907626}
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -32928,9 +33245,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1409685010
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -33035,7 +33349,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7a1f4e1023a96294d88a3b99c85cb859, type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7a1f4e1023a96294d88a3b99c85cb859, type: 2}
@@ -33154,6 +33468,34 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: 6.5999999, y: 1.60000002}
   m_Center: {x: 2.4000001, y: -.0399999991}
+--- !u!1 &1424388027
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100108, guid: cf726133c93278b4d9c0f87b6a8b3493, type: 2}
+  m_PrefabInternal: {fileID: 7861735}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1424388028}
+  - 61: {fileID: 1806565182}
+  m_Layer: 0
+  m_Name: FloorCol
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1424388028
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400108, guid: cf726133c93278b4d9c0f87b6a8b3493, type: 2}
+  m_PrefabInternal: {fileID: 7861735}
+  m_GameObject: {fileID: 1424388027}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 16.952034, y: -3.70000005, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 822522779}
+  m_RootOrder: 7
 --- !u!1 &1429463858
 GameObject:
   m_ObjectHideFlags: 0
@@ -33193,7 +33535,7 @@ Transform:
   - {fileID: 2067085650}
   - {fileID: 1562459032}
   m_Father: {fileID: 822522779}
-  m_RootOrder: 5
+  m_RootOrder: 9
 --- !u!1 &1432300811
 GameObject:
   m_ObjectHideFlags: 0
@@ -33519,9 +33861,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1448476133
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -33633,10 +33972,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &1456226123
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -33782,7 +34118,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1461163253}
-  - 61: {fileID: 1461163254}
   m_Layer: 0
   m_Name: FloorCol
   m_TagString: Untagged
@@ -33801,14 +34136,14 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1652458618}
-  m_RootOrder: 13
+  m_RootOrder: 16
 --- !u!61 &1461163254
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 6100002, guid: eee7093b7c8925b419fe304921610b2b,
     type: 2}
   m_PrefabInternal: {fileID: 1883531758}
-  m_GameObject: {fileID: 1461163252}
+  m_GameObject: {fileID: 2121399239}
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -33859,9 +34194,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1461881095
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -34051,7 +34383,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1464621768}
-  - 61: {fileID: 1464621769}
   m_Layer: 0
   m_Name: FloorCol
   m_TagString: Untagged
@@ -34070,14 +34401,14 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1652458618}
-  m_RootOrder: 14
+  m_RootOrder: 17
 --- !u!61 &1464621769
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 6100004, guid: eee7093b7c8925b419fe304921610b2b,
     type: 2}
   m_PrefabInternal: {fileID: 1883531758}
-  m_GameObject: {fileID: 1464621767}
+  m_GameObject: {fileID: 1065547781}
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -34128,9 +34459,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1481783250
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -34268,6 +34596,58 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c58befdfc340a094e914ffef13aa20c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1502123650
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100002, guid: 42dc9cb6baaebf44484f7fae6c5d0972, type: 2}
+  m_PrefabInternal: {fileID: 2137077577}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1502123651}
+  - 132: {fileID: 1502123652}
+  m_Layer: 0
+  m_Name: EndScore GUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1502123651
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400002, guid: 42dc9cb6baaebf44484f7fae6c5d0972, type: 2}
+  m_PrefabInternal: {fileID: 2137077577}
+  m_GameObject: {fileID: 1502123650}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .365181446, y: -.269654095, z: 0}
+  m_LocalScale: {x: 4, y: 3.22580647, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1110977166}
+  m_RootOrder: 0
+--- !u!132 &1502123652
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13200000, guid: 42dc9cb6baaebf44484f7fae6c5d0972,
+    type: 2}
+  m_PrefabInternal: {fileID: 2137077577}
+  m_GameObject: {fileID: 1502123650}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: "\u70B9"
+  m_Anchor: 0
+  m_Alignment: 0
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Material: {fileID: 0}
+  m_FontSize: 25
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278321690
+  m_PixelCorrect: 1
+  m_RichText: 1
 --- !u!1 &1507664955
 GameObject:
   m_ObjectHideFlags: 0
@@ -34351,7 +34731,7 @@ GameObject:
   - 50: {fileID: 1508608831}
   m_Layer: 0
   m_Name: Trap
-  m_TagString: Untagged
+  m_TagString: DamageObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34393,7 +34773,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 1508608829}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Radius: 3.11999989
   m_Center: {x: 0, y: 0}
 --- !u!212 &1508608833
@@ -34532,9 +34912,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1513072611
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -34647,9 +35024,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1515823119
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -34717,6 +35091,56 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5c0dcc5480f541e4cad5c50400877299, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1528473518
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 9dafe31f9610cc54c88ccdbfcf41a564, type: 2}
+  m_PrefabInternal: {fileID: 487028524}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1528473520}
+  - 131: {fileID: 1528473519}
+  m_Layer: 0
+  m_Name: UnityWatermark-small-L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!131 &1528473519
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13100000, guid: 9dafe31f9610cc54c88ccdbfcf41a564,
+    type: 2}
+  m_PrefabInternal: {fileID: 487028524}
+  m_GameObject: {fileID: 1528473518}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 353c87c3b668b469e8cf62afbc95e274, type: 3}
+  m_Color: {r: .952941179, g: .627451003, b: .576470613, a: 1}
+  m_PixelInset:
+    serializedVersion: 2
+    x: -64
+    y: -29
+    width: 128
+    height: 58
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
+--- !u!4 &1528473520
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 9dafe31f9610cc54c88ccdbfcf41a564, type: 2}
+  m_PrefabInternal: {fileID: 487028524}
+  m_GameObject: {fileID: 1528473518}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .670775414, y: .447183609, z: 0}
+  m_LocalScale: {x: .25, y: .310000002, z: 1}
+  m_Children:
+  - {fileID: 656092711}
+  - {fileID: 1604285629}
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
 --- !u!1 &1530307445
 GameObject:
   m_ObjectHideFlags: 0
@@ -34830,9 +35254,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1530578006
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -34945,9 +35366,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1533723208
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -35023,7 +35441,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1537933014}
-  - 61: {fileID: 1537933015}
   m_Layer: 0
   m_Name: FloorCol
   m_TagString: Untagged
@@ -35042,19 +35459,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 239566716}
-  m_RootOrder: 6
---- !u!61 &1537933015
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6100016, guid: cf726133c93278b4d9c0f87b6a8b3493,
-    type: 2}
-  m_PrefabInternal: {fileID: 1032857828}
-  m_GameObject: {fileID: 1537933013}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Size: {x: 10, y: 1}
-  m_Center: {x: 0, y: 0}
+  m_RootOrder: 10
 --- !u!1 &1549124413
 GameObject:
   m_ObjectHideFlags: 0
@@ -35100,9 +35505,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1549124416
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -35292,7 +35694,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1552606732}
-  - 61: {fileID: 1552606733}
   m_Layer: 0
   m_Name: FloorCol
   m_TagString: Untagged
@@ -35311,14 +35712,14 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 239566716}
-  m_RootOrder: 9
+  m_RootOrder: 13
 --- !u!61 &1552606733
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 6100004, guid: cf726133c93278b4d9c0f87b6a8b3493,
     type: 2}
   m_PrefabInternal: {fileID: 1032857828}
-  m_GameObject: {fileID: 1552606731}
+  m_GameObject: {fileID: 274245943}
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -35369,9 +35770,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1558895520
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -35473,7 +35871,7 @@ Transform:
   - {fileID: 1768976212}
   - {fileID: 590750018}
   m_Father: {fileID: 822522779}
-  m_RootOrder: 4
+  m_RootOrder: 8
 --- !u!1 &1562459031
 GameObject:
   m_ObjectHideFlags: 0
@@ -35518,10 +35916,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &1562459034
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -35734,7 +36129,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400058, guid: 621f2f92c5de3e444b7859cae679e04f, type: 2}
       propertyPath: m_RootOrder
-      value: 20
+      value: 21
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 621f2f92c5de3e444b7859cae679e04f, type: 2}
@@ -35856,9 +36251,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1592432011
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -36014,10 +36406,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &1601700062
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -36130,9 +36519,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1602617908
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -36200,6 +36586,58 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5c0dcc5480f541e4cad5c50400877299, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1604285628
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100002, guid: 9dafe31f9610cc54c88ccdbfcf41a564, type: 2}
+  m_PrefabInternal: {fileID: 487028524}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1604285629}
+  - 132: {fileID: 1604285630}
+  m_Layer: 0
+  m_Name: EndScore GUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1604285629
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400002, guid: 9dafe31f9610cc54c88ccdbfcf41a564, type: 2}
+  m_PrefabInternal: {fileID: 487028524}
+  m_GameObject: {fileID: 1604285628}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.13942945, y: .483870894, z: 0}
+  m_LocalScale: {x: 4, y: 3.22580647, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1528473520}
+  m_RootOrder: 1
+--- !u!132 &1604285630
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13200000, guid: 9dafe31f9610cc54c88ccdbfcf41a564,
+    type: 2}
+  m_PrefabInternal: {fileID: 487028524}
+  m_GameObject: {fileID: 1604285628}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: "\u6700\u9AD8\u30B9\u30B3\u30A2"
+  m_Anchor: 0
+  m_Alignment: 0
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Material: {fileID: 0}
+  m_FontSize: 25
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278321690
+  m_PixelCorrect: 1
+  m_RichText: 1
 --- !u!1 &1605166811
 GameObject:
   m_ObjectHideFlags: 0
@@ -36208,7 +36646,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1605166812}
-  - 61: {fileID: 1605166813}
   m_Layer: 0
   m_Name: FloorCol
   m_TagString: Untagged
@@ -36227,14 +36664,14 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 822522779}
-  m_RootOrder: 9
+  m_RootOrder: 13
 --- !u!61 &1605166813
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 6100004, guid: cf726133c93278b4d9c0f87b6a8b3493,
     type: 2}
   m_PrefabInternal: {fileID: 7861735}
-  m_GameObject: {fileID: 1605166811}
+  m_GameObject: {fileID: 407606838}
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -36274,9 +36711,10 @@ Transform:
   - {fileID: 176030105}
   - {fileID: 1530307446}
   - {fileID: 1612290615}
+  - {fileID: 701745932}
   - {fileID: 129807101}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 22
 --- !u!212 &1606295863
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -36548,9 +36986,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1625494700
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -36701,9 +37136,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1628922218
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -36841,6 +37273,33 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c58befdfc340a094e914ffef13aa20c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1636226872
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1636226873}
+  m_Layer: 0
+  m_Name: GameOver
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1636226873
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1636226872}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 24
 --- !u!1 &1640528148
 GameObject:
   m_ObjectHideFlags: 0
@@ -36956,9 +37415,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1646504183
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -37026,6 +37482,35 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: ff3c1c80b70242d449ff0d5be465120c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1646765795
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100106, guid: cf726133c93278b4d9c0f87b6a8b3493, type: 2}
+  m_PrefabInternal: {fileID: 1032857828}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1646765796}
+  - 61: {fileID: 320073126}
+  m_Layer: 13
+  m_Name: stage2
+  m_TagString: Ground
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1646765796
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400106, guid: cf726133c93278b4d9c0f87b6a8b3493, type: 2}
+  m_PrefabInternal: {fileID: 1032857828}
+  m_GameObject: {fileID: 1646765795}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 12.0355759, y: -3.7705555, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 931710991}
+  m_Father: {fileID: 239566716}
+  m_RootOrder: 4
 --- !u!1 &1652192817
 GameObject:
   m_ObjectHideFlags: 0
@@ -37137,11 +37622,14 @@ Transform:
   - {fileID: 1370715483}
   - {fileID: 520150867}
   - {fileID: 1863085277}
+  - {fileID: 2121399240}
+  - {fileID: 1065547782}
+  - {fileID: 374480594}
   - {fileID: 1461163253}
   - {fileID: 1464621768}
   - {fileID: 76753426}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 19
 --- !u!212 &1652458619
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -37235,10 +37723,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &1655034908
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -37459,9 +37944,9 @@ GameObject:
   - 58: {fileID: 1676868192}
   - 50: {fileID: 1676868191}
   - 114: {fileID: 1676868190}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: partsCrystal4
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37490,10 +37975,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &1676868191
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -37606,9 +38088,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1677144970
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -37721,9 +38200,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1681227586
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -37906,9 +38382,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1684814380
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -38029,7 +38502,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1691196975}
   - 212: {fileID: 1691196978}
-  - 114: {fileID: 1691196976}
   m_Layer: 13
   m_Name: stage_block1
   m_TagString: Untagged
@@ -38055,7 +38527,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 11400012, guid: cf726133c93278b4d9c0f87b6a8b3493,
     type: 2}
   m_PrefabInternal: {fileID: 7861735}
-  m_GameObject: {fileID: 1691196974}
+  m_GameObject: {fileID: 27758866}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e650b25e2adf841418d4a978477cac58, type: 3}
@@ -38135,9 +38607,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1696596710
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -38250,9 +38719,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1697104808
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -38403,9 +38869,9 @@ GameObject:
   - 58: {fileID: 1699397127}
   - 50: {fileID: 1699397126}
   - 114: {fileID: 1699397125}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: partsCrystal5
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38422,10 +38888,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &1699397126
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -38619,10 +39082,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &1702206368
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -38805,9 +39265,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1703571278
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -38920,9 +39377,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1705354119
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -39035,9 +39489,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1717883210
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -39219,10 +39670,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &1722922861
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -39298,7 +39746,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1725583205}
-  - 61: {fileID: 1725583206}
   m_Layer: 0
   m_Name: FloorCol
   m_TagString: Untagged
@@ -39317,14 +39764,14 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1059330245}
-  m_RootOrder: 10
+  m_RootOrder: 11
 --- !u!61 &1725583206
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 6100002, guid: a5cd0d053ec38044aa8fef7929438677,
     type: 2}
   m_PrefabInternal: {fileID: 1016872344}
-  m_GameObject: {fileID: 1725583204}
+  m_GameObject: {fileID: 891374717}
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -39375,9 +39822,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1729099499
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -39560,9 +40004,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1735219553
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -39708,7 +40149,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1743829801}
-  - 61: {fileID: 1743829802}
   m_Layer: 0
   m_Name: FloorCol
   m_TagString: Untagged
@@ -39727,19 +40167,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 822522779}
-  m_RootOrder: 7
---- !u!61 &1743829802
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6100014, guid: cf726133c93278b4d9c0f87b6a8b3493,
-    type: 2}
-  m_PrefabInternal: {fileID: 7861735}
-  m_GameObject: {fileID: 1743829800}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Size: {x: 7, y: 1}
-  m_Center: {x: 0, y: 0}
+  m_RootOrder: 11
 --- !u!1 &1746153254
 GameObject:
   m_ObjectHideFlags: 0
@@ -39785,9 +40213,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1746153257
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -39868,9 +40293,9 @@ GameObject:
   - 58: {fileID: 1748038787}
   - 50: {fileID: 1748038786}
   - 114: {fileID: 1748038785}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: partsCrystal5
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39899,10 +40324,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &1748038786
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -40127,9 +40549,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1758305877
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -40241,10 +40660,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &1761517827
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -40357,9 +40773,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1768662785
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -40471,10 +40884,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &1768976214
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -40623,11 +41033,10 @@ GameObject:
   - 212: {fileID: 1779776450}
   - 95: {fileID: 1779776449}
   - 58: {fileID: 1779776448}
-  - 50: {fileID: 1779776447}
-  - 114: {fileID: 1779776446}
-  m_Layer: 0
+  - 114: {fileID: 1021842079}
+  m_Layer: 13
   m_Name: partsCrystal10
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40650,32 +41059,13 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 11400014, guid: cf726133c93278b4d9c0f87b6a8b3493,
     type: 2}
   m_PrefabInternal: {fileID: 7861735}
-  m_GameObject: {fileID: 1779776444}
+  m_GameObject: {fileID: 1021842077}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
---- !u!50 &1779776447
-Rigidbody2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 5000000, guid: cf726133c93278b4d9c0f87b6a8b3493,
-    type: 2}
-  m_PrefabInternal: {fileID: 7861735}
-  m_GameObject: {fileID: 1779776444}
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: .0500000007
-  m_GravityScale: 0
-  m_FixedAngle: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
+  point: 1
 --- !u!58 &1779776448
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -40740,9 +41130,9 @@ GameObject:
   - 58: {fileID: 1779961933}
   - 50: {fileID: 1779961932}
   - 114: {fileID: 1779961931}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: partsCrystal9
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40771,10 +41161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &1779961932
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -40850,7 +41237,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1780964578}
-  - 61: {fileID: 1780964579}
   m_Layer: 13
   m_Name: stage2
   m_TagString: Ground
@@ -40870,14 +41256,14 @@ Transform:
   m_Children:
   - {fileID: 1691196975}
   m_Father: {fileID: 822522779}
-  m_RootOrder: 8
+  m_RootOrder: 12
 --- !u!61 &1780964579
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 6100006, guid: cf726133c93278b4d9c0f87b6a8b3493,
     type: 2}
   m_PrefabInternal: {fileID: 7861735}
-  m_GameObject: {fileID: 1780964577}
+  m_GameObject: {fileID: 747403299}
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -40928,9 +41314,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1790796129
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -41042,9 +41425,9 @@ GameObject:
   - 58: {fileID: 1800526042}
   - 50: {fileID: 1800526041}
   - 114: {fileID: 1800526040}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: partsCrystal10
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41073,10 +41456,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &1800526041
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -41189,9 +41569,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1802230750
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -41267,7 +41644,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1806565181}
-  - 61: {fileID: 1806565182}
   m_Layer: 0
   m_Name: FloorCol
   m_TagString: Untagged
@@ -41286,14 +41662,14 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 822522779}
-  m_RootOrder: 11
+  m_RootOrder: 15
 --- !u!61 &1806565182
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 6100008, guid: cf726133c93278b4d9c0f87b6a8b3493,
     type: 2}
   m_PrefabInternal: {fileID: 7861735}
-  m_GameObject: {fileID: 1806565180}
+  m_GameObject: {fileID: 1424388027}
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -41692,9 +42068,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1833333750
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -41807,9 +42180,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1833685054
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -42026,9 +42396,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1837285611
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -42209,9 +42576,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1839233461
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -42324,9 +42688,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1839996503
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -42534,6 +42895,34 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c58befdfc340a094e914ffef13aa20c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1856820702
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100100, guid: cf726133c93278b4d9c0f87b6a8b3493, type: 2}
+  m_PrefabInternal: {fileID: 1032857828}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1856820703}
+  - 61: {fileID: 983546195}
+  m_Layer: 0
+  m_Name: FloorCol
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1856820703
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400100, guid: cf726133c93278b4d9c0f87b6a8b3493, type: 2}
+  m_PrefabInternal: {fileID: 1032857828}
+  m_GameObject: {fileID: 1856820702}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.21371078, y: -1.79999995, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 239566716}
+  m_RootOrder: 6
 --- !u!1 &1857000515
 GameObject:
   m_ObjectHideFlags: 0
@@ -42669,7 +43058,7 @@ Transform:
   - {fileID: 33967620}
   - {fileID: 1201614306}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
 --- !u!1 &1863085276
 GameObject:
   m_ObjectHideFlags: 0
@@ -42683,9 +43072,9 @@ GameObject:
   - 58: {fileID: 1863085280}
   - 50: {fileID: 1863085279}
   - 114: {fileID: 1863085278}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: partsCrystal3
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42714,10 +43103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &1863085279
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -42970,9 +43356,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1871371504
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -43145,7 +43528,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400046, guid: eee7093b7c8925b419fe304921610b2b, type: 2}
       propertyPath: m_RootOrder
-      value: 17
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eee7093b7c8925b419fe304921610b2b, type: 2}
@@ -43259,7 +43642,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400044, guid: 86de4d0a774046b42b096b30ad128ebb, type: 2}
       propertyPath: m_RootOrder
-      value: 18
+      value: 19
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 86de4d0a774046b42b096b30ad128ebb, type: 2}
@@ -43311,9 +43694,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1892087191
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -43411,7 +43791,7 @@ Transform:
   - {fileID: 226247687}
   - {fileID: 527974222}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 11
 --- !u!1 &1893938566
 GameObject:
   m_ObjectHideFlags: 0
@@ -43703,9 +44083,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1912757519
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -43817,10 +44194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &1926123900
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -44073,9 +44447,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1932910067
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -44156,9 +44527,9 @@ GameObject:
   - 58: {fileID: 1938683255}
   - 50: {fileID: 1938683254}
   - 114: {fileID: 1938683253}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: partsCrystal10
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44187,10 +44558,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &1938683254
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -44302,10 +44670,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &1946313106
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -44558,9 +44923,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1957134700
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -44673,9 +45035,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1959180467
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -44756,9 +45115,9 @@ GameObject:
   - 58: {fileID: 1959316049}
   - 50: {fileID: 1959316048}
   - 114: {fileID: 1959316047}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: partsCrystal5
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44787,10 +45146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &1959316048
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -45017,9 +45373,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1972112834
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -45131,9 +45484,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1975788861
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -45214,7 +45564,7 @@ Transform:
   - {fileID: 488042935}
   - {fileID: 730334160}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 9
 --- !u!114 &1975981024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45273,9 +45623,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &1977463867
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -45387,10 +45734,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &1977471935
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -45467,7 +45811,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1980987585}
   - 212: {fileID: 1980987587}
-  - 114: {fileID: 1980987586}
   m_Layer: 13
   m_Name: stage_block1
   m_TagString: Untagged
@@ -45493,7 +45836,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 11400012, guid: cf726133c93278b4d9c0f87b6a8b3493,
     type: 2}
   m_PrefabInternal: {fileID: 1032857828}
-  m_GameObject: {fileID: 1980987584}
+  m_GameObject: {fileID: 931710990}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e650b25e2adf841418d4a978477cac58, type: 3}
@@ -45889,7 +46232,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 07521378c8868f244b0a3a916bb8df52, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 07521378c8868f244b0a3a916bb8df52, type: 2}
@@ -46289,9 +46632,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &2025720135
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -46544,9 +46884,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &2032604395
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -46728,10 +47065,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &2039478395
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -46882,9 +47216,9 @@ GameObject:
   - 58: {fileID: 2042872735}
   - 50: {fileID: 2042872734}
   - 114: {fileID: 2042872733}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: partsCrystal10
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46913,10 +47247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &2042872734
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -47054,6 +47385,34 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c58befdfc340a094e914ffef13aa20c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &2049144730
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100100, guid: cf726133c93278b4d9c0f87b6a8b3493, type: 2}
+  m_PrefabInternal: {fileID: 7861735}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2049144731}
+  - 61: {fileID: 1400694329}
+  m_Layer: 0
+  m_Name: FloorCol
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2049144731
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400100, guid: cf726133c93278b4d9c0f87b6a8b3493, type: 2}
+  m_PrefabInternal: {fileID: 7861735}
+  m_GameObject: {fileID: 2049144730}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.21371078, y: -1.79999995, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 822522779}
+  m_RootOrder: 6
 --- !u!1 &2063293315
 GameObject:
   m_ObjectHideFlags: 0
@@ -47099,9 +47458,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &2063293318
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -47321,10 +47677,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &2067085652
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -47565,9 +47918,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &2070762757
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -47806,9 +48156,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &2082132186
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -48035,9 +48382,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &2091982936
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -48150,9 +48494,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &2094669060
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -48265,9 +48606,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &2095051785
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -48450,9 +48788,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &2099976370
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -48603,9 +48938,9 @@ GameObject:
   - 58: {fileID: 2110964488}
   - 50: {fileID: 2110964487}
   - 114: {fileID: 2110964486}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: partsCrystal3
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48634,10 +48969,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &2110964487
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -48718,9 +49050,9 @@ GameObject:
   - 58: {fileID: 2117956296}
   - 50: {fileID: 2117956295}
   - 114: {fileID: 2117956294}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: partsCrystal10
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48749,10 +49081,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &2117956295
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -48857,13 +49186,41 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 696e3c184c944d849a519fe158915fa5, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 696e3c184c944d849a519fe158915fa5, type: 2}
   m_RootGameObject: {fileID: 890477332}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &2121399239
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100072, guid: eee7093b7c8925b419fe304921610b2b, type: 2}
+  m_PrefabInternal: {fileID: 1883531758}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2121399240}
+  - 61: {fileID: 1461163254}
+  m_Layer: 0
+  m_Name: FloorCol
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2121399240
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400072, guid: eee7093b7c8925b419fe304921610b2b, type: 2}
+  m_PrefabInternal: {fileID: 1883531758}
+  m_GameObject: {fileID: 2121399239}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.445236206, y: -2.80350375, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1652458618}
+  m_RootOrder: 13
 --- !u!1 &2121676482
 GameObject:
   m_ObjectHideFlags: 0
@@ -48921,9 +49278,9 @@ GameObject:
   - 58: {fileID: 2121906644}
   - 50: {fileID: 2121906643}
   - 114: {fileID: 2121906642}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: partsCrystal3
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48952,10 +49309,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
+  point: 1
 --- !u!50 &2121906643
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -49138,9 +49492,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &2129895372
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -49253,9 +49604,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &2136425388
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -49323,6 +49671,50 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5c0dcc5480f541e4cad5c50400877299, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1001 &2137077577
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 42dc9cb6baaebf44484f7fae6c5d0972, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: .335387707
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 42dc9cb6baaebf44484f7fae6c5d0972, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: .447184563
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 42dc9cb6baaebf44484f7fae6c5d0972, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 42dc9cb6baaebf44484f7fae6c5d0972, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 42dc9cb6baaebf44484f7fae6c5d0972, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 42dc9cb6baaebf44484f7fae6c5d0972, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 42dc9cb6baaebf44484f7fae6c5d0972, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 42dc9cb6baaebf44484f7fae6c5d0972, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 42dc9cb6baaebf44484f7fae6c5d0972, type: 2}
+  m_RootGameObject: {fileID: 1110977165}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &2137303940
 GameObject:
   m_ObjectHideFlags: 0
@@ -49436,9 +49828,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &2138240103
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -49551,9 +49940,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
-  coin: 1
-  scoin: 2
-  goldcoin: 4
 --- !u!50 &2138582454
 Rigidbody2D:
   m_ObjectHideFlags: 0

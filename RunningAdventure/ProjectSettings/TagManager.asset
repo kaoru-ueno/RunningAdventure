@@ -28,7 +28,7 @@ TagManager:
   User Layer 13: Coin
   User Layer 14: Scoin
   User Layer 15: Goldcoin
-  User Layer 16: 
+  User Layer 16: Last
   User Layer 17: 
   User Layer 18: 
   User Layer 19: 
@@ -60,4 +60,8 @@ TagManager:
   - name: Player
     userID: 2
     uniqueID: 979189183
+    locked: 0
+  - name: Last
+    userID: 4
+    uniqueID: 99068445
     locked: 0

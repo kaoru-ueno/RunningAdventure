@@ -105,7 +105,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  point: 0
   coin: 1
+  scoin: 2
+  goldcoin: 4
 --- !u!50 &78787198
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -3792,6 +3795,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8192
   speed: 5
+  speedometer: 100
 --- !u!82 &1908787715
 AudioSource:
   m_ObjectHideFlags: 0

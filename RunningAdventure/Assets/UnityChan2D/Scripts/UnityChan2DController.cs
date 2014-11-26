@@ -4,6 +4,8 @@ using UnityEngine;
 public class UnityChan2DController : MonoBehaviour
 {
     public float maxSpeed = 10f;
+
+
     public float jumpPower = 1000f;
     public Vector2 backwardForce = new Vector2(-4.5f, 5.4f);
 	public int coin = 1;
@@ -71,6 +73,7 @@ public class UnityChan2DController : MonoBehaviour
 
     void Update()
     {
+		transform.Translate (transform.right * speed);
 
 		Vector3	camera_position = this.main_camera.transform.position;
 
@@ -126,11 +129,13 @@ public class UnityChan2DController : MonoBehaviour
 
 		void Moves (Vector2 direction)
 	{
-		rigidbody2D.velocity = direction * speed;
+		//rigidbody2D.velocity = direction * speed;
+		rigidbody2D.AddForce(direction * speed);
 	}
 
 	void Move(bool jump)
     {
+		Vector2 Posi = (Vector2)transform.position + Vector2.right;
       /*  if (Mathf.Abs(move) > 0)
         {
             Quaternion rot = transform.rotation;
@@ -146,15 +151,19 @@ public class UnityChan2DController : MonoBehaviour
         //if (jump && m_isGround)
 		if (jump && restJumps > 0)
         {
-			if(restJumps == 1){
-				/*m_animator.SetTrigger("Jump");
+			if(restJumps == 1)
+			{
+				m_animator.SetTrigger("Jump");
            	 	SendMessage("Jump", SendMessageOptions.DontRequireReceiver);
-				m_rigidbody2D.AddForce(Vector2.up * jumpPower );//* 0.4f);*/
+				float jumpHeight = jumpPower / 2;
+				float gravity = Mathf.Abs(Physics.gravity.y);
+				float velocity = Mathf.Sqrt(2 * gravity * jumpHeight);
+				m_rigidbody2D.velocity = Vector2.up * velocity;
 
-				/*for(int i = 0; i < 10; i++ )
-				{
-					transform.Translate(transform.up * 0.1);
-				}*/
+				//float angularVelocity = Mathf.PI * gravity / velocity * 2;
+				//m_rigidbody2D.angularVelocity = Vector2.up * angularVelocity;
+
+				//m_rigidbody2D.AddForce(Vector2.up * jumpPower);
 
 				restJumps--;
 	
@@ -162,14 +171,17 @@ public class UnityChan2DController : MonoBehaviour
 			}
 
 			else{
-			/*m_animator.SetTrigger("Jump");
+			m_animator.SetTrigger("Jump");
 				SendMessage("Jump", SendMessageOptions.DontRequireReceiver);
-				m_rigidbody2D.AddForce(Vector2.up * jumpPower);*/
+				float jumpHeight = jumpPower;
+				float gravity = Mathf.Abs(Physics.gravity.y);
+				float velocity = Mathf.Sqrt(2 * gravity * jumpHeight);
+				m_rigidbody2D.velocity = Vector2.up * velocity;
+					
+				//float angularVelocity = Mathf.PI * gravity / velocity;
+				//m_rigidbody2D.angularVelocity = Vector2.up * angularVelocity;
 
-				/*for(int i = 0; i < 10; i++ )
-				{
-					transform.Translate(transform.forward * 0.1);
-				}*/
+				//m_rigidbody2D.AddForce(Vector2.up * jumpPower);
 
 				restJumps--;
 				
@@ -183,15 +195,15 @@ public class UnityChan2DController : MonoBehaviour
 	//	}
 
 		//高さ制限
-		//Vector2 pos = transform.position;
+		Vector2 pos = transform.position;
 		
-		//Vector2 min = new Vector2(0, -2000);
+		Vector2 min = new Vector2(0, -2000);
 		
-		//Vector2 max = new Vector2(0, 1.5f);
+		Vector2 max = new Vector2(0, 4.0f);
 		
-		//pos.y = Mathf.Clamp (pos.y, min.y, max.y);
+		pos.y = Mathf.Clamp (pos.y, min.y, max.y);
 		
-		//transform.position = pos;
+		transform.position = pos;
     }
 
     void FixedUpdate()

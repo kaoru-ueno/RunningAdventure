@@ -4,7 +4,7 @@ using UnityEngine;
 public class UnityChan2DController : MonoBehaviour
 {
     public float maxSpeed = 10f;
-
+//	Debug.Log("highScore" + highScore);
 
     public float jumpPower = 1000f;
     public Vector2 backwardForce = new Vector2(-4.5f, 5.4f);

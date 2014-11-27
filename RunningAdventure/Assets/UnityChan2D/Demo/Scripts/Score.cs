@@ -9,10 +9,10 @@ public class Score : MonoBehaviour
 	public GUIText highScoreGUIText;
 	
 	// スコア
-	private int score;
+	public static int score;
 	
 	// ハイスコア
-	private int highScore;
+	public static int highScore;
 
 	public static int bonusgauge = 0;
 	

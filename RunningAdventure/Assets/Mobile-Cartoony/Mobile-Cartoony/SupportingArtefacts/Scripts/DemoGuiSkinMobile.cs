@@ -88,8 +88,8 @@ public class DemoGuiSkinMobile : MonoBehaviour {
 		if (windowID == 2) {
 			GUILayout.Space(64);
 			GUILayout.BeginHorizontal();
-			GUILayout.Box ( "", ColoredGUISkinMobile.Skin.customStyles[2]);
-			GUILayout.Box ( "", ColoredGUISkinMobile.Skin.customStyles[2]);
+			GUILayout.Box ( "bestscore", ColoredGUISkinMobile.Skin.customStyles[2]);
+			GUILayout.Box ( "bestscore", ColoredGUISkinMobile.Skin.customStyles[2]);
 			GUILayout.EndHorizontal();
 		}
 	}

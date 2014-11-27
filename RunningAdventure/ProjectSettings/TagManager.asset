@@ -28,8 +28,8 @@ TagManager:
   User Layer 13: Coin
   User Layer 14: Scoin
   User Layer 15: Goldcoin
-  User Layer 16: Last
-  User Layer 17: 
+  User Layer 16: ScoreBoard
+  User Layer 17: Scorehyouji
   User Layer 18: 
   User Layer 19: 
   User Layer 20: 
@@ -61,7 +61,11 @@ TagManager:
     userID: 2
     uniqueID: 979189183
     locked: 0
-  - name: Last
+  - name: ScoreBoard
     userID: 4
     uniqueID: 99068445
+    locked: 0
+  - name: Scorehyouji
+    userID: 5
+    uniqueID: 60456983
     locked: 0

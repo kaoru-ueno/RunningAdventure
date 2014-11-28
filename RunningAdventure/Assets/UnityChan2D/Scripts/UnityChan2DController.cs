@@ -195,13 +195,9 @@ public class UnityChan2DController : MonoBehaviour
 				// ゲーム中ではなく、タッチ直後であればtrueを返す。
 				if (gameflg != false && touch.phase == TouchPhase.Began)
 				{
-					if (GUI.Button (new Rect (630,10, 100, 50), "button"))
-					{	
-						Debug.Log("Button pushed");
-					}else{
 					//ジャンプ
 						Move(true);
-					}
+
 				}
 			}
 			

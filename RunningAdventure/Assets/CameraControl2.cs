@@ -33,6 +33,7 @@ public class CameraControl2 : MonoBehaviour {
 		{
 			bonustart = 0;
 			UnityChan2DController.bonusflg = false;
+			UnityChan2DController.jumpconstraint = 0;
 		}
 
 		//ボーナスステージ中ならカメラを上に移す

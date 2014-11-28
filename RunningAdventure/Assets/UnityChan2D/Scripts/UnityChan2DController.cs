@@ -43,6 +43,8 @@ public class UnityChan2DController : MonoBehaviour
 	//どれだけスコアが溜まったらボーナスステージにするかの値
 	public int bonuscount = 100;
 
+	public static int jumpconstraint = 0;
+
 	//private bool ypos = false;
 
 
@@ -128,11 +130,17 @@ public class UnityChan2DController : MonoBehaviour
 		//	if(transform.position.y > 13) ypos = true;
 		//}
 		//------------------------------------------------------------------------------
+		if(bonusflg == true)
+		{
+			jumpconstraint++;
 
+			Debug.Log("jumpconstraint" + jumpconstraint);
+		}
 
 		//ボーナスゲージが溜まったら
 		if(Score.bonusgauge == bonuscount)
 		{	
+
 			//ボーナスステージスタート
 			bonusflg = true;
 
@@ -175,7 +183,7 @@ public class UnityChan2DController : MonoBehaviour
 			//Moves (transform.right * 1.5f);
 			transform.Translate (transform.right * speed * 1.2f);
 			
-			print ("speedup");
+			//print ("speedup");
 		}
 		
 		
@@ -189,7 +197,7 @@ public class UnityChan2DController : MonoBehaviour
 			//Moves (transform.right * 2f);
 			transform.Translate (transform.right * speed * 1.5f);
 			
-			print ("speedup");
+			//print ("speedup");
 		}
 		//--------------------------------------------------------------
 
@@ -206,15 +214,21 @@ public class UnityChan2DController : MonoBehaviour
 				// ゲーム中ではなく、タッチ直後であればtrueを返す。
 				if (gameflg != false && touch.phase == TouchPhase.Began)
 				{
-					Move(true);
+					if(jumpconstraint > 70 || bonusflg == false)
+					{
+						Move(true);
+					}
+
 				}
 			}
 			
-			
+			if(jumpconstraint > 70 || bonusflg == false)
+			{
 			//float x = Input.GetAxis("Horizontal");
 			bool jump = Input.GetButtonDown("Jump");
 			//Move(x, jump);
 			Move(jump);
+			}
         }
 
 		//ゲームオーバーの条件
@@ -271,7 +285,7 @@ public class UnityChan2DController : MonoBehaviour
 
 				restJumps--;
 	
-				print ("restJumps:"+restJumps);
+				//print ("restJumps:"+restJumps);
 			}
 
 			else{
@@ -290,7 +304,7 @@ public class UnityChan2DController : MonoBehaviour
 				restJumps--;
 				
 				
-				print ("restJumps:"+restJumps);
+				//print ("restJumps:"+restJumps);
 			}
         }
 
@@ -327,7 +341,7 @@ public class UnityChan2DController : MonoBehaviour
 		if (c.tag == "Ground") 
 		{
 			restJumps = 2;
-			print ("error");
+			//print ("error");
 		}
 	}
 

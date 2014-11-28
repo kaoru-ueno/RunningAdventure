@@ -14,7 +14,7 @@ public class FloorControl : MonoBehaviour {
 	
 	// 床モデルの数.
 	public static float		MODEL_NUM = 10;
-	
+
 	void	Start() 
 	{
 		// カメラのインスタンスを探しておく.

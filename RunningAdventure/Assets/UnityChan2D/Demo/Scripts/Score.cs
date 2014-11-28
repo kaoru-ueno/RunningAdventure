@@ -54,12 +54,14 @@ public class Score : MonoBehaviour
 
 //		if (other.tag == coin) {
 						score = score + point;
+						Debug.Log("score"+score);
 
 					//通常ステージ
 					if(UnityChan2DController.bonusflg == false)
 						{
 							//ボーナスゲージを溜める
 							bonusgauge = bonusgauge + point;
+							Debug.Log("bonusgauge"+bonusgauge);
 						}
 						
 //						break;

@@ -1143,10 +1143,6 @@ StateMachine:
   - {x: 108, y: -168, z: 0}
   m_OrderedTransitions:
     data:
-      first: {fileID: 110289722}
-      second:
-      - {fileID: 110100243}
-    data:
       first: {fileID: 0}
       second:
       - {fileID: 110100000}
@@ -1170,6 +1166,10 @@ StateMachine:
       - {fileID: 110128039}
       - {fileID: 110172645}
       - {fileID: 110191769}
+    data:
+      first: {fileID: 110289722}
+      second:
+      - {fileID: 110100243}
     data:
       first: {fileID: 110206422}
       second:

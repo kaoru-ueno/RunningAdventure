@@ -10,7 +10,7 @@ public class StartScene : MonoBehaviour {
 	private int TextFieldWidth = 320;
 	private int TextFieldHeight = 50;
 
-	private string UserName = "aaa";
+	private string UserName = "";
 	private int maxLength = 20;
 		
 	public GUIStyle startButtonStyle;

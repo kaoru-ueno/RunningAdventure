@@ -135,7 +135,7 @@ public class DemoGuiSkin : MonoBehaviour {
 	public bool MyToggle(bool variable) {
 		
 		// Different style toggle button, it looks like a button with a toggle on it
-		GUILayout.Box ("", ColoredGUISkin.Skin.button, GUILayout.Width(ColoredGUISkin.Skin.toggle.fixedWidth + ColoredGUISkin.Skin.button.padding.left + ColoredGUISkin.Skin.button.padding.right),
+		GUILayout.Box ("Lets", ColoredGUISkin.Skin.button, GUILayout.Width(ColoredGUISkin.Skin.toggle.fixedWidth + ColoredGUISkin.Skin.button.padding.left + ColoredGUISkin.Skin.button.padding.right),
 											  GUILayout.Height(ColoredGUISkin.Skin.toggle.fixedHeight + ColoredGUISkin.Skin.button.padding.top + ColoredGUISkin.Skin.button.padding.bottom));
 		Rect toggleRect = GUILayoutUtility.GetLastRect();
 		toggleRect.x += ColoredGUISkin.Skin.button.padding.left;

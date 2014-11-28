@@ -10,10 +10,10 @@ public class CrystalsetControl : MonoBehaviour {
 	//private Vector3	initial_position;
 	
 	// 床の幅（X方向）.
-	public	static float	WIDTH = 32f;
+	public	static float	WIDTH = 38f;
 	
 	// 床モデルの数.
-	public static float		MODEL_NUM = 2;
+	public static float		MODEL_NUM = 1;
 
 	public GameObject crystal;
 	
@@ -50,7 +50,7 @@ public class CrystalsetControl : MonoBehaviour {
 		
 		if(floor_position.x + total_width/2.0f < camera_position.x) 
 		{
-			Destroy(gameObject);
+			//Destroy(crystal);
 
 			// 前にワープ.
 			floor_position.x += total_width;

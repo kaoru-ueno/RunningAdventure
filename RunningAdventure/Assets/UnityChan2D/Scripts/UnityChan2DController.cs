@@ -45,6 +45,7 @@ public class UnityChan2DController : MonoBehaviour
 
 	//private bool ypos = false;
 
+
     void Reset()
     {
         Awake();
@@ -70,12 +71,14 @@ public class UnityChan2DController : MonoBehaviour
         m_animator.applyRootMotion = false;
     }
 
+
     void Awake()
     {
         m_animator = GetComponent<Animator>();
         m_boxcollier2D = GetComponent<BoxCollider2D>();
         m_rigidbody2D = GetComponent<Rigidbody2D>();
     }
+
 
 	void Start () {
 		//移動（使っていない）
@@ -87,8 +90,12 @@ public class UnityChan2DController : MonoBehaviour
 
 	}
 
+
     void Update()
     {	
+
+		//オブジェクトすり抜け管理------------------------------------------------------------------------------
+
 		//ボーナスステージが終わっている且つ高さが８以上
 		if(bonusflg == false && transform.position.y > 8)
 		{
@@ -97,7 +104,7 @@ public class UnityChan2DController : MonoBehaviour
 		}
 
 		//ボーナスステージが終わっている且つ高さが７以下
-		if(bonusflg == false && transform.position.y < 7)
+		if(gameflg != false && bonusflg == false && transform.position.y < 7)
 		{
 			gameObject.collider2D.isTrigger = false;
 		}
@@ -120,6 +127,8 @@ public class UnityChan2DController : MonoBehaviour
 
 		//	if(transform.position.y > 13) ypos = true;
 		//}
+		//------------------------------------------------------------------------------
+
 
 		//ボーナスゲージが溜まったら
 		if(Score.bonusgauge == bonuscount)
@@ -209,7 +218,7 @@ public class UnityChan2DController : MonoBehaviour
         }
 
 		//ゲームオーバーの条件
-		if(transform.position.y < -6)
+		if(transform.position.y < -8)
 		{
 			//ゲームオーバー画面表示
 			FindObjectOfType<StageControl>().gameEnd();
@@ -226,6 +235,7 @@ public class UnityChan2DController : MonoBehaviour
 		//rigidbody2D.velocity = direction * speed;
 		rigidbody2D.AddForce(direction * speed);
 	}*/
+
 
 	void Move(bool jump)
     {
@@ -300,6 +310,7 @@ public class UnityChan2DController : MonoBehaviour
 		//transform.position = pos;
     }
 
+
     void FixedUpdate()
     {
         Vector2 pos = transform.position;
@@ -310,6 +321,7 @@ public class UnityChan2DController : MonoBehaviour
         m_animator.SetBool("isGround", m_isGround);
     }
 
+
 		void OnTriggerEnter2D(Collider2D c)
 	{
 		if (c.tag == "Ground") 
@@ -318,6 +330,7 @@ public class UnityChan2DController : MonoBehaviour
 			print ("error");
 		}
 	}
+
 
 	void OnTriggerStay2D(Collider2D other)
     {
@@ -328,19 +341,23 @@ public class UnityChan2DController : MonoBehaviour
 						//ゲームオーバー画面表示
 						FindObjectOfType<StageControl> ().gameEnd ();
 
+						gameflg = false;
+
 						//地面をすり抜ける
 						gameObject.collider2D.isTrigger = true;
 
 						//カメラを止める
 						main_camera.GetComponent<CameraControl2> ().enabled = false;
 
-						gameflg = false;
+						
 
 				}
 				if (other.tag == "Coin" || other.tag == "Scoin" || other.tag == "Goldcoin") {
 						Destroy (other.gameObject);
 						}
 				}
+
+
 	IEnumerator INTERNAL_OnDamage()
     {
         m_animator.Play(m_isGround ? "Damage" : "AirDamage");
@@ -363,10 +380,12 @@ public class UnityChan2DController : MonoBehaviour
         m_state = State.Invincible;
     }
 
+
     void OnFinishedInvincibleMode()
     {
         m_state = State.Normal;
     }
+
 
 	public void GameScreen()
 	{
@@ -389,6 +408,7 @@ public class UnityChan2DController : MonoBehaviour
 			}
 		}
 	}
+
 
     enum State
     {

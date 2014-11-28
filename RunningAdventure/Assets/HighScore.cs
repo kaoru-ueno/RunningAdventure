@@ -22,7 +22,7 @@ namespace NCMB
 		// サーバーにハイスコアを保存 -------------------------
 		public void save()
 		{
-			#if FALSE
+			#if true
 			NCMBObject obj = new NCMBObject("HighScore");
 			obj["Uuid"]  = uuid;
 			obj["Name"]  = name;

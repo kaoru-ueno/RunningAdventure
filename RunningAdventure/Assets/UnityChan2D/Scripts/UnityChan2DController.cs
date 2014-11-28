@@ -23,22 +23,28 @@ public class UnityChan2DController : MonoBehaviour
 	//ジャンプする回数
 	private int restJumps = 2;
 
-	// 床の移動スピード
+	// 移動スピード
 	public float speed = 1;
 
 	private GameObject main_camera = null;
 
+	//スピードを変化させる値
 	public float speedometer = 100;
 
+	//スピードの段階
 	public static int speedlevel = 1;
 
+	//ゲームの終わりを判断するフラッグ
 	private bool gameflg = true;
 
+	//ボーナスステージの終わりを判断するフラッグ
 	public static bool bonusflg = false;
 
+	//どれだけスコアが溜まったらボーナスステージにするかの値
 	public int bonuscount = 100;
 
-	private bool ypos = false;
+	//private bool ypos = false;
+
 
     void Reset()
     {
@@ -65,6 +71,7 @@ public class UnityChan2DController : MonoBehaviour
         m_animator.applyRootMotion = false;
     }
 
+
     void Awake()
     {
         m_animator = GetComponent<Animator>();
@@ -72,26 +79,37 @@ public class UnityChan2DController : MonoBehaviour
         m_rigidbody2D = GetComponent<Rigidbody2D>();
     }
 
+
 	void Start () {
-		Moves (transform.right);
+		//移動（使っていない）
+		//Moves (transform.right);
+		
+		// カメラのインスタンスを探しておく.
 
 		this.main_camera = GameObject.FindGameObjectWithTag("MainCamera");
 
 	}
 
+
     void Update()
-    {
+    {	
+
+		//オブジェクトすり抜け管理------------------------------------------------------------------------------
+
+		//ボーナスステージが終わっている且つ高さが８以上
 		if(bonusflg == false && transform.position.y > 8)
 		{
 			gameObject.collider2D.isTrigger = true;
-			ypos = false;
+			//ypos = false;
 		}
 
-		if(bonusflg == false && transform.position.y < 7)
+		//ボーナスステージが終わっている且つ高さが７以下
+		if(gameflg != false && bonusflg == false && transform.position.y < 7)
 		{
 			gameObject.collider2D.isTrigger = false;
 		}
 
+		//ボーナスステージが始まっている且つ高さが５以下
 		if(bonusflg == true && transform.position.y < 5)
 		{
 			gameObject.collider2D.isTrigger = true;
@@ -99,6 +117,7 @@ public class UnityChan2DController : MonoBehaviour
 			jumpPower = 12;
 		}
 
+		//ボーナスステージが始まっている且つ高さが１０以上
 		if(bonusflg == true && transform.position.y > 10)
 		{
 			gameObject.collider2D.isTrigger = false;
@@ -108,16 +127,20 @@ public class UnityChan2DController : MonoBehaviour
 
 		//	if(transform.position.y > 13) ypos = true;
 		//}
+		//------------------------------------------------------------------------------
 
 
+		//ボーナスゲージが溜まったら
 		if(Score.bonusgauge == bonuscount)
-		{
+		{	
+			//ボーナスステージスタート
 			bonusflg = true;
 
+			//ボーナスゲージリセット
 			Score.bonusgauge = 0;
 
+			//ボーナスステージに移動させる
 			jumpPower = 50;
-
 			m_animator.SetTrigger("Jump");
 			SendMessage("Jump", SendMessageOptions.DontRequireReceiver);
 			float jumpHeight = jumpPower;
@@ -125,41 +148,52 @@ public class UnityChan2DController : MonoBehaviour
 			float velocity = Mathf.Sqrt(2 * gravity * jumpHeight);
 			m_rigidbody2D.velocity = Vector2.up * velocity;
 
-			print("bonusflg"+bonusflg);
+			//print("bonusflg"+bonusflg);
 		}
 
+		Vector3	camera_position = this.main_camera.transform.position;
 
-
+		//ゲームが終わったら
 		if(gameflg == false)
 		{
 			GameScreen();
 		}
 
-		transform.Translate (transform.right * speed);
-
-		Vector3	camera_position = this.main_camera.transform.position;
-
-		if(speedlevel != 2)
+		//移動のスクリプト--------------------------------------------------------------
+		if(speedlevel == 1)
 		{
-			if(camera_position.x > speedometer && camera_position.x < speedometer + 1.0f )
-			{
-				Moves (transform.right * 1.5f);
-				speedlevel = 2;
-				print ("speedup");
-
-			}
+			transform.Translate (transform.right * speed);
 		}
 
-		if (speedlevel != 3) 
+		if(camera_position.x > speedometer && camera_position.x < speedometer + 1.0f )
 		{
-			if(camera_position.x > speedometer * 2 && camera_position.x < speedometer * 2 + 1.0f )
-			{
-				Moves (transform.right * 2f);
-				speedlevel = 3;
-				print ("speedup2");
-			}
+			speedlevel = 2;
 		}
 
+		if(speedlevel == 2)
+		{
+			//Moves (transform.right * 1.5f);
+			transform.Translate (transform.right * speed * 1.2f);
+			
+			print ("speedup");
+		}
+		
+		
+		if(camera_position.x > speedometer && camera_position.x < speedometer * 2 + 1.0f )
+		{
+			speedlevel = 3;
+		}
+
+		if(speedlevel == 3)
+		{
+			//Moves (transform.right * 2f);
+			transform.Translate (transform.right * speed * 1.5f);
+			
+			print ("speedup");
+		}
+		//--------------------------------------------------------------
+
+		
         if (m_state != State.Damaged)
         {
 
@@ -183,7 +217,8 @@ public class UnityChan2DController : MonoBehaviour
 			Move(jump);
         }
 
-		if(transform.position.y < -6)
+		//ゲームオーバーの条件
+		if(transform.position.y < -8)
 		{
 			//ゲームオーバー画面表示
 			FindObjectOfType<StageControl>().gameEnd();
@@ -195,15 +230,16 @@ public class UnityChan2DController : MonoBehaviour
 		}
     }
 
-		void Moves (Vector2 direction)
+		/*void Moves (Vector2 direction)
 	{
 		//rigidbody2D.velocity = direction * speed;
 		rigidbody2D.AddForce(direction * speed);
-	}
+	}*/
+
 
 	void Move(bool jump)
     {
-		Vector2 Posi = (Vector2)transform.position + Vector2.right;
+		//Vector2 Posi = (Vector2)transform.position + Vector2.right;
       /*  if (Mathf.Abs(move) > 0)
         {
             Quaternion rot = transform.rotation;
@@ -274,6 +310,7 @@ public class UnityChan2DController : MonoBehaviour
 		//transform.position = pos;
     }
 
+
     void FixedUpdate()
     {
         Vector2 pos = transform.position;
@@ -284,6 +321,7 @@ public class UnityChan2DController : MonoBehaviour
         m_animator.SetBool("isGround", m_isGround);
     }
 
+
 		void OnTriggerEnter2D(Collider2D c)
 	{
 		if (c.tag == "Ground") 
@@ -292,6 +330,7 @@ public class UnityChan2DController : MonoBehaviour
 			print ("error");
 		}
 	}
+
 
 	void OnTriggerStay2D(Collider2D other)
     {
@@ -302,19 +341,23 @@ public class UnityChan2DController : MonoBehaviour
 						//ゲームオーバー画面表示
 						FindObjectOfType<StageControl> ().gameEnd ();
 
+						gameflg = false;
+
 						//地面をすり抜ける
 						gameObject.collider2D.isTrigger = true;
 
 						//カメラを止める
 						main_camera.GetComponent<CameraControl2> ().enabled = false;
 
-						gameflg = false;
+						
 
 				}
 				if (other.tag == "Coin" || other.tag == "Scoin" || other.tag == "Goldcoin") {
 						Destroy (other.gameObject);
 						}
 				}
+
+
 	IEnumerator INTERNAL_OnDamage()
     {
         m_animator.Play(m_isGround ? "Damage" : "AirDamage");
@@ -327,7 +370,7 @@ public class UnityChan2DController : MonoBehaviour
 
         yield return new WaitForSeconds(.5f);
 
-		Moves (transform.right);
+		//Moves (transform.right);
 
         while (m_isGround == false)
         {
@@ -337,10 +380,12 @@ public class UnityChan2DController : MonoBehaviour
         m_state = State.Invincible;
     }
 
+
     void OnFinishedInvincibleMode()
     {
         m_state = State.Normal;
     }
+
 
 	public void GameScreen()
 	{
@@ -363,6 +408,7 @@ public class UnityChan2DController : MonoBehaviour
 			}
 		}
 	}
+
 
     enum State
     {

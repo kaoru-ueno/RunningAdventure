@@ -14,7 +14,7 @@ public class StageControl : MonoBehaviour {
 
 		GameObject.Find("Dist").guiText.text = "";
 		GameObject.Find("GameEnd").guiText.text = "";
-		GameObject.Find("GameEndSC").guiTexture.enabled = false;
+		//GameObject.Find("GameEndSC").guiTexture.enabled = false;
 	}
 	
 	void Update () {
@@ -30,7 +30,7 @@ public class StageControl : MonoBehaviour {
 
 	public void gameEndSC()
 	{
-		GameObject.Find("GameEndSC").guiTexture.enabled = true;
+		//GameObject.Find("GameEndSC").guiTexture.enabled = true;
 	}
 }
 

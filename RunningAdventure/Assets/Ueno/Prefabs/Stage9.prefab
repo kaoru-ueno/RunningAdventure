@@ -8,7 +8,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400000}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Crystal1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,7 +28,7 @@ GameObject:
   - 58: {fileID: 5800000}
   - 50: {fileID: 5000000}
   - 114: {fileID: 11400000}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: partsCrystal10
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -48,7 +48,7 @@ GameObject:
   - 58: {fileID: 5800002}
   - 50: {fileID: 5000002}
   - 114: {fileID: 11400002}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: partsCrystal10
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -68,7 +68,7 @@ GameObject:
   - 58: {fileID: 5800004}
   - 50: {fileID: 5000004}
   - 114: {fileID: 11400004}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: partsCrystal10
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ GameObject:
   - 58: {fileID: 5800006}
   - 50: {fileID: 5000006}
   - 114: {fileID: 11400006}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: partsCrystal10
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -108,7 +108,7 @@ GameObject:
   - 58: {fileID: 5800008}
   - 50: {fileID: 5000008}
   - 114: {fileID: 11400010}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: partsCrystal10
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -128,7 +128,7 @@ GameObject:
   - 58: {fileID: 5800010}
   - 50: {fileID: 5000010}
   - 114: {fileID: 11400030}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: partsCrystal10
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -145,7 +145,7 @@ GameObject:
   - 4: {fileID: 400014}
   - 212: {fileID: 21200024}
   - 114: {fileID: 11400008}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -165,7 +165,7 @@ GameObject:
   - 58: {fileID: 5800012}
   - 50: {fileID: 5000012}
   - 114: {fileID: 11400040}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: partsCrystal10
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -182,7 +182,7 @@ GameObject:
   - 4: {fileID: 400020}
   - 212: {fileID: 21200028}
   - 114: {fileID: 11400012}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -199,7 +199,7 @@ GameObject:
   - 4: {fileID: 400022}
   - 212: {fileID: 21200030}
   - 114: {fileID: 11400014}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -216,7 +216,7 @@ GameObject:
   - 4: {fileID: 400016}
   - 61: {fileID: 6100002}
   - 212: {fileID: 21200014}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -233,7 +233,7 @@ GameObject:
   - 4: {fileID: 400030}
   - 61: {fileID: 6100016}
   - 212: {fileID: 21200016}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -250,7 +250,7 @@ GameObject:
   - 4: {fileID: 400024}
   - 212: {fileID: 21200032}
   - 114: {fileID: 11400016}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -267,7 +267,7 @@ GameObject:
   - 4: {fileID: 400026}
   - 212: {fileID: 21200034}
   - 114: {fileID: 11400018}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -284,7 +284,7 @@ GameObject:
   - 4: {fileID: 400028}
   - 212: {fileID: 21200036}
   - 114: {fileID: 11400020}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -301,7 +301,7 @@ GameObject:
   - 4: {fileID: 400032}
   - 212: {fileID: 21200038}
   - 114: {fileID: 11400022}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -318,7 +318,7 @@ GameObject:
   - 4: {fileID: 400036}
   - 212: {fileID: 21200040}
   - 114: {fileID: 11400028}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -338,7 +338,7 @@ GameObject:
   - 58: {fileID: 5800014}
   - 50: {fileID: 5000014}
   - 114: {fileID: 11400048}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: partsCrystal10
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -355,7 +355,7 @@ GameObject:
   - 4: {fileID: 400044}
   - 212: {fileID: 21200044}
   - 114: {fileID: 11400032}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -372,7 +372,7 @@ GameObject:
   - 4: {fileID: 400046}
   - 212: {fileID: 21200046}
   - 114: {fileID: 11400034}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -389,7 +389,7 @@ GameObject:
   - 4: {fileID: 400048}
   - 212: {fileID: 21200048}
   - 114: {fileID: 11400036}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -406,7 +406,7 @@ GameObject:
   - 4: {fileID: 400050}
   - 212: {fileID: 21200050}
   - 114: {fileID: 11400038}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -426,7 +426,7 @@ GameObject:
   - 58: {fileID: 5800016}
   - 50: {fileID: 5000016}
   - 114: {fileID: 11400052}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: partsCrystal10
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -443,7 +443,7 @@ GameObject:
   - 4: {fileID: 400054}
   - 212: {fileID: 21200054}
   - 114: {fileID: 11400042}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -460,7 +460,7 @@ GameObject:
   - 4: {fileID: 400056}
   - 212: {fileID: 21200056}
   - 114: {fileID: 11400044}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -477,7 +477,7 @@ GameObject:
   - 4: {fileID: 400060}
   - 212: {fileID: 21200058}
   - 114: {fileID: 11400046}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -497,7 +497,7 @@ GameObject:
   - 58: {fileID: 5800018}
   - 50: {fileID: 5000018}
   - 114: {fileID: 11400054}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: partsCrystal10
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -514,7 +514,7 @@ GameObject:
   - 4: {fileID: 400064}
   - 212: {fileID: 21200062}
   - 114: {fileID: 11400050}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -531,7 +531,7 @@ GameObject:
   - 4: {fileID: 400034}
   - 61: {fileID: 6100020}
   - 212: {fileID: 21200012}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -548,7 +548,7 @@ GameObject:
   - 4: {fileID: 400042}
   - 61: {fileID: 6100028}
   - 212: {fileID: 21200010}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -565,7 +565,7 @@ GameObject:
   - 4: {fileID: 400040}
   - 61: {fileID: 6100026}
   - 212: {fileID: 21200022}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -583,9 +583,9 @@ GameObject:
   - 114: {fileID: 11400024}
   - 114: {fileID: 11400026}
   - 212: {fileID: 21200018}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Stage9
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -598,7 +598,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400066}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FloorCol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -614,7 +614,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400068}
   - 61: {fileID: 6100000}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FloorCol
   m_TagString: Untagged
   m_Icon: {fileID: 0}

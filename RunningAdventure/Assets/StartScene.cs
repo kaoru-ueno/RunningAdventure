@@ -82,15 +82,16 @@ public class StartScene : MonoBehaviour {
 					
 					//サーバーにデータを保存
 					//UUIDの生成
-					
-					//要修正！！
-					//新規でUUID作成されるのを防ぐこと！
-					//RankingScene.csにてPlayerPrefsからのnameを取得しているので、こりまた修正を！！
 					System.Guid guid=System.Guid.NewGuid();
 					_uuid = guid.ToString();
 					_name = UserName;
+
 					currentHighScore = new NCMB.HighScore(_score,_name,_uuid);
 					currentHighScore.save();
+
+					//サーバー問い合わせ用にローカル保存
+					PlayerPrefs.SetString("Uuid",_uuid);
+					PlayerPrefs.SetString("Name",_name);
 					
 					Application.LoadLevel ("Start");
 					//is_firstPlay = false;

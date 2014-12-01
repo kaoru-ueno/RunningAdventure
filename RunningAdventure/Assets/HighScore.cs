@@ -44,6 +44,32 @@ namespace NCMB
 			});
 			#endif
 		}
+
+		// ハイスコアを更新して保存 -------------------------
+		public void updateScore()
+		{
+			#if False
+			NCMBObject obj = new NCMBObject("HighScore");
+			obj["Uuid"]  = uuid;
+			obj["Name"]  = name;
+			obj["Score"] = score;
+			obj.SaveAsync();
+			#else
+			// データストアの「HighScore」クラスから、Uuidをキーにして検索
+			NCMBQuery<NCMBObject> query = new NCMBQuery<NCMBObject> ("HighScore");
+			query.WhereEqualTo ("Uuid", uuid);
+			query.FindAsync ((List<NCMBObject> objList ,NCMBException e) => {
+				
+				//検索成功したら    
+				if (e == null) {
+					objList[0]["Score"] = score;
+					objList[0]["Uuid"] = uuid;
+					objList[0]["Name"] = name;
+					objList[0].SaveAsync();
+				}
+			});
+			#endif
+		}
 		
 		// サーバーからハイスコアを取得  -----------------
 		public void fetch()

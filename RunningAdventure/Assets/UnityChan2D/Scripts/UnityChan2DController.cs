@@ -138,7 +138,7 @@ public class UnityChan2DController : MonoBehaviour
 		}
 
 		//ボーナスゲージが溜まったら
-		if(Score.bonusgauge == bonuscount)
+		if(Score.bonusgauge == bonuscount && gameflg != false)
 		{	
 
 			//ボーナスステージスタート
@@ -155,6 +155,7 @@ public class UnityChan2DController : MonoBehaviour
 			float gravity = Mathf.Abs(Physics.gravity.y);
 			float velocity = Mathf.Sqrt(2 * gravity * jumpHeight);
 			m_rigidbody2D.velocity = Vector2.up * velocity;
+			jumpPower = 12;
 
 			//print("bonusflg"+bonusflg);
 		}
@@ -390,8 +391,8 @@ public class UnityChan2DController : MonoBehaviour
         {
             yield return new WaitForFixedUpdate();
         }
-        m_animator.SetTrigger("Invincible Mode");
-        m_state = State.Invincible;
+        //m_animator.SetTrigger("Invincible Mode");
+       // m_state = State.Invincible;
     }
 
 

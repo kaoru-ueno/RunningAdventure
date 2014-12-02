@@ -41,7 +41,7 @@ public class UnityChan2DController : MonoBehaviour
 	public static bool bonusflg = false;
 
 	//どれだけスコアが溜まったらボーナスステージにするかの値
-	public int bonuscount = 100;
+	public static  int bonuscount = 100;
 
 	public static int jumpconstraint = 0;
 

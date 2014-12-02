@@ -8,12 +8,13 @@ public class FeverGaugeControl : MonoBehaviour {
 	private float gaugeScale = 1;
 	private int playerScore;
 	private int localScore;
-	public int FeverScore;
+	private int FeverScore;
 	// Use this for initialization
 	void Start () {
 		// ゲージの取得
 		gaugeObject = transform.FindChild("Bar").gameObject;
 		feverGaugeObject = transform.FindChild("Fever").gameObject;
+		FeverScore = UnityChan2DController.bonuscount;
 
 		// 初期化
 		init ();
@@ -21,6 +22,8 @@ public class FeverGaugeControl : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+		//FeverScore = UnityChan2DController.bonuscount;
 
 		localScore = Score.score - playerScore;
 		if(localScore < FeverScore){
@@ -42,7 +45,7 @@ public class FeverGaugeControl : MonoBehaviour {
 	}
 
 	// 初期化
-	void init(){
+	public void init(){
 		// スコアを0にする
 		localScore = 0;
 		// スコアを取得

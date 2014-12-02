@@ -9,7 +9,7 @@ public class StartScene : MonoBehaviour {
 	public static string _uuid;
 	public static string _name;
 	
-	private int ButtonWidth = 300;
+	private int ButtonWidth = 280;
 	private int ButtonHeight = 70;
 	private int BgPanelWidth = 552;
 	private int BgPanelHeight = 316;

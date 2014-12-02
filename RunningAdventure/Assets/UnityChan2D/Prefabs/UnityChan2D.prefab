@@ -72,6 +72,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -86,9 +87,13 @@ MonoBehaviour:
   maxSpeed: 10
   jumpPower: 1000
   backwardForce: {x: -4.5, y: 5.4000001}
+  coin: 1
+  life: 0
   whatIsGround:
     serializedVersion: 2
     m_Bits: 256
+  speed: 1
+  speedometer: 100
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

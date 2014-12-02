@@ -123,6 +123,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400014}
   - 131: {fileID: 13100004}
+  - 114: {fileID: 11400006}
   m_Layer: 0
   m_Name: RetryButton
   m_TagString: Untagged
@@ -145,7 +146,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &100018
 GameObject:
   m_ObjectHideFlags: 0
@@ -327,7 +328,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100012}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .439999998, y: .280000001, z: 1}
+  m_LocalPosition: {x: .444999993, y: .280000001, z: 1}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 400018}
@@ -481,6 +482,17 @@ MonoBehaviour:
   endScoreGUIText: {fileID: 13200010}
   kmGUIText: {fileID: 13200014}
   clistalScoreGUIText: {fileID: 13200016}
+--- !u!114 &11400006
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3837a8066be8c3445b56fcbf1cdff822, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!131 &13100000
 GUITexture:
   m_ObjectHideFlags: 1
@@ -701,7 +713,7 @@ GUIText:
   serializedVersion: 3
   m_Text: 24
   m_Anchor: 0
-  m_Alignment: 0
+  m_Alignment: 1
   m_PixelOffset: {x: 0, y: 0}
   m_LineSpacing: 1
   m_TabSize: 4
@@ -724,7 +736,7 @@ GUIText:
   serializedVersion: 3
   m_Text: 24
   m_Anchor: 0
-  m_Alignment: 0
+  m_Alignment: 1
   m_PixelOffset: {x: 0, y: 0}
   m_LineSpacing: 1
   m_TabSize: 4

@@ -21,8 +21,9 @@ public class RankingScene : MonoBehaviour {
 	private bool backButton;
 	private bool editButton;
 
-	private int ButtonWidth = 300;
-	private int ButtonHeight = 70;
+	private int ButtonWidth = 250;
+	private int ButtonHeight = 65;
+	public GUIStyle backButtonStyle;
 
 	// Use this for initialization
 	void Start () {
@@ -119,15 +120,7 @@ public class RankingScene : MonoBehaviour {
 		// 戻るボタンが押されたら
 		if( backButton )	Application.LoadLevel("Start");
 
-		// ボタンを表示する
-		//GUI.Button(new Rect(Screen.width / 2 - ButtonWidth / 2, (Screen.height / 2 - ButtonHeight / 2)+20, ButtonWidth, ButtonHeight), "ゲームスタート");
-		//GUI.Button(new Rect(Screen.width / 2 - ButtonWidth / 2, (Screen.height / 2 - ButtonHeight / 2)+100, ButtonWidth, ButtonHeight), "ランキング");
-		/*if (GUI.Button(new Rect(Screen.width / 2 - ButtonWidth / 2, (Screen.height / 2 - ButtonHeight / 2)+20, ButtonWidth, ButtonHeight), "ゲームスタート")){
-			print ("スタートをクリックしました");
-			Application.LoadLevel ("Test");
-		}*/
-
-		if (GUI.Button(new Rect(Screen.width / 2 - ButtonWidth / 2, (Screen.height / 2 - ButtonHeight / 2)+100, ButtonWidth, ButtonHeight), "Back")){
+		if (GUI.Button(new Rect(Screen.width / 2 - ButtonWidth / 2, (Screen.height / 2 - ButtonHeight / 2)+150, ButtonWidth, ButtonHeight), "", backButtonStyle)){
 			print ("スタート画面に戻りまーす");
 			Application.LoadLevel ("Start");
 		}

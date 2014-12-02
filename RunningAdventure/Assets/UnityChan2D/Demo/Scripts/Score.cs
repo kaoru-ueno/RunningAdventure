@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using NCMB;
 
 public class Score : MonoBehaviour
 {
@@ -15,6 +16,12 @@ public class Score : MonoBehaviour
 	public static int highScore;
 
 	public static int bonusgauge = 0;
+
+	//サーバーに保存時に必要
+	public string _name;
+	public string _uuid;
+	private NCMB.HighScore currentHighScore;
+
 	
 	// PlayerPrefsで保存するためのキー
 	private string highScoreKey = "highScore";
@@ -34,6 +41,11 @@ public class Score : MonoBehaviour
 		// スコア・ハイスコアを表示する
 		scoreGUIText.text = "Score:" + score.ToString ();
 		highScoreGUIText.text = "HighScore:" + highScore.ToString ();
+
+		if(UnityChan2DController.gameflg == false)
+		{
+			Save ();
+		}
 	}
 	
 	// ゲーム開始前の状態に戻す
@@ -54,14 +66,14 @@ public class Score : MonoBehaviour
 
 //		if (other.tag == coin) {
 						score = score + point;
-						Debug.Log("score"+score);
+						//Debug.Log("score"+score);
 
 					//通常ステージ
 					if(UnityChan2DController.bonusflg == false)
 						{
 							//ボーナスゲージを溜める
 							bonusgauge = bonusgauge + point;
-							Debug.Log("bonusgauge"+bonusgauge);
+							//Debug.Log("bonusgauge"+bonusgauge);
 						}
 						
 //						break;
@@ -84,9 +96,17 @@ public class Score : MonoBehaviour
 	// ハイスコアの保存
 	public void Save ()
 	{
+		Debug.Log("Score.Save() called!!!!");
+
 		// ハイスコアを保存する
 		PlayerPrefs.SetInt (highScoreKey, highScore);
 		PlayerPrefs.Save ();
+
+		//サーバーにハイスコアを保存する
+		_name = PlayerPrefs.GetString ("Name");
+		_uuid = PlayerPrefs.GetString ("Uuid");
+		currentHighScore = new NCMB.HighScore( highScore, _name, _uuid );
+		currentHighScore.updateScore();	//_uuidの二重登録を防ぐ
 		
 		// ゲーム開始前の状態に戻す
 		Initialize ();

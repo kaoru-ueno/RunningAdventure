@@ -9,7 +9,7 @@ public class StartScene : MonoBehaviour {
 	public static string _uuid;
 	public static string _name;
 	
-	private int ButtonWidth = 300;
+	private int ButtonWidth = 280;
 	private int ButtonHeight = 70;
 	private int BgPanelWidth = 552;
 	private int BgPanelHeight = 316;
@@ -108,7 +108,7 @@ public class StartScene : MonoBehaviour {
 			// ボタンを表示する
 			if (GUI.Button(new Rect(Screen.width / 2 - ButtonWidth / 2, (Screen.height / 2 - ButtonHeight / 2)+20, ButtonWidth, ButtonHeight),"", startButtonStyle)){
 				print ("スタートをクリックしました");
-				Application.LoadLevel ("Test");
+				Application.LoadLevel ("Test_kudo");
 			}
 			if (GUI.Button(new Rect(Screen.width / 2 - ButtonWidth / 2, (Screen.height / 2 - ButtonHeight / 2)+120, ButtonWidth, ButtonHeight),"", rankingButtonStyle)){
 				print ("ランキングをクリックしました");

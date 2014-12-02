@@ -35,15 +35,19 @@ public class UnityChan2DController : MonoBehaviour
 	public static int speedlevel = 1;
 
 	//ゲームの終わりを判断するフラッグ
-	private bool gameflg = true;
+	public static bool gameflg = true;
 
 	//ボーナスステージの終わりを判断するフラッグ
 	public static bool bonusflg = false;
 
 	//どれだけスコアが溜まったらボーナスステージにするかの値
-	public static  int bonuscount = 100;
+	public static  int bonuscount = 50;
 
 	public static int jumpconstraint = 0;
+
+	private int bonusJump = 0;
+
+	private int GameSC = 0;
 
 	//private bool ypos = false;
 
@@ -134,11 +138,11 @@ public class UnityChan2DController : MonoBehaviour
 		{
 			jumpconstraint++;
 
-			Debug.Log("jumpconstraint" + jumpconstraint);
+			//Debug.Log("jumpconstraint" + jumpconstraint);
 		}
 
 		//ボーナスゲージが溜まったら
-		if(Score.bonusgauge == bonuscount && gameflg != false)
+		if(Score.bonusgauge > bonuscount && gameflg != false && bonusJump < 1)
 		{	
 
 			//ボーナスステージスタート
@@ -146,6 +150,8 @@ public class UnityChan2DController : MonoBehaviour
 
 			//ボーナスゲージリセット
 			Score.bonusgauge = 0;
+
+
 
 			//ボーナスステージに移動させる
 			jumpPower = 50;
@@ -155,6 +161,7 @@ public class UnityChan2DController : MonoBehaviour
 			float gravity = Mathf.Abs(Physics.gravity.y);
 			float velocity = Mathf.Sqrt(2 * gravity * jumpHeight);
 			m_rigidbody2D.velocity = Vector2.up * velocity;
+			bonusJump++;
 			jumpPower = 12;
 
 			//print("bonusflg"+bonusflg);
@@ -242,6 +249,7 @@ public class UnityChan2DController : MonoBehaviour
 			main_camera.GetComponent<CameraControl2>().enabled = false;
 
 			gameflg = false;
+
 		}
 		if(Unikill.enemyjump == true && Unikill.jumpplan < 2){
 
@@ -453,9 +461,10 @@ public class UnityChan2DController : MonoBehaviour
 	public void GameScreen()
 	{
 
-		if (gameflg != true && Input.GetMouseButtonDown (0)) 
+		if (gameflg != true && Input.GetMouseButtonDown (0) && GameSC == 0) 
 		{
 			FindObjectOfType<StageControl> ().gameEndSC ();
+			GameSC++;
 		}
 
 		for (int i = 0; i < Input.touchCount; i++)
@@ -465,9 +474,10 @@ public class UnityChan2DController : MonoBehaviour
 			Touch touch = Input.GetTouch (i);
 			
 			// ゲーム中ではなく、タッチ直後であればtrueを返す。
-			if (gameflg != true && touch.phase == TouchPhase.Began)
+			if (gameflg != true && touch.phase == TouchPhase.Began && GameSC == 0)
 			{
 				FindObjectOfType<StageControl> ().gameEndSC ();
+				GameSC++;
 			}
 		}
 	}

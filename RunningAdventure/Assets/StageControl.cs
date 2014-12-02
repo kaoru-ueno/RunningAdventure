@@ -5,6 +5,7 @@ public class StageControl : MonoBehaviour {
 
 	public GUIText DistGUIText;
 	public GUIText GameEndGUIText;
+	public GameObject GameEndGameObject;
 	//public GUITexture GameEndSCGUITexture;
 	private GameObject main_camera = null;
 
@@ -14,6 +15,7 @@ public class StageControl : MonoBehaviour {
 
 		GameObject.Find("Dist").guiText.text = "";
 		GameObject.Find("GameEnd").guiText.text = "";
+		//GameObject.Find("GameOver").renderer.enabled  = false;
 		//GameObject.Find("GameOver").guiTexture.enabled = false;
 	}
 	
@@ -30,7 +32,7 @@ public class StageControl : MonoBehaviour {
 
 	public void gameEndSC()
 	{
-		//GameObject.Find("GameOver").guiTexture.enabled = true;
+		Instantiate (GameEndGameObject, transform.position, Quaternion.identity);
 	}
 }
 

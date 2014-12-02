@@ -34,6 +34,11 @@ public class Score : MonoBehaviour
 		// スコア・ハイスコアを表示する
 		scoreGUIText.text = "Score:" + score.ToString ();
 		highScoreGUIText.text = "HighScore:" + highScore.ToString ();
+
+		if(UnityChan2DController.gameflg == false)
+		{
+			Save ();
+		}
 	}
 	
 	// ゲーム開始前の状態に戻す
@@ -54,14 +59,14 @@ public class Score : MonoBehaviour
 
 //		if (other.tag == coin) {
 						score = score + point;
-						Debug.Log("score"+score);
+						//Debug.Log("score"+score);
 
 					//通常ステージ
 					if(UnityChan2DController.bonusflg == false)
 						{
 							//ボーナスゲージを溜める
 							bonusgauge = bonusgauge + point;
-							Debug.Log("bonusgauge"+bonusgauge);
+							//Debug.Log("bonusgauge"+bonusgauge);
 						}
 						
 //						break;

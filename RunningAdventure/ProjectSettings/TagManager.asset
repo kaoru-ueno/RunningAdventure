@@ -61,6 +61,10 @@ TagManager:
     userID: 2
     uniqueID: 979189183
     locked: 0
+  - name: UI
+    userID: 6
+    uniqueID: 3082946417
+    locked: 0
   - name: ScoreBoard
     userID: 4
     uniqueID: 99068445
@@ -68,8 +72,4 @@ TagManager:
   - name: Scorehyouji
     userID: 5
     uniqueID: 60456983
-    locked: 0
-  - name: UI
-    userID: 6
-    uniqueID: 3082946417
     locked: 0

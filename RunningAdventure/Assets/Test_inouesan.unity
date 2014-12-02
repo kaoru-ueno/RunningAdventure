@@ -261,7 +261,7 @@ GameObject:
   - 4: {fileID: 13773603}
   - 212: {fileID: 13773606}
   - 114: {fileID: 13773604}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -334,7 +334,7 @@ GameObject:
   - 58: {fileID: 14998445}
   - 50: {fileID: 14998444}
   - 114: {fileID: 14998443}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: partsCrystal10
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -443,7 +443,7 @@ GameObject:
   - 4: {fileID: 27282082}
   - 212: {fileID: 27282085}
   - 114: {fileID: 27282083}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -891,7 +891,7 @@ GameObject:
   - 58: {fileID: 53587766}
   - 50: {fileID: 53587765}
   - 114: {fileID: 53587764}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: partsCrystal1
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -909,7 +909,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1652458618}
-  m_RootOrder: 9
+  m_RootOrder: 7
 --- !u!114 &53587764
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1150,7 +1150,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 62467204}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Crystal1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1185,9 +1185,11 @@ GameObject:
   m_Component:
   - 4: {fileID: 62566672}
   - 212: {fileID: 62566673}
+  - 58: {fileID: 62566677}
+  - 50: {fileID: 62566676}
   - 58: {fileID: 62566675}
   - 50: {fileID: 62566674}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Trap
   m_TagString: DamageObject
   m_Icon: {fileID: 0}
@@ -1201,11 +1203,11 @@ Transform:
   m_PrefabInternal: {fileID: 1267315504}
   m_GameObject: {fileID: 62566671}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.0838156, y: -1, z: 0}
-  m_LocalScale: {x: .178155154, y: .178155065, z: 1}
+  m_LocalPosition: {x: 14.0657806, y: -.903694153, z: 0}
+  m_LocalScale: {x: .171047091, y: .171047315, z: 1}
   m_Children: []
   m_Father: {fileID: 1652458618}
-  m_RootOrder: 1
+  m_RootOrder: 18
 --- !u!212 &62566673
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1249,6 +1251,34 @@ CircleCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 62566671}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Radius: 3.11999989
+  m_Center: {x: 0, y: 0}
+--- !u!50 &62566676
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5000012, guid: eee7093b7c8925b419fe304921610b2b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1267315504}
+  m_GameObject: {fileID: 62566671}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 0
+  m_FixedAngle: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+--- !u!58 &62566677
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5800012, guid: eee7093b7c8925b419fe304921610b2b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1267315504}
   m_GameObject: {fileID: 62566671}
   m_Enabled: 1
   m_Material: {fileID: 0}
@@ -1490,7 +1520,7 @@ GameObject:
   - 4: {fileID: 73351053}
   - 212: {fileID: 73351056}
   - 114: {fileID: 73351054}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1559,7 +1589,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 76753426}
   - 61: {fileID: 76753427}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FloorCol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1577,7 +1607,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1652458618}
-  m_RootOrder: 15
+  m_RootOrder: 13
 --- !u!61 &76753427
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1710,7 +1740,7 @@ GameObject:
   - 58: {fileID: 80055454}
   - 50: {fileID: 80055453}
   - 114: {fileID: 80055452}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: partsCrystal10
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -2103,7 +2133,7 @@ GameObject:
   - 4: {fileID: 99195321}
   - 212: {fileID: 99195324}
   - 114: {fileID: 99195322}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2286,7 +2316,7 @@ GameObject:
   - 58: {fileID: 112937652}
   - 50: {fileID: 112937651}
   - 114: {fileID: 112937650}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: partsCrystal10
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -2398,7 +2428,7 @@ GameObject:
   - 58: {fileID: 112990999}
   - 50: {fileID: 112990998}
   - 114: {fileID: 112990997}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: partsCrystal10
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -2617,7 +2647,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 129807101}
   - 61: {fileID: 129807102}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FloorCol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2872,7 +2902,7 @@ GameObject:
   - 4: {fileID: 136805115}
   - 212: {fileID: 136805118}
   - 114: {fileID: 136805116}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3124,7 +3154,7 @@ GameObject:
   - 4: {fileID: 140611163}
   - 212: {fileID: 140611166}
   - 114: {fileID: 140611164}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3361,7 +3391,7 @@ GameObject:
   - 4: {fileID: 149898347}
   - 212: {fileID: 149898350}
   - 114: {fileID: 149898348}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3482,6 +3512,7 @@ MonoBehaviour:
     m_Bits: 8192
   speed: .5
   speedometer: 10
+  bonuscount: 1
 --- !u!82 &153431670
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3606,7 +3637,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 979189183
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300002, guid: 37426dfe5cfb14626a6e1c60f8d927eb, type: 3}
+  m_Sprite: {fileID: 21300004, guid: 15a8c35470d51ad4d8fed4877b8c79f1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &153431675
 Transform:
@@ -3998,9 +4029,8 @@ GameObject:
   - 4: {fileID: 169730363}
   - 212: {fileID: 169730365}
   - 95: {fileID: 169730364}
-  - 50: {fileID: 169730367}
-  - 58: {fileID: 169730366}
-  m_Layer: 0
+  - 58: {fileID: 873188821}
+  m_Layer: 10
   m_Name: Fire
   m_TagString: DamageObject
   m_Icon: {fileID: 0}
@@ -4014,11 +4044,11 @@ Transform:
   m_PrefabInternal: {fileID: 1547129953}
   m_GameObject: {fileID: 169730362}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .244509995, y: -2.5, z: 0}
+  m_LocalPosition: {x: 6.25683594, y: -2.70447397, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 359679888}
-  m_RootOrder: 0
+  m_RootOrder: 8
 --- !u!95 &169730364
 Animator:
   serializedVersion: 3
@@ -4064,28 +4094,12 @@ CircleCollider2D:
   m_PrefabParentObject: {fileID: 5800000, guid: 86de4d0a774046b42b096b30ad128ebb,
     type: 2}
   m_PrefabInternal: {fileID: 1547129953}
-  m_GameObject: {fileID: 169730362}
+  m_GameObject: {fileID: 992741727}
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Radius: .5
   m_Center: {x: 0, y: 0}
---- !u!50 &169730367
-Rigidbody2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 5000000, guid: 86de4d0a774046b42b096b30ad128ebb,
-    type: 2}
-  m_PrefabInternal: {fileID: 1547129953}
-  m_GameObject: {fileID: 169730362}
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: .0500000007
-  m_GravityScale: 0
-  m_FixedAngle: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
 --- !u!1 &171788734
 GameObject:
   m_ObjectHideFlags: 0
@@ -4278,7 +4292,7 @@ GameObject:
   - 4: {fileID: 172331571}
   - 212: {fileID: 172331574}
   - 114: {fileID: 172331572}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4383,7 +4397,7 @@ GameObject:
   - 4: {fileID: 176030105}
   - 61: {fileID: 176030107}
   - 212: {fileID: 176030106}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -4555,7 +4569,7 @@ GameObject:
   - 4: {fileID: 181479229}
   - 212: {fileID: 181479228}
   - 114: {fileID: 181479226}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4625,7 +4639,7 @@ GameObject:
   - 4: {fileID: 183589213}
   - 212: {fileID: 183589216}
   - 114: {fileID: 183589214}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4920,9 +4934,9 @@ GameObject:
   - 114: {fileID: 189441644}
   - 114: {fileID: 189441643}
   - 212: {fileID: 189441642}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Stage8
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5006,7 +5020,7 @@ GameObject:
   - 4: {fileID: 190758046}
   - 212: {fileID: 190758049}
   - 114: {fileID: 190758047}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5076,7 +5090,7 @@ GameObject:
   - 4: {fileID: 198298724}
   - 212: {fileID: 198298727}
   - 114: {fileID: 198298725}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5243,6 +5257,58 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5c0dcc5480f541e4cad5c50400877299, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &202099249
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100008, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9, type: 2}
+  m_PrefabInternal: {fileID: 1068242929}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 202099250}
+  - 132: {fileID: 202099251}
+  m_Layer: 0
+  m_Name: EndText GUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &202099250
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400008, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9, type: 2}
+  m_PrefabInternal: {fileID: 1068242929}
+  m_GameObject: {fileID: 202099249}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.109999999, y: .49000001, z: 1}
+  m_LocalScale: {x: 4, y: 3.22580647, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1993754435}
+  m_RootOrder: 0
+--- !u!132 &202099251
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13200006, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1068242929}
+  m_GameObject: {fileID: 202099249}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: "\u5408\u8A08\u30B9\u30B3\u30A2"
+  m_Anchor: 0
+  m_Alignment: 0
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 12800000, guid: 2478714fb9e5f471a9f8979fe2dfa0da, type: 3}
+  m_Material: {fileID: 0}
+  m_FontSize: 20
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278321690
+  m_PixelCorrect: 1
+  m_RichText: 1
 --- !u!1 &203141547
 GameObject:
   m_ObjectHideFlags: 0
@@ -5625,7 +5691,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: cf726133c93278b4d9c0f87b6a8b3493, type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cf726133c93278b4d9c0f87b6a8b3493, type: 2}
@@ -5789,7 +5855,7 @@ GameObject:
   - 4: {fileID: 241104701}
   - 212: {fileID: 241104704}
   - 114: {fileID: 241104702}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5859,7 +5925,7 @@ GameObject:
   - 4: {fileID: 242340565}
   - 212: {fileID: 242340568}
   - 114: {fileID: 242340566}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6036,7 +6102,7 @@ GameObject:
   - 4: {fileID: 245423996}
   - 212: {fileID: 245423999}
   - 114: {fileID: 245423997}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6106,7 +6172,7 @@ GameObject:
   - 4: {fileID: 245669961}
   - 61: {fileID: 245669963}
   - 212: {fileID: 245669962}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -6347,7 +6413,7 @@ GameObject:
   - 4: {fileID: 260749948}
   - 212: {fileID: 260749951}
   - 114: {fileID: 260749949}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6420,7 +6486,7 @@ GameObject:
   - 58: {fileID: 261544219}
   - 50: {fileID: 261544218}
   - 114: {fileID: 261544217}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: partsCrystal1
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -6438,7 +6504,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1652458618}
-  m_RootOrder: 8
+  m_RootOrder: 6
 --- !u!114 &261544217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6748,7 +6814,7 @@ GameObject:
   - 4: {fileID: 275200418}
   - 212: {fileID: 275200421}
   - 114: {fileID: 275200419}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6818,7 +6884,7 @@ GameObject:
   - 4: {fileID: 293942420}
   - 212: {fileID: 293942423}
   - 114: {fileID: 293942421}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6888,7 +6954,7 @@ GameObject:
   - 4: {fileID: 303325547}
   - 212: {fileID: 303325550}
   - 114: {fileID: 303325548}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7135,7 +7201,7 @@ GameObject:
   - 4: {fileID: 317884216}
   - 212: {fileID: 317884215}
   - 114: {fileID: 317884213}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7545,7 +7611,7 @@ GameObject:
   - 4: {fileID: 335977078}
   - 61: {fileID: 335977080}
   - 212: {fileID: 335977079}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -7613,7 +7679,7 @@ GameObject:
   - 4: {fileID: 337180250}
   - 212: {fileID: 337180253}
   - 114: {fileID: 337180251}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7686,7 +7752,7 @@ GameObject:
   - 58: {fileID: 337215333}
   - 50: {fileID: 337215332}
   - 114: {fileID: 337215331}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: partsCrystal1
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -7865,7 +7931,7 @@ GameObject:
   - 4: {fileID: 341962458}
   - 212: {fileID: 341962461}
   - 114: {fileID: 341962459}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7925,6 +7991,58 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c58befdfc340a094e914ffef13aa20c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &344653323
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100028, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9, type: 2}
+  m_PrefabInternal: {fileID: 1068242929}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 344653325}
+  - 132: {fileID: 344653324}
+  m_Layer: 0
+  m_Name: ClistarScore
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!132 &344653324
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13200016, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1068242929}
+  m_GameObject: {fileID: 344653323}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: 0
+  m_Anchor: 0
+  m_Alignment: 0
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 12800000, guid: 2478714fb9e5f471a9f8979fe2dfa0da, type: 3}
+  m_Material: {fileID: 0}
+  m_FontSize: 30
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_PixelCorrect: 1
+  m_RichText: 1
+--- !u!4 &344653325
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400028, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9, type: 2}
+  m_PrefabInternal: {fileID: 1068242929}
+  m_GameObject: {fileID: 344653323}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.424665838, y: -.0356109366, z: .100000001}
+  m_LocalScale: {x: 1.21951222, y: 4.76190472, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1384850774}
+  m_RootOrder: 1
 --- !u!1 &356419651
 GameObject:
   m_ObjectHideFlags: 0
@@ -8006,9 +8124,9 @@ GameObject:
   - 114: {fileID: 359679891}
   - 114: {fileID: 359679890}
   - 212: {fileID: 359679889}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Stage7
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8023,9 +8141,6 @@ Transform:
   m_LocalPosition: {x: 192, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 169730363}
-  - {fileID: 873188818}
-  - {fileID: 992741728}
   - {fileID: 367717915}
   - {fileID: 604345014}
   - {fileID: 532960478}
@@ -8033,6 +8148,9 @@ Transform:
   - {fileID: 1508792961}
   - {fileID: 1408613824}
   - {fileID: 1558016876}
+  - {fileID: 992741728}
+  - {fileID: 169730363}
+  - {fileID: 873188818}
   m_Father: {fileID: 0}
   m_RootOrder: 15
 --- !u!212 &359679889
@@ -8201,7 +8319,7 @@ GameObject:
   - 4: {fileID: 367717915}
   - 61: {fileID: 367717917}
   - 212: {fileID: 367717916}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -8223,7 +8341,7 @@ Transform:
   - {fileID: 149898347}
   - {fileID: 172331571}
   m_Father: {fileID: 359679888}
-  m_RootOrder: 3
+  m_RootOrder: 0
 --- !u!212 &367717916
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8269,7 +8387,7 @@ GameObject:
   - 4: {fileID: 368754274}
   - 212: {fileID: 368754277}
   - 114: {fileID: 368754275}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8478,7 +8596,7 @@ GameObject:
   - 4: {fileID: 378492022}
   - 61: {fileID: 378492024}
   - 212: {fileID: 378492023}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -8656,7 +8774,7 @@ GameObject:
   - 58: {fileID: 381616964}
   - 50: {fileID: 381616963}
   - 114: {fileID: 381616962}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: partsCrystal1
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -8881,7 +8999,7 @@ GameObject:
   - 4: {fileID: 389572969}
   - 212: {fileID: 389572972}
   - 114: {fileID: 389572970}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9048,7 +9166,7 @@ GameObject:
   - 4: {fileID: 402550472}
   - 212: {fileID: 402550471}
   - 114: {fileID: 402550469}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9118,7 +9236,7 @@ GameObject:
   - 4: {fileID: 402632983}
   - 212: {fileID: 402632986}
   - 114: {fileID: 402632984}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9188,7 +9306,7 @@ GameObject:
   - 4: {fileID: 411016115}
   - 61: {fileID: 411016117}
   - 212: {fileID: 411016116}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -9210,7 +9328,7 @@ Transform:
   - {fileID: 1550265840}
   - {fileID: 696259804}
   m_Father: {fileID: 1652458618}
-  m_RootOrder: 4
+  m_RootOrder: 2
 --- !u!212 &411016116
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9256,7 +9374,7 @@ GameObject:
   - 4: {fileID: 411851287}
   - 212: {fileID: 411851290}
   - 114: {fileID: 411851288}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9350,6 +9468,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DistGUIText: {fileID: 1254219722}
   GameEndGUIText: {fileID: 1307962271}
+  GameEndSCGUITexture: {fileID: 0}
 --- !u!114 &423625906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9362,6 +9481,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offset: {x: 0, y: 0, z: 0}
+  homePosition: {x: 0, y: 0, z: 0}
+  bonusrage: 200
 --- !u!81 &423625907
 AudioListener:
   m_ObjectHideFlags: 0
@@ -9819,7 +9940,7 @@ GameObject:
   - 4: {fileID: 448155630}
   - 212: {fileID: 448155633}
   - 114: {fileID: 448155631}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9999,7 +10120,7 @@ GameObject:
   - 58: {fileID: 477317098}
   - 50: {fileID: 477317097}
   - 114: {fileID: 477317096}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: partsCrystal9
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -10555,7 +10676,7 @@ GameObject:
   - 58: {fileID: 520150870}
   - 50: {fileID: 520150869}
   - 114: {fileID: 520150868}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: partsCrystal3
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -10573,7 +10694,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1652458618}
-  m_RootOrder: 11
+  m_RootOrder: 9
 --- !u!114 &520150868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10664,7 +10785,7 @@ GameObject:
   - 4: {fileID: 526868134}
   - 212: {fileID: 526868137}
   - 114: {fileID: 526868135}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10822,7 +10943,7 @@ GameObject:
   - 4: {fileID: 532960478}
   - 61: {fileID: 532960480}
   - 212: {fileID: 532960479}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -10844,7 +10965,7 @@ Transform:
   - {fileID: 1682717155}
   - {fileID: 341962458}
   m_Father: {fileID: 359679888}
-  m_RootOrder: 5
+  m_RootOrder: 2
 --- !u!212 &532960479
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11617,7 +11738,7 @@ GameObject:
   - 4: {fileID: 565828273}
   - 212: {fileID: 565828276}
   - 114: {fileID: 565828274}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11790,7 +11911,7 @@ GameObject:
   - 4: {fileID: 604345014}
   - 61: {fileID: 604345016}
   - 212: {fileID: 604345015}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -11812,7 +11933,7 @@ Transform:
   - {fileID: 1439938513}
   - {fileID: 402550472}
   m_Father: {fileID: 359679888}
-  m_RootOrder: 4
+  m_RootOrder: 1
 --- !u!212 &604345015
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11858,7 +11979,7 @@ GameObject:
   - 4: {fileID: 606032475}
   - 212: {fileID: 606032478}
   - 114: {fileID: 606032476}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11918,6 +12039,58 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c58befdfc340a094e914ffef13aa20c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &610159546
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100006, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9, type: 2}
+  m_PrefabInternal: {fileID: 1068242929}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 610159547}
+  - 132: {fileID: 610159548}
+  m_Layer: 0
+  m_Name: EndText GUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &610159547
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400006, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9, type: 2}
+  m_PrefabInternal: {fileID: 1068242929}
+  m_GameObject: {fileID: 610159546}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .25, y: -.269654095, z: 1}
+  m_LocalScale: {x: 4, y: 3.22580647, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1993754435}
+  m_RootOrder: 1
+--- !u!132 &610159548
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13200004, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1068242929}
+  m_GameObject: {fileID: 610159546}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: "\u3066\u3093"
+  m_Anchor: 0
+  m_Alignment: 0
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 12800000, guid: 2478714fb9e5f471a9f8979fe2dfa0da, type: 3}
+  m_Material: {fileID: 0}
+  m_FontSize: 25
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278321690
+  m_PixelCorrect: 1
+  m_RichText: 1
 --- !u!1 &617499536
 GameObject:
   m_ObjectHideFlags: 0
@@ -12001,7 +12174,7 @@ GameObject:
   - 58: {fileID: 629823053}
   - 50: {fileID: 629823052}
   - 114: {fileID: 629823051}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: partsCrystal6
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -12220,7 +12393,7 @@ GameObject:
   - 58: {fileID: 638504085}
   - 50: {fileID: 638504084}
   - 114: {fileID: 638504083}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: partsCrystal6
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -12588,7 +12761,7 @@ GameObject:
   - 4: {fileID: 665014304}
   - 212: {fileID: 665014307}
   - 114: {fileID: 665014305}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12660,7 +12833,7 @@ GameObject:
   - 95: {fileID: 665793722}
   - 58: {fileID: 665793725}
   - 50: {fileID: 665793724}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Fire
   m_TagString: DamageObject
   m_Icon: {fileID: 0}
@@ -12756,7 +12929,7 @@ GameObject:
   - 4: {fileID: 670320802}
   - 212: {fileID: 670320805}
   - 114: {fileID: 670320803}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12829,7 +13002,7 @@ GameObject:
   - 58: {fileID: 670597095}
   - 50: {fileID: 670597094}
   - 114: {fileID: 670597093}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: partsCrystal3
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -13053,7 +13226,7 @@ GameObject:
   - 58: {fileID: 678986988}
   - 50: {fileID: 678986987}
   - 114: {fileID: 678986986}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: partsCrystal4
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -13379,7 +13552,7 @@ GameObject:
   - 58: {fileID: 694500321}
   - 50: {fileID: 694500320}
   - 114: {fileID: 694500319}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: partsCrystal10
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -13488,7 +13661,7 @@ GameObject:
   - 4: {fileID: 696259804}
   - 212: {fileID: 696259807}
   - 114: {fileID: 696259805}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13558,7 +13731,7 @@ GameObject:
   - 4: {fileID: 698574273}
   - 212: {fileID: 698574276}
   - 114: {fileID: 698574274}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13740,7 +13913,7 @@ GameObject:
   - 4: {fileID: 700769631}
   - 212: {fileID: 700769634}
   - 114: {fileID: 700769632}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14136,7 +14309,7 @@ GameObject:
   - 4: {fileID: 717480161}
   - 212: {fileID: 717480164}
   - 114: {fileID: 717480162}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14481,7 +14654,7 @@ GameObject:
   - 58: {fileID: 730850725}
   - 50: {fileID: 730850724}
   - 114: {fileID: 730850723}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: partsCrystal10
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -14804,7 +14977,7 @@ GameObject:
   - 4: {fileID: 764117567}
   - 212: {fileID: 764117570}
   - 114: {fileID: 764117568}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14874,7 +15047,7 @@ GameObject:
   - 4: {fileID: 769485831}
   - 61: {fileID: 769485833}
   - 212: {fileID: 769485832}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -15049,7 +15222,7 @@ GameObject:
   - 4: {fileID: 775122948}
   - 61: {fileID: 775122950}
   - 212: {fileID: 775122949}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -15611,7 +15784,7 @@ GameObject:
   - 4: {fileID: 798034207}
   - 212: {fileID: 798034210}
   - 114: {fileID: 798034208}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15708,7 +15881,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e3ff126a806b2454eaff021fe39cea19, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: e3ff126a806b2454eaff021fe39cea19, type: 2}
       propertyPath: jumpPower
@@ -16059,7 +16232,7 @@ GameObject:
   - 4: {fileID: 814128109}
   - 61: {fileID: 814128111}
   - 212: {fileID: 814128110}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -16081,7 +16254,7 @@ Transform:
   - {fileID: 939797145}
   - {fileID: 1886603288}
   m_Father: {fileID: 1652458618}
-  m_RootOrder: 2
+  m_RootOrder: 0
 --- !u!212 &814128110
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16261,7 +16434,7 @@ GameObject:
   - 4: {fileID: 818792360}
   - 61: {fileID: 818792362}
   - 212: {fileID: 818792361}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -16283,7 +16456,7 @@ Transform:
   - {fileID: 700769631}
   - {fileID: 2022545152}
   m_Father: {fileID: 359679888}
-  m_RootOrder: 6
+  m_RootOrder: 3
 --- !u!212 &818792361
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16716,7 +16889,7 @@ GameObject:
   - 58: {fileID: 843646600}
   - 50: {fileID: 843646599}
   - 114: {fileID: 843646598}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: partsCrystal10
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -17035,6 +17208,58 @@ Transform:
   - {fileID: 689659061}
   m_Father: {fileID: 1351693015}
   m_RootOrder: 8
+--- !u!1 &855681102
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100012, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9, type: 2}
+  m_PrefabInternal: {fileID: 1068242929}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 855681103}
+  - 132: {fileID: 855681104}
+  m_Layer: 0
+  m_Name: Retry
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &855681103
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400012, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9, type: 2}
+  m_PrefabInternal: {fileID: 1068242929}
+  m_GameObject: {fileID: 855681102}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .444999993, y: .280000001, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 1437459541}
+  m_RootOrder: 4
+--- !u!132 &855681104
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13200008, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1068242929}
+  m_GameObject: {fileID: 855681102}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: "\u30EA\u30C8\u30E9\u30A4"
+  m_Anchor: 0
+  m_Alignment: 0
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 12800000, guid: 2478714fb9e5f471a9f8979fe2dfa0da, type: 3}
+  m_Material: {fileID: 0}
+  m_FontSize: 0
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_PixelCorrect: 1
+  m_RichText: 1
 --- !u!1 &865759541
 GameObject:
   m_ObjectHideFlags: 0
@@ -17115,7 +17340,7 @@ GameObject:
   - 4: {fileID: 868496746}
   - 212: {fileID: 868496749}
   - 114: {fileID: 868496747}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17255,9 +17480,8 @@ GameObject:
   - 4: {fileID: 873188818}
   - 212: {fileID: 873188820}
   - 95: {fileID: 873188819}
-  - 50: {fileID: 873188822}
-  - 58: {fileID: 873188821}
-  m_Layer: 0
+  - 58: {fileID: 992741731}
+  m_Layer: 10
   m_Name: Fire
   m_TagString: DamageObject
   m_Icon: {fileID: 0}
@@ -17271,11 +17495,11 @@ Transform:
   m_PrefabInternal: {fileID: 1547129953}
   m_GameObject: {fileID: 873188817}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.0844507, y: -2.5, z: 0}
+  m_LocalPosition: {x: .249923706, y: -2.61986923, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 359679888}
-  m_RootOrder: 1
+  m_RootOrder: 9
 --- !u!95 &873188819
 Animator:
   serializedVersion: 3
@@ -17321,28 +17545,12 @@ CircleCollider2D:
   m_PrefabParentObject: {fileID: 5800002, guid: 86de4d0a774046b42b096b30ad128ebb,
     type: 2}
   m_PrefabInternal: {fileID: 1547129953}
-  m_GameObject: {fileID: 873188817}
+  m_GameObject: {fileID: 169730362}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Radius: .5
   m_Center: {x: 0, y: 0}
---- !u!50 &873188822
-Rigidbody2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 5000002, guid: 86de4d0a774046b42b096b30ad128ebb,
-    type: 2}
-  m_PrefabInternal: {fileID: 1547129953}
-  m_GameObject: {fileID: 873188817}
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: .0500000007
-  m_GravityScale: 0
-  m_FixedAngle: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
 --- !u!1 &878292683
 GameObject:
   m_ObjectHideFlags: 0
@@ -17692,7 +17900,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: cf726133c93278b4d9c0f87b6a8b3493, type: 2}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 100010, guid: cf726133c93278b4d9c0f87b6a8b3493, type: 2}
       propertyPath: m_IsActive
@@ -17794,7 +18002,7 @@ GameObject:
   - 95: {fileID: 902820487}
   - 58: {fileID: 902820490}
   - 50: {fileID: 902820489}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Fire
   m_TagString: DamageObject
   m_Icon: {fileID: 0}
@@ -17950,6 +18158,58 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c58befdfc340a094e914ffef13aa20c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &910037152
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100026, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9, type: 2}
+  m_PrefabInternal: {fileID: 1068242929}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 910037153}
+  - 132: {fileID: 910037154}
+  m_Layer: 0
+  m_Name: Km
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &910037153
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400026, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9, type: 2}
+  m_PrefabInternal: {fileID: 1068242929}
+  m_GameObject: {fileID: 910037152}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.424665302, y: .430000097, z: 1}
+  m_LocalScale: {x: 1.21951222, y: 4.76190472, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1384850774}
+  m_RootOrder: 0
+--- !u!132 &910037154
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13200014, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1068242929}
+  m_GameObject: {fileID: 910037152}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: 0
+  m_Anchor: 0
+  m_Alignment: 0
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 12800000, guid: 2478714fb9e5f471a9f8979fe2dfa0da, type: 3}
+  m_Material: {fileID: 0}
+  m_FontSize: 30
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_PixelCorrect: 1
+  m_RichText: 1
 --- !u!1 &913316828
 GameObject:
   m_ObjectHideFlags: 0
@@ -18163,7 +18423,7 @@ GameObject:
   - 212: {fileID: 932553806}
   - 58: {fileID: 932553805}
   - 50: {fileID: 932553804}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Trap
   m_TagString: DamageObject
   m_Icon: {fileID: 0}
@@ -18313,7 +18573,7 @@ GameObject:
   - 4: {fileID: 939797145}
   - 212: {fileID: 939797148}
   - 114: {fileID: 939797146}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18381,7 +18641,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 940277912}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FloorCol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18399,7 +18659,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1652458618}
-  m_RootOrder: 18
+  m_RootOrder: 16
 --- !u!1 &940657570
 GameObject:
   m_ObjectHideFlags: 0
@@ -18624,7 +18884,7 @@ GameObject:
   - 4: {fileID: 951866620}
   - 212: {fileID: 951866623}
   - 114: {fileID: 951866621}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18956,7 +19216,7 @@ GameObject:
   - 4: {fileID: 967095925}
   - 212: {fileID: 967095928}
   - 114: {fileID: 967095926}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19203,7 +19463,7 @@ GameObject:
   - 4: {fileID: 972380660}
   - 212: {fileID: 972380663}
   - 114: {fileID: 972380661}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19492,7 +19752,7 @@ GameObject:
   - 4: {fileID: 986148249}
   - 212: {fileID: 986148252}
   - 114: {fileID: 986148250}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19562,9 +19822,8 @@ GameObject:
   - 4: {fileID: 992741728}
   - 212: {fileID: 992741730}
   - 95: {fileID: 992741729}
-  - 50: {fileID: 992741732}
-  - 58: {fileID: 992741731}
-  m_Layer: 0
+  - 58: {fileID: 169730366}
+  m_Layer: 10
   m_Name: Fire
   m_TagString: DamageObject
   m_Icon: {fileID: 0}
@@ -19578,11 +19837,11 @@ Transform:
   m_PrefabInternal: {fileID: 1547129953}
   m_GameObject: {fileID: 992741727}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.1844511, y: -2.5, z: 0}
+  m_LocalPosition: {x: 12.0099335, y: -2.61986923, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 359679888}
-  m_RootOrder: 2
+  m_RootOrder: 7
 --- !u!95 &992741729
 Animator:
   serializedVersion: 3
@@ -19628,28 +19887,12 @@ CircleCollider2D:
   m_PrefabParentObject: {fileID: 5800004, guid: 86de4d0a774046b42b096b30ad128ebb,
     type: 2}
   m_PrefabInternal: {fileID: 1547129953}
-  m_GameObject: {fileID: 992741727}
+  m_GameObject: {fileID: 873188817}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Radius: .5
   m_Center: {x: 0, y: 0}
---- !u!50 &992741732
-Rigidbody2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 5000004, guid: 86de4d0a774046b42b096b30ad128ebb,
-    type: 2}
-  m_PrefabInternal: {fileID: 1547129953}
-  m_GameObject: {fileID: 992741727}
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: .0500000007
-  m_GravityScale: 0
-  m_FixedAngle: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
 --- !u!1 &995463970
 GameObject:
   m_ObjectHideFlags: 0
@@ -19660,7 +19903,7 @@ GameObject:
   - 4: {fileID: 995463971}
   - 61: {fileID: 995463973}
   - 212: {fileID: 995463972}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -20012,7 +20255,7 @@ GameObject:
   - 4: {fileID: 1025292791}
   - 212: {fileID: 1025292794}
   - 114: {fileID: 1025292792}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20291,6 +20534,74 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: ff3c1c80b70242d449ff0d5be465120c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1033124543
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9, type: 2}
+  m_PrefabInternal: {fileID: 1068242929}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1033124544}
+  - 131: {fileID: 1033124546}
+  - 114: {fileID: 1033124545}
+  m_Layer: 0
+  m_Name: EndHighScore-R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1033124544
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9, type: 2}
+  m_PrefabInternal: {fileID: 1068242929}
+  m_GameObject: {fileID: 1033124543}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .709999979, y: .529999971, z: 0}
+  m_LocalScale: {x: .310000002, y: .25999999, z: 1}
+  m_Children:
+  - {fileID: 1694479763}
+  - {fileID: 1604777812}
+  - {fileID: 1073154767}
+  m_Father: {fileID: 1437459541}
+  m_RootOrder: 0
+--- !u!114 &1033124545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1068242929}
+  m_GameObject: {fileID: 1033124543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad9c0ad4683d93e4186b182c78849127, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  endHighScoreGUIText: {fileID: 1073154768}
+  endScoreGUIText: {fileID: 1733387120}
+  kmGUIText: {fileID: 910037154}
+  clistalScoreGUIText: {fileID: 344653324}
+--- !u!131 &1033124546
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13100000, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1068242929}
+  m_GameObject: {fileID: 1033124543}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 353c87c3b668b469e8cf62afbc95e274, type: 3}
+  m_Color: {r: .529411793, g: .736523032, b: 1, a: 1}
+  m_PixelInset:
+    serializedVersion: 2
+    x: -64
+    y: -29
+    width: 128
+    height: 58
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
 --- !u!1 &1033565050
 GameObject:
   m_ObjectHideFlags: 0
@@ -20299,7 +20610,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1033565051}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FloorCol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20317,7 +20628,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1652458618}
-  m_RootOrder: 17
+  m_RootOrder: 15
 --- !u!1 &1035205830
 GameObject:
   m_ObjectHideFlags: 0
@@ -20328,7 +20639,7 @@ GameObject:
   - 4: {fileID: 1035205831}
   - 212: {fileID: 1035205834}
   - 114: {fileID: 1035205832}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20575,7 +20886,7 @@ GameObject:
   - 4: {fileID: 1041983532}
   - 212: {fileID: 1041983535}
   - 114: {fileID: 1041983533}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20645,7 +20956,7 @@ GameObject:
   - 4: {fileID: 1047499106}
   - 61: {fileID: 1047499108}
   - 212: {fileID: 1047499107}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -20666,7 +20977,7 @@ Transform:
   - {fileID: 1272439015}
   - {fileID: 1841212854}
   m_Father: {fileID: 1652458618}
-  m_RootOrder: 5
+  m_RootOrder: 3
 --- !u!212 &1047499107
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20757,9 +21068,9 @@ GameObject:
   - 114: {fileID: 1059330248}
   - 114: {fileID: 1059330247}
   - 212: {fileID: 1059330246}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Stage10
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20987,7 +21298,7 @@ GameObject:
   - 4: {fileID: 1064090366}
   - 212: {fileID: 1064090369}
   - 114: {fileID: 1064090367}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21117,6 +21428,62 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c58befdfc340a094e914ffef13aa20c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1001 &1068242929
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400018, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400018, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -.0977802277
+      objectReference: {fileID: 0}
+    - target: {fileID: 400018, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400018, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400018, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400018, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400018, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400018, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9, type: 2}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400006, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9, type: 2}
+      propertyPath: retry
+      value: 
+      objectReference: {fileID: 2800000, guid: 5b0dade72ef3748c48e97fe993ced70d, type: 3}
+    - target: {fileID: 100014, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400006, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9, type: 2}
+      propertyPath: Circle_Button
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9, type: 2}
+  m_RootGameObject: {fileID: 1437459540}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &1073037291
 GameObject:
   m_ObjectHideFlags: 0
@@ -21127,7 +21494,7 @@ GameObject:
   - 4: {fileID: 1073037292}
   - 212: {fileID: 1073037295}
   - 114: {fileID: 1073037293}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21187,6 +21554,58 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c58befdfc340a094e914ffef13aa20c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1073154766
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100022, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9, type: 2}
+  m_PrefabInternal: {fileID: 1068242929}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1073154767}
+  - 132: {fileID: 1073154768}
+  m_Layer: 0
+  m_Name: EndHighScore GUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1073154767
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400022, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9, type: 2}
+  m_PrefabInternal: {fileID: 1068242929}
+  m_GameObject: {fileID: 1073154766}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.375415444, y: .0600000992, z: 1}
+  m_LocalScale: {x: 4, y: 3.22580647, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1033124544}
+  m_RootOrder: 2
+--- !u!132 &1073154768
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13200012, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1068242929}
+  m_GameObject: {fileID: 1073154766}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: 24
+  m_Anchor: 0
+  m_Alignment: 1
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 12800000, guid: 2478714fb9e5f471a9f8979fe2dfa0da, type: 3}
+  m_Material: {fileID: 0}
+  m_FontSize: 50
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_PixelCorrect: 1
+  m_RichText: 1
 --- !u!1 &1073303982
 GameObject:
   m_ObjectHideFlags: 0
@@ -21200,7 +21619,7 @@ GameObject:
   - 58: {fileID: 1073303986}
   - 50: {fileID: 1073303985}
   - 114: {fileID: 1073303984}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: partsCrystal10
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -21826,7 +22245,7 @@ GameObject:
   - 4: {fileID: 1085871296}
   - 212: {fileID: 1085871299}
   - 114: {fileID: 1085871297}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21896,7 +22315,7 @@ GameObject:
   - 4: {fileID: 1095907147}
   - 212: {fileID: 1095907150}
   - 114: {fileID: 1095907148}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21966,7 +22385,7 @@ GameObject:
   - 4: {fileID: 1126670015}
   - 212: {fileID: 1126670018}
   - 114: {fileID: 1126670016}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22036,7 +22455,7 @@ GameObject:
   - 4: {fileID: 1135620251}
   - 212: {fileID: 1135620254}
   - 114: {fileID: 1135620252}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22148,7 +22567,7 @@ GameObject:
   - 4: {fileID: 1153047401}
   - 212: {fileID: 1153047404}
   - 114: {fileID: 1153047402}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22216,7 +22635,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1159976629}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FloorCol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22245,7 +22664,7 @@ GameObject:
   - 4: {fileID: 1166834428}
   - 61: {fileID: 1166834430}
   - 212: {fileID: 1166834429}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -22266,7 +22685,7 @@ Transform:
   - {fileID: 1581473776}
   - {fileID: 181479229}
   m_Father: {fileID: 1652458618}
-  m_RootOrder: 3
+  m_RootOrder: 1
 --- !u!212 &1166834429
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22363,7 +22782,7 @@ GameObject:
   - 4: {fileID: 1183004858}
   - 212: {fileID: 1183004861}
   - 114: {fileID: 1183004859}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22548,7 +22967,7 @@ GameObject:
   - 58: {fileID: 1194564378}
   - 50: {fileID: 1194564377}
   - 114: {fileID: 1194564376}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: partsCrystal4
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -22727,7 +23146,7 @@ GameObject:
   - 4: {fileID: 1204962409}
   - 212: {fileID: 1204962412}
   - 114: {fileID: 1204962410}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23480,7 +23899,7 @@ GameObject:
   - 4: {fileID: 1233957070}
   - 212: {fileID: 1233957073}
   - 114: {fileID: 1233957071}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23997,7 +24416,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1263980854}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FloorCol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24015,7 +24434,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1652458618}
-  m_RootOrder: 16
+  m_RootOrder: 14
 --- !u!1 &1266181954
 GameObject:
   m_ObjectHideFlags: 0
@@ -24123,7 +24542,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400046, guid: eee7093b7c8925b419fe304921610b2b, type: 2}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: eee7093b7c8925b419fe304921610b2b, type: 2}
       propertyPath: m_TagString
@@ -24187,7 +24606,7 @@ GameObject:
   - 4: {fileID: 1272439015}
   - 212: {fileID: 1272439018}
   - 114: {fileID: 1272439016}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24549,7 +24968,7 @@ GameObject:
   - 58: {fileID: 1291454031}
   - 50: {fileID: 1291454030}
   - 114: {fileID: 1291454029}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: partsCrystal10
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -24658,7 +25077,7 @@ GameObject:
   - 4: {fileID: 1298840945}
   - 61: {fileID: 1298840947}
   - 212: {fileID: 1298840946}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -24833,7 +25252,7 @@ GameObject:
   - 212: {fileID: 1304028574}
   - 58: {fileID: 1304028573}
   - 50: {fileID: 1304028572}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Trap
   m_TagString: DamageObject
   m_Icon: {fileID: 0}
@@ -24964,7 +25383,7 @@ GameObject:
   - 4: {fileID: 1309894407}
   - 212: {fileID: 1309894410}
   - 114: {fileID: 1309894408}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25104,7 +25523,7 @@ GameObject:
   - 4: {fileID: 1323790683}
   - 61: {fileID: 1323790685}
   - 212: {fileID: 1323790684}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -25465,7 +25884,7 @@ GameObject:
   - 4: {fileID: 1356622935}
   - 212: {fileID: 1356622938}
   - 114: {fileID: 1356622936}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25538,7 +25957,7 @@ GameObject:
   - 58: {fileID: 1370715486}
   - 50: {fileID: 1370715485}
   - 114: {fileID: 1370715484}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: partsCrystal3
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -25556,7 +25975,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1652458618}
-  m_RootOrder: 10
+  m_RootOrder: 8
 --- !u!114 &1370715484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25888,7 +26307,7 @@ GameObject:
   - 4: {fileID: 1381694621}
   - 212: {fileID: 1381694624}
   - 114: {fileID: 1381694622}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25948,6 +26367,73 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c58befdfc340a094e914ffef13aa20c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1384850773
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100024, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9, type: 2}
+  m_PrefabInternal: {fileID: 1068242929}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1384850774}
+  - 131: {fileID: 1384850776}
+  - 114: {fileID: 1384850775}
+  m_Layer: 0
+  m_Name: Endkm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1384850774
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400024, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9, type: 2}
+  m_PrefabInternal: {fileID: 1068242929}
+  m_GameObject: {fileID: 1384850773}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .505999982, y: .847780228, z: 0}
+  m_LocalScale: {x: .819999993, y: .209999993, z: 1}
+  m_Children:
+  - {fileID: 910037153}
+  - {fileID: 344653325}
+  m_Father: {fileID: 1437459541}
+  m_RootOrder: 2
+--- !u!114 &1384850775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400004, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1068242929}
+  m_GameObject: {fileID: 1384850773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad9c0ad4683d93e4186b182c78849127, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  endHighScoreGUIText: {fileID: 1073154768}
+  endScoreGUIText: {fileID: 1733387120}
+  kmGUIText: {fileID: 910037154}
+  clistalScoreGUIText: {fileID: 344653324}
+--- !u!131 &1384850776
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13100008, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1068242929}
+  m_GameObject: {fileID: 1384850773}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 77f0569b48ea34b3b81e8d2477b17563, type: 3}
+  m_Color: {r: .529411793, g: .736523032, b: 1, a: 1}
+  m_PixelInset:
+    serializedVersion: 2
+    x: -64
+    y: -29
+    width: 128
+    height: 58
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
 --- !u!1 &1392986697
 GameObject:
   m_ObjectHideFlags: 0
@@ -25958,7 +26444,7 @@ GameObject:
   - 4: {fileID: 1392986698}
   - 212: {fileID: 1392986701}
   - 114: {fileID: 1392986699}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26067,7 +26553,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1408613824}
   - 61: {fileID: 1408613825}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FloorCol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26085,7 +26571,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 359679888}
-  m_RootOrder: 8
+  m_RootOrder: 5
 --- !u!61 &1408613825
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26215,9 +26701,10 @@ GameObject:
   - 4: {fileID: 1411533825}
   - 212: {fileID: 1411533827}
   - 95: {fileID: 1411533826}
+  - 58: {fileID: 1411533830}
   - 58: {fileID: 1411533829}
   - 50: {fileID: 1411533828}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Fire
   m_TagString: DamageObject
   m_Icon: {fileID: 0}
@@ -26231,11 +26718,11 @@ Transform:
   m_PrefabInternal: {fileID: 1267315504}
   m_GameObject: {fileID: 1411533824}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.44222832, y: -1.5, z: 0}
+  m_LocalPosition: {x: 1.43647766, y: -1.33243799, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1652458618}
-  m_RootOrder: 0
+  m_RootOrder: 17
 --- !u!95 &1411533826
 Animator:
   serializedVersion: 3
@@ -26299,6 +26786,18 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
+  m_Radius: .5
+  m_Center: {x: 0, y: 0}
+--- !u!58 &1411533830
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5800014, guid: eee7093b7c8925b419fe304921610b2b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1267315504}
+  m_GameObject: {fileID: 1411533824}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Radius: .5
   m_Center: {x: 0, y: 0}
 --- !u!1 &1413584064
@@ -26761,7 +27260,7 @@ GameObject:
   - 4: {fileID: 1437009870}
   - 212: {fileID: 1437009873}
   - 114: {fileID: 1437009871}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26821,6 +27320,39 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c58befdfc340a094e914ffef13aa20c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1437459540
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100018, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9, type: 2}
+  m_PrefabInternal: {fileID: 1068242929}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1437459541}
+  m_Layer: 0
+  m_Name: GameOver
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1437459541
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400018, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9, type: 2}
+  m_PrefabInternal: {fileID: 1068242929}
+  m_GameObject: {fileID: 1437459540}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -.0977802277, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1033124544}
+  - {fileID: 1993754435}
+  - {fileID: 1384850774}
+  - {fileID: 1577737761}
+  - {fileID: 855681103}
+  - {fileID: 2093931003}
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
 --- !u!1 &1439938512
 GameObject:
   m_ObjectHideFlags: 0
@@ -26831,7 +27363,7 @@ GameObject:
   - 4: {fileID: 1439938513}
   - 212: {fileID: 1439938516}
   - 114: {fileID: 1439938514}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27147,7 +27679,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1461163253}
   - 61: {fileID: 1461163254}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FloorCol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27165,7 +27697,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1652458618}
-  m_RootOrder: 13
+  m_RootOrder: 11
 --- !u!61 &1461163254
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27186,7 +27718,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1462688834}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FloorCol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27259,7 +27791,7 @@ GameObject:
   - 4: {fileID: 1464333351}
   - 212: {fileID: 1464333354}
   - 114: {fileID: 1464333352}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27328,7 +27860,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1464621768}
   - 61: {fileID: 1464621769}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FloorCol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27346,7 +27878,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1652458618}
-  m_RootOrder: 14
+  m_RootOrder: 12
 --- !u!61 &1464621769
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27955,7 +28487,7 @@ GameObject:
   - 212: {fileID: 1508608833}
   - 58: {fileID: 1508608832}
   - 50: {fileID: 1508608831}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Trap
   m_TagString: DamageObject
   m_Icon: {fileID: 0}
@@ -28035,7 +28567,7 @@ GameObject:
   - 4: {fileID: 1508792961}
   - 61: {fileID: 1508792963}
   - 212: {fileID: 1508792962}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -28057,7 +28589,7 @@ Transform:
   - {fileID: 1702238301}
   - {fileID: 986148249}
   m_Father: {fileID: 359679888}
-  m_RootOrder: 7
+  m_RootOrder: 4
 --- !u!212 &1508792962
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28210,7 +28742,7 @@ GameObject:
   - 4: {fileID: 1530307446}
   - 61: {fileID: 1530307448}
   - 212: {fileID: 1530307447}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -28619,7 +29151,7 @@ GameObject:
   - 4: {fileID: 1550265840}
   - 212: {fileID: 1550265843}
   - 114: {fileID: 1550265841}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28794,7 +29326,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1558016876}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FloorCol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28812,7 +29344,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 359679888}
-  m_RootOrder: 9
+  m_RootOrder: 6
 --- !u!1 &1558895517
 GameObject:
   m_ObjectHideFlags: 0
@@ -28930,7 +29462,7 @@ GameObject:
   - 4: {fileID: 1562574190}
   - 212: {fileID: 1562574193}
   - 114: {fileID: 1562574191}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29028,6 +29560,67 @@ Transform:
   - {fileID: 2136425386}
   m_Father: {fileID: 1351693015}
   m_RootOrder: 9
+--- !u!1 &1577737760
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100014, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9, type: 2}
+  m_PrefabInternal: {fileID: 1068242929}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1577737761}
+  - 131: {fileID: 1577737762}
+  - 114: {fileID: 1577737763}
+  m_Layer: 0
+  m_Name: RetryButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1577737761
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400014, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9, type: 2}
+  m_PrefabInternal: {fileID: 1068242929}
+  m_GameObject: {fileID: 1577737760}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .5, y: .264398575, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1437459541}
+  m_RootOrder: 3
+--- !u!131 &1577737762
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13100004, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1068242929}
+  m_GameObject: {fileID: 1577737760}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 5b0dade72ef3748c48e97fe993ced70d, type: 3}
+  m_Color: {r: .529411793, g: .736523032, b: 1, a: 1}
+  m_PixelInset:
+    serializedVersion: 2
+    x: -68
+    y: -68.5
+    width: 136
+    height: 137
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
+--- !u!114 &1577737763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400006, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1068242929}
+  m_GameObject: {fileID: 1577737760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3837a8066be8c3445b56fcbf1cdff822, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1581473775
 GameObject:
   m_ObjectHideFlags: 0
@@ -29038,7 +29631,7 @@ GameObject:
   - 4: {fileID: 1581473776}
   - 212: {fileID: 1581473779}
   - 114: {fileID: 1581473777}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29111,7 +29704,7 @@ GameObject:
   - 58: {fileID: 1601700063}
   - 50: {fileID: 1601700062}
   - 114: {fileID: 1601700061}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: partsCrystal1
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -29129,7 +29722,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1652458618}
-  m_RootOrder: 7
+  m_RootOrder: 5
 --- !u!114 &1601700061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29317,6 +29910,58 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5c0dcc5480f541e4cad5c50400877299, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1604777811
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100002, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9, type: 2}
+  m_PrefabInternal: {fileID: 1068242929}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1604777812}
+  - 132: {fileID: 1604777813}
+  m_Layer: 0
+  m_Name: EndHighText GUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1604777812
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400002, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9, type: 2}
+  m_PrefabInternal: {fileID: 1068242929}
+  m_GameObject: {fileID: 1604777811}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .25, y: -.269651026, z: 1}
+  m_LocalScale: {x: 4, y: 3.22580647, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1033124544}
+  m_RootOrder: 1
+--- !u!132 &1604777813
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13200000, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1068242929}
+  m_GameObject: {fileID: 1604777811}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: "\u3066\u3093"
+  m_Anchor: 0
+  m_Alignment: 0
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 12800000, guid: 2478714fb9e5f471a9f8979fe2dfa0da, type: 3}
+  m_Material: {fileID: 0}
+  m_FontSize: 25
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278321690
+  m_PixelCorrect: 1
+  m_RichText: 1
 --- !u!1 &1605166811
 GameObject:
   m_ObjectHideFlags: 0
@@ -29368,9 +30013,9 @@ GameObject:
   - 114: {fileID: 1606295865}
   - 114: {fileID: 1606295864}
   - 212: {fileID: 1606295863}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Stage9
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29522,7 +30167,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1612290615}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Crystal1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29984,7 +30629,7 @@ GameObject:
   - 4: {fileID: 1630441898}
   - 212: {fileID: 1630441901}
   - 114: {fileID: 1630441899}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30633,9 +31278,9 @@ GameObject:
   - 114: {fileID: 1652458621}
   - 114: {fileID: 1652458620}
   - 212: {fileID: 1652458619}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Stage6
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30650,8 +31295,6 @@ Transform:
   m_LocalPosition: {x: 160, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1411533825}
-  - {fileID: 62566672}
   - {fileID: 814128109}
   - {fileID: 1166834428}
   - {fileID: 411016115}
@@ -30669,6 +31312,8 @@ Transform:
   - {fileID: 1263980854}
   - {fileID: 1033565051}
   - {fileID: 940277912}
+  - {fileID: 1411533825}
+  - {fileID: 62566672}
   m_Father: {fileID: 0}
   m_RootOrder: 13
 --- !u!212 &1652458619
@@ -30733,7 +31378,7 @@ GameObject:
   - 58: {fileID: 1655034909}
   - 50: {fileID: 1655034908}
   - 114: {fileID: 1655034907}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: partsCrystal1
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -30842,7 +31487,7 @@ GameObject:
   - 4: {fileID: 1658293486}
   - 212: {fileID: 1658293489}
   - 114: {fileID: 1658293487}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30985,7 +31630,7 @@ GameObject:
   - 58: {fileID: 1676868192}
   - 50: {fileID: 1676868191}
   - 114: {fileID: 1676868190}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: partsCrystal4
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -31308,7 +31953,7 @@ GameObject:
   - 4: {fileID: 1682717155}
   - 212: {fileID: 1682717158}
   - 114: {fileID: 1682717156}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31482,6 +32127,58 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c58befdfc340a094e914ffef13aa20c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1694479762
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100004, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9, type: 2}
+  m_PrefabInternal: {fileID: 1068242929}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1694479763}
+  - 132: {fileID: 1694479764}
+  m_Layer: 0
+  m_Name: EndHighText GUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1694479763
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400004, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9, type: 2}
+  m_PrefabInternal: {fileID: 1068242929}
+  m_GameObject: {fileID: 1694479762}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.119999997, y: .5, z: 1}
+  m_LocalScale: {x: 4, y: 3.22580647, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1033124544}
+  m_RootOrder: 0
+--- !u!132 &1694479764
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13200002, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1068242929}
+  m_GameObject: {fileID: 1694479762}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: "\u30CF\u30A4\u30B9\u30B3\u30A2"
+  m_Anchor: 0
+  m_Alignment: 0
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 12800000, guid: 2478714fb9e5f471a9f8979fe2dfa0da, type: 3}
+  m_Material: {fileID: 0}
+  m_FontSize: 20
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278321690
+  m_PixelCorrect: 1
+  m_RichText: 1
 --- !u!1 &1696596707
 GameObject:
   m_ObjectHideFlags: 0
@@ -31599,7 +32296,7 @@ GameObject:
   - 4: {fileID: 1698900498}
   - 212: {fileID: 1698900501}
   - 114: {fileID: 1698900499}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31672,7 +32369,7 @@ GameObject:
   - 58: {fileID: 1699397127}
   - 50: {fileID: 1699397126}
   - 114: {fileID: 1699397125}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: partsCrystal5
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -31958,7 +32655,7 @@ GameObject:
   - 4: {fileID: 1702238301}
   - 212: {fileID: 1702238304}
   - 114: {fileID: 1702238302}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32028,7 +32725,7 @@ GameObject:
   - 4: {fileID: 1722427670}
   - 212: {fileID: 1722427673}
   - 114: {fileID: 1722427671}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32204,7 +32901,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1725583205}
   - 61: {fileID: 1725583206}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FloorCol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32286,6 +32983,58 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c58befdfc340a094e914ffef13aa20c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1733387118
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100020, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9, type: 2}
+  m_PrefabInternal: {fileID: 1068242929}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1733387119}
+  - 132: {fileID: 1733387120}
+  m_Layer: 0
+  m_Name: EndScore GUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1733387119
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400020, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9, type: 2}
+  m_PrefabInternal: {fileID: 1068242929}
+  m_GameObject: {fileID: 1733387118}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.385415465, y: .0600000992, z: 1}
+  m_LocalScale: {x: 4, y: 3.22580647, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1993754435}
+  m_RootOrder: 2
+--- !u!132 &1733387120
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13200010, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1068242929}
+  m_GameObject: {fileID: 1733387118}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: 24
+  m_Anchor: 0
+  m_Alignment: 1
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 12800000, guid: 2478714fb9e5f471a9f8979fe2dfa0da, type: 3}
+  m_Material: {fileID: 0}
+  m_FontSize: 50
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_PixelCorrect: 1
+  m_RichText: 1
 --- !u!1 &1734566230
 GameObject:
   m_ObjectHideFlags: 0
@@ -32296,7 +33045,7 @@ GameObject:
   - 4: {fileID: 1734566231}
   - 212: {fileID: 1734566234}
   - 114: {fileID: 1734566232}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32546,7 +33295,7 @@ GameObject:
   - 58: {fileID: 1748038787}
   - 50: {fileID: 1748038786}
   - 114: {fileID: 1748038785}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: partsCrystal5
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -32697,7 +33446,7 @@ GameObject:
   - 4: {fileID: 1751841112}
   - 212: {fileID: 1751841115}
   - 114: {fileID: 1751841113}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32840,7 +33589,7 @@ GameObject:
   - 58: {fileID: 1779961933}
   - 50: {fileID: 1779961932}
   - 114: {fileID: 1779961931}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: partsCrystal9
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -33100,7 +33849,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1792004681}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Crystal1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33329,7 +34078,7 @@ GameObject:
   - 4: {fileID: 1808909099}
   - 212: {fileID: 1808909102}
   - 114: {fileID: 1808909100}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33539,7 +34288,7 @@ GameObject:
   - 4: {fileID: 1823976848}
   - 212: {fileID: 1823976851}
   - 114: {fileID: 1823976849}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33609,7 +34358,7 @@ GameObject:
   - 4: {fileID: 1825431649}
   - 212: {fileID: 1825431652}
   - 114: {fileID: 1825431650}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33679,7 +34428,7 @@ GameObject:
   - 4: {fileID: 1825467306}
   - 61: {fileID: 1825467308}
   - 212: {fileID: 1825467307}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -33701,7 +34450,7 @@ Transform:
   - {fileID: 136805115}
   - {fileID: 448155630}
   m_Father: {fileID: 1652458618}
-  m_RootOrder: 6
+  m_RootOrder: 4
 --- !u!212 &1825467307
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -33815,7 +34564,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1836787685}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Crystal1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33851,7 +34600,7 @@ GameObject:
   - 4: {fileID: 1838726181}
   - 61: {fileID: 1838726183}
   - 212: {fileID: 1838726182}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -33919,7 +34668,7 @@ GameObject:
   - 4: {fileID: 1841212854}
   - 212: {fileID: 1841212857}
   - 114: {fileID: 1841212855}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34059,7 +34808,7 @@ GameObject:
   - 4: {fileID: 1857000516}
   - 212: {fileID: 1857000519}
   - 114: {fileID: 1857000517}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34327,7 +35076,7 @@ GameObject:
   - 58: {fileID: 1863085280}
   - 50: {fileID: 1863085279}
   - 114: {fileID: 1863085278}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: partsCrystal3
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -34345,7 +35094,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1652458618}
-  m_RootOrder: 12
+  m_RootOrder: 10
 --- !u!114 &1863085278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34436,7 +35185,7 @@ GameObject:
   - 4: {fileID: 1865881909}
   - 212: {fileID: 1865881912}
   - 114: {fileID: 1865881910}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34506,7 +35255,7 @@ GameObject:
   - 4: {fileID: 1870530273}
   - 212: {fileID: 1870530276}
   - 114: {fileID: 1870530274}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34778,7 +35527,7 @@ GameObject:
   - 4: {fileID: 1879298548}
   - 61: {fileID: 1879298550}
   - 212: {fileID: 1879298549}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -34846,7 +35595,7 @@ GameObject:
   - 4: {fileID: 1886603288}
   - 212: {fileID: 1886603291}
   - 114: {fileID: 1886603289}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35023,7 +35772,7 @@ GameObject:
   - 4: {fileID: 1893938567}
   - 212: {fileID: 1893938570}
   - 114: {fileID: 1893938568}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35093,7 +35842,7 @@ GameObject:
   - 4: {fileID: 1895050922}
   - 61: {fileID: 1895050924}
   - 212: {fileID: 1895050923}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -35636,7 +36385,7 @@ GameObject:
   - 58: {fileID: 1938683255}
   - 50: {fileID: 1938683254}
   - 114: {fileID: 1938683253}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: partsCrystal10
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -36294,7 +37043,7 @@ GameObject:
   - 58: {fileID: 1959316049}
   - 50: {fileID: 1959316048}
   - 114: {fileID: 1959316047}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: partsCrystal5
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -36403,7 +37152,7 @@ GameObject:
   - 4: {fileID: 1965057538}
   - 212: {fileID: 1965057541}
   - 114: {fileID: 1965057539}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36851,7 +37600,7 @@ GameObject:
   - 4: {fileID: 1986877005}
   - 212: {fileID: 1986877008}
   - 114: {fileID: 1986877006}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36981,6 +37730,74 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c58befdfc340a094e914ffef13aa20c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1993754434
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100010, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9, type: 2}
+  m_PrefabInternal: {fileID: 1068242929}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1993754435}
+  - 131: {fileID: 1993754437}
+  - 114: {fileID: 1993754436}
+  m_Layer: 0
+  m_Name: EndScorel-L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1993754435
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400010, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9, type: 2}
+  m_PrefabInternal: {fileID: 1068242929}
+  m_GameObject: {fileID: 1993754434}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .289999992, y: .529999971, z: 0}
+  m_LocalScale: {x: .310000002, y: .25999999, z: 1}
+  m_Children:
+  - {fileID: 202099250}
+  - {fileID: 610159547}
+  - {fileID: 1733387119}
+  m_Father: {fileID: 1437459541}
+  m_RootOrder: 1
+--- !u!114 &1993754436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1068242929}
+  m_GameObject: {fileID: 1993754434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad9c0ad4683d93e4186b182c78849127, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  endHighScoreGUIText: {fileID: 1073154768}
+  endScoreGUIText: {fileID: 1733387120}
+  kmGUIText: {fileID: 910037154}
+  clistalScoreGUIText: {fileID: 344653324}
+--- !u!131 &1993754437
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13100002, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1068242929}
+  m_GameObject: {fileID: 1993754434}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 353c87c3b668b469e8cf62afbc95e274, type: 3}
+  m_Color: {r: .529411793, g: .736523032, b: 1, a: 1}
+  m_PixelInset:
+    serializedVersion: 2
+    x: -64
+    y: -29
+    width: 128
+    height: 58
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
 --- !u!1 &1996182652
 GameObject:
   m_ObjectHideFlags: 0
@@ -36991,7 +37808,7 @@ GameObject:
   - 4: {fileID: 1996182653}
   - 212: {fileID: 1996182656}
   - 114: {fileID: 1996182654}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37088,7 +37905,7 @@ GameObject:
   - 4: {fileID: 2001816727}
   - 61: {fileID: 2001816729}
   - 212: {fileID: 2001816728}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -37296,7 +38113,7 @@ GameObject:
   - 4: {fileID: 2022545152}
   - 212: {fileID: 2022545155}
   - 114: {fileID: 2022545153}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37366,7 +38183,7 @@ GameObject:
   - 4: {fileID: 2025852619}
   - 212: {fileID: 2025852622}
   - 114: {fileID: 2025852620}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38114,7 +38931,7 @@ GameObject:
   - 58: {fileID: 2042872735}
   - 50: {fileID: 2042872734}
   - 114: {fileID: 2042872733}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: partsCrystal10
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -38692,7 +39509,7 @@ GameObject:
   - 4: {fileID: 2078189439}
   - 212: {fileID: 2078189442}
   - 114: {fileID: 2078189440}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38973,6 +39790,54 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5c0dcc5480f541e4cad5c50400877299, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &2093931002
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100016, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9, type: 2}
+  m_PrefabInternal: {fileID: 1068242929}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2093931003}
+  - 131: {fileID: 2093931004}
+  m_Layer: 0
+  m_Name: Shadow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2093931003
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400016, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9, type: 2}
+  m_PrefabInternal: {fileID: 1068242929}
+  m_GameObject: {fileID: 2093931002}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .5, y: .5, z: -1}
+  m_LocalScale: {x: 2, y: 3, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1437459541}
+  m_RootOrder: 5
+--- !u!131 &2093931004
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13100006, guid: 57c3b6e9b41c2f54f9cb307c1d601dc9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1068242929}
+  m_GameObject: {fileID: 2093931002}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: ce00ebfc0e20c4261b60b7563b672ba9, type: 3}
+  m_Color: {r: .5, g: .5, b: .5, a: .5}
+  m_PixelInset:
+    serializedVersion: 2
+    x: -64
+    y: -29
+    width: 128
+    height: 58
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
 --- !u!1 &2094669057
 GameObject:
   m_ObjectHideFlags: 0
@@ -39090,7 +39955,7 @@ GameObject:
   - 4: {fileID: 2097429174}
   - 212: {fileID: 2097429177}
   - 114: {fileID: 2097429175}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39277,7 +40142,7 @@ GameObject:
   - 58: {fileID: 2110964488}
   - 50: {fileID: 2110964487}
   - 114: {fileID: 2110964486}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: partsCrystal3
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -39496,7 +40361,7 @@ GameObject:
   - 58: {fileID: 2117956296}
   - 50: {fileID: 2117956295}
   - 114: {fileID: 2117956294}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: partsCrystal10
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -39696,7 +40561,7 @@ GameObject:
   - 58: {fileID: 2121906644}
   - 50: {fileID: 2121906643}
   - 114: {fileID: 2121906642}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: partsCrystal3
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -39805,7 +40670,7 @@ GameObject:
   - 4: {fileID: 2127016631}
   - 212: {fileID: 2127016634}
   - 114: {fileID: 2127016632}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage_block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40089,7 +40954,7 @@ GameObject:
   - 4: {fileID: 2137303941}
   - 61: {fileID: 2137303943}
   - 212: {fileID: 2137303942}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: stage1
   m_TagString: Ground
   m_Icon: {fileID: 0}

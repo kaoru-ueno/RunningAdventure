@@ -368,7 +368,8 @@ public class UnityChan2DController : MonoBehaviour
 
 				}
 				if (other.tag == "Coin" || other.tag == "Scoin" || other.tag == "Goldcoin") {
-						Destroy (other.gameObject);
+						//Destroy(other.gameObject);
+						other.gameObject.renderer.enabled = false;
 						}
 				}
 

@@ -373,6 +373,48 @@ MonoBehaviour:
     m_StretchWidth: 1
     m_StretchHeight: 0
   bgPanel: {fileID: 2800000, guid: c5ffe5b6fca72934d8b2c0392c83f42b, type: 3}
+--- !u!1 &42907497
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 42907499}
+  - 114: {fileID: 42907498}
+  m_Layer: 0
+  m_Name: NCMBSettings
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &42907498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 42907497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1224658411, guid: e5da4d20707777945a74acb4d8bf4516, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  applicationKey: e93c6636fcc598cfc26a78a2adfa2d9ae8bed1496e8dc48bb3f76164a302ceb0
+  clientKey: 39f31cc94a433bad631dd9c40a5c674d6d91518f188ead64714999f8ee204232
+  responseValidation: 0
+--- !u!4 &42907499
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 42907497}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
 --- !u!1 &754487649
 GameObject:
   m_ObjectHideFlags: 0

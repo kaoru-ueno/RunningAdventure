@@ -4,17 +4,17 @@ using System.Collections;
 public class FloorControl : MonoBehaviour {
 
 	// カメラ.
-	private GameObject		main_camera = null;
+	private GameObject main_camera = null;
 	
 	// 初期位置.
 	//private Vector3	initial_position;
 	
 	// 床の幅（X方向）.
-	public	static float	WIDTH = 32f;
+	public static float	WIDTH = 32f;
 	
 	// 床モデルの数.
-	public static float		MODEL_NUM = 10;
-	
+	public static float	MODEL_NUM = 10;
+
 	void	Start() 
 	{
 		// カメラのインスタンスを探しておく.

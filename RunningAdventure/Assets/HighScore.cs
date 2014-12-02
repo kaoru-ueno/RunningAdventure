@@ -22,7 +22,7 @@ namespace NCMB
 		// サーバーにハイスコアを保存 -------------------------
 		public void save()
 		{
-			#if FALSE
+			#if true
 			NCMBObject obj = new NCMBObject("HighScore");
 			obj["Uuid"]  = uuid;
 			obj["Name"]  = name;
@@ -30,6 +30,32 @@ namespace NCMB
 			obj.SaveAsync();
 			#else
 			// データストアの「HighScore」クラスから、Nameをキーにして検索
+			NCMBQuery<NCMBObject> query = new NCMBQuery<NCMBObject> ("HighScore");
+			query.WhereEqualTo ("Uuid", uuid);
+			query.FindAsync ((List<NCMBObject> objList ,NCMBException e) => {
+				
+				//検索成功したら    
+				if (e == null) {
+					objList[0]["Score"] = score;
+					objList[0]["Uuid"] = uuid;
+					objList[0]["Name"] = name;
+					objList[0].SaveAsync();
+				}
+			});
+			#endif
+		}
+
+		// ハイスコアを更新して保存 -------------------------
+		public void updateScore()
+		{
+			#if False
+			NCMBObject obj = new NCMBObject("HighScore");
+			obj["Uuid"]  = uuid;
+			obj["Name"]  = name;
+			obj["Score"] = score;
+			obj.SaveAsync();
+			#else
+			// データストアの「HighScore」クラスから、Uuidをキーにして検索
 			NCMBQuery<NCMBObject> query = new NCMBQuery<NCMBObject> ("HighScore");
 			query.WhereEqualTo ("Uuid", uuid);
 			query.FindAsync ((List<NCMBObject> objList ,NCMBException e) => {

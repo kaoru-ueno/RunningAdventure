@@ -41,7 +41,9 @@ public class UnityChan2DController : MonoBehaviour
 	public static bool bonusflg = false;
 
 	//どれだけスコアが溜まったらボーナスステージにするかの値
-	public int bonuscount = 100;
+	public static  int bonuscount = 100;
+
+	public static int jumpconstraint = 0;
 
 	//private bool ypos = false;
 
@@ -128,11 +130,17 @@ public class UnityChan2DController : MonoBehaviour
 		//	if(transform.position.y > 13) ypos = true;
 		//}
 		//------------------------------------------------------------------------------
+		if(bonusflg == true)
+		{
+			jumpconstraint++;
 
+			Debug.Log("jumpconstraint" + jumpconstraint);
+		}
 
 		//ボーナスゲージが溜まったら
-		if(Score.bonusgauge == bonuscount)
+		if(Score.bonusgauge == bonuscount && gameflg != false)
 		{	
+
 			//ボーナスステージスタート
 			bonusflg = true;
 
@@ -147,6 +155,7 @@ public class UnityChan2DController : MonoBehaviour
 			float gravity = Mathf.Abs(Physics.gravity.y);
 			float velocity = Mathf.Sqrt(2 * gravity * jumpHeight);
 			m_rigidbody2D.velocity = Vector2.up * velocity;
+			jumpPower = 12;
 
 			//print("bonusflg"+bonusflg);
 		}
@@ -175,7 +184,7 @@ public class UnityChan2DController : MonoBehaviour
 			//Moves (transform.right * 1.5f);
 			transform.Translate (transform.right * speed * 1.2f);
 			
-			print ("speedup");
+			//print ("speedup");
 		}
 		
 		
@@ -189,7 +198,7 @@ public class UnityChan2DController : MonoBehaviour
 			//Moves (transform.right * 2f);
 			transform.Translate (transform.right * speed * 1.5f);
 			
-			print ("speedup");
+			//print ("speedup");
 		}
 		//--------------------------------------------------------------
 
@@ -206,15 +215,21 @@ public class UnityChan2DController : MonoBehaviour
 				// ゲーム中ではなく、タッチ直後であればtrueを返す。
 				if (gameflg != false && touch.phase == TouchPhase.Began)
 				{
-					Move(true);
+					if(jumpconstraint > 70 || bonusflg == false)
+					{
+						Move(true);
+					}
+
 				}
 			}
 			
-			
+			if(jumpconstraint > 70 || bonusflg == false)
+			{
 			//float x = Input.GetAxis("Horizontal");
 			bool jump = Input.GetButtonDown("Jump");
 			//Move(x, jump);
 			Move(jump);
+			}
         }
 
 		//ゲームオーバーの条件
@@ -271,7 +286,7 @@ public class UnityChan2DController : MonoBehaviour
 
 				restJumps--;
 	
-				print ("restJumps:"+restJumps);
+				//print ("restJumps:"+restJumps);
 			}
 
 			else{
@@ -290,7 +305,7 @@ public class UnityChan2DController : MonoBehaviour
 				restJumps--;
 				
 				
-				print ("restJumps:"+restJumps);
+				//print ("restJumps:"+restJumps);
 			}
         }
 
@@ -327,7 +342,7 @@ public class UnityChan2DController : MonoBehaviour
 		if (c.tag == "Ground") 
 		{
 			restJumps = 2;
-			print ("error");
+			//print ("error");
 		}
 	}
 
@@ -353,7 +368,8 @@ public class UnityChan2DController : MonoBehaviour
 
 				}
 				if (other.tag == "Coin" || other.tag == "Scoin" || other.tag == "Goldcoin") {
-						Destroy (other.gameObject);
+						//Destroy(other.gameObject);
+						other.gameObject.renderer.enabled = false;
 						}
 				}
 
@@ -376,8 +392,8 @@ public class UnityChan2DController : MonoBehaviour
         {
             yield return new WaitForFixedUpdate();
         }
-        m_animator.SetTrigger("Invincible Mode");
-        m_state = State.Invincible;
+        //m_animator.SetTrigger("Invincible Mode");
+       // m_state = State.Invincible;
     }
 
 

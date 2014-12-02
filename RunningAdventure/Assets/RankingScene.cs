@@ -45,6 +45,7 @@ public class RankingScene : MonoBehaviour {
 		isLeaderBoardFetched = false;
 		
 		//uuid
+		/*
 		_uuid=PlayerPrefs.GetString("Uuid", "__UNDEFINED__");
 		_name=PlayerPrefs.GetString("Name", "__UNDEFINED__");
 		System.Guid guid=System.Guid.NewGuid();
@@ -53,6 +54,11 @@ public class RankingScene : MonoBehaviour {
 		PlayerPrefs.SetString("Uuid",_uuid);
 		PlayerPrefs.SetString("Name",_name);
 		PlayerPrefs.Save();
+		*/
+
+		_uuid = PlayerPrefs.GetString ("Uuid");
+		_name = PlayerPrefs.GetString ("Name");
+
 		
 		// 現在のハイスコアを取得
 		//string name = FindObjectOfType<UserAuth>().currentPlayer();

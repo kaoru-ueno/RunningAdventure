@@ -4,28 +4,42 @@ using System.Collections;
 public class CrystalsetControl : MonoBehaviour {
 
 	// カメラ.
-	private GameObject		main_camera = null;
+	private GameObject main_camera = null;
+
+	// Waveプレハブを格納する
+	public GameObject[] crystal;
 	
+	// 現在のWave
+	private int currentcrystal;
+
 	// 初期位置.
 	//private Vector3	initial_position;
 	
 	// 床の幅（X方向）.
-	public	static float	WIDTH = 38f;
-	
-	// 床モデルの数.
-	public static float		MODEL_NUM = 1;
+	public    float WIDTH = 38f;
 
-	public GameObject crystal;
+	// 床モデルの数.
+	public    float MODEL_NUM = 1;
+
+
 	
-	void	Start() 
+	IEnumerator Start ()
 	{
+		
+		// Waveが存在しなければコルーチンを終了する
+		if (crystal.Length == 0) {
+			yield break;
+		}
 		// カメラのインスタンスを探しておく.
 		this.main_camera = GameObject.FindGameObjectWithTag("MainCamera");
 		
 		//this.initial_position = this.transform.position;
 		
 		//print (this.main_camera);
-		
+		for (int i = 0; i < crystal.Length; i++) 
+		{
+		GameObject g = (GameObject)Instantiate (crystal [currentcrystal], transform.position, Quaternion.identity);
+		}
 	}
 	
 	void	Update()
@@ -40,7 +54,7 @@ public class CrystalsetControl : MonoBehaviour {
 		
 		// 背景全体（すべてのモデルを並べた）の幅.
 		//
-		float	total_width = CrystalsetControl.WIDTH * CrystalsetControl.MODEL_NUM;
+		float	total_width = WIDTH * MODEL_NUM;
 		
 		// 背景の位置.
 		Vector3	floor_position = this.transform.position;
@@ -57,10 +71,15 @@ public class CrystalsetControl : MonoBehaviour {
 
 			this.transform.position = floor_position;
 
-			GameObject g = (GameObject)Instantiate (crystal, transform.position, Quaternion.identity);
+			GameObject g = (GameObject)Instantiate (crystal [currentcrystal], transform.position, Quaternion.identity);
 			
 		}
-			
+
+		// 格納されているWaveを全て実行したらcurrentWaveを0にする（最初から -> ループ）
+		if (crystal.Length <= ++currentcrystal) 
+		{
+			currentcrystal = 0;
+		}
 			//print (this.transform.position);
 	}
 		

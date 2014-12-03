@@ -187,7 +187,7 @@ public class UnityChan2DController : MonoBehaviour
 		//移動のスクリプト--------------------------------------------------------------
 		if(speedlevel == 1)
 		{
-			Moves ();
+			transform.Translate (transform.right * speed);
 		}
 
 		if(camera_position.x > speedometer && camera_position.x < speedometer + 1.0f )

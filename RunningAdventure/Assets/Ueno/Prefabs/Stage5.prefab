@@ -1614,8 +1614,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 6.5999999, y: 1.60000002}
-  m_Center: {x: 2.4000001, y: -.0399999991}
+  m_Size: {x: 6.5999999, y: .899999976}
+  m_Center: {x: 2.4000001, y: .360000014}
 --- !u!61 &6100002
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -1636,8 +1636,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 6.5999999, y: 1.60000002}
-  m_Center: {x: 2.4000001, y: -.0399999991}
+  m_Size: {x: 6.5999999, y: .899999976}
+  m_Center: {x: 2.4000001, y: .360000014}
 --- !u!61 &6100024
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -1647,8 +1647,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 6.5999999, y: 1.60000002}
-  m_Center: {x: 2.4000001, y: -.0399999991}
+  m_Size: {x: 6.5999999, y: .899999976}
+  m_Center: {x: 2.4000001, y: .360000014}
 --- !u!61 &6100044
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -1658,8 +1658,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 6.5999999, y: 1.60000002}
-  m_Center: {x: 2.4000001, y: -.0399999991}
+  m_Size: {x: 6.5999999, y: .899999976}
+  m_Center: {x: 2.4000001, y: .360000014}
 --- !u!61 &6100048
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -1669,8 +1669,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 6.5999999, y: 1.60000002}
-  m_Center: {x: 2.4000001, y: -.0399999991}
+  m_Size: {x: 6.5999999, y: .899999976}
+  m_Center: {x: 2.4000001, y: .360000014}
 --- !u!95 &9500004
 Animator:
   serializedVersion: 3

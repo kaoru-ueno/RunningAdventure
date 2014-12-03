@@ -42,10 +42,10 @@ public class Score : MonoBehaviour
 		scoreGUIText.text = "Score:" + score.ToString ();
 		highScoreGUIText.text = "HighScore:" + highScore.ToString ();
 
-		if(UnityChan2DController.gameflg == false)
-		{
-			Save ();
-		}
+		//if(UnityChan2DController.gameflg == false)
+		//{
+		//	Save ();
+		//}
 	}
 	
 	// ゲーム開始前の状態に戻す

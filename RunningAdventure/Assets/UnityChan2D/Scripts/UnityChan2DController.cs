@@ -187,7 +187,7 @@ public class UnityChan2DController : MonoBehaviour
 		//移動のスクリプト--------------------------------------------------------------
 		if(speedlevel == 1)
 		{
-			transform.Translate (transform.right * speed);
+			Moves ();
 		}
 
 		if(camera_position.x > speedometer && camera_position.x < speedometer + 1.0f )
@@ -276,11 +276,11 @@ public class UnityChan2DController : MonoBehaviour
 		}
 	}
 
-		/*void Moves (Vector2 direction)
-	{
-		//rigidbody2D.velocity = direction * speed;
-		rigidbody2D.AddForce(direction * speed);
-	}*/
+	//public void Moves (transform.right speed)
+	//{
+	//	transform.Translate (transform.right * speed);
+		//rigidbody2D.AddForce(direction * speed);
+	//}
 
 
 	void Move(bool jump)

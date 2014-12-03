@@ -110,11 +110,13 @@ public class StartScene : MonoBehaviour {
 				print ("スタートをクリックしました");
 				Application.LoadLevel ("Test_kudo");
 				UnityChan2DController.gameflg = true;
+
 			}
 			if (GUI.Button(new Rect(Screen.width / 2 - ButtonWidth / 2, (Screen.height / 2 - ButtonHeight / 2)+120, ButtonWidth, ButtonHeight),"", rankingButtonStyle)){
 				print ("ランキングをクリックしました");
 				Application.LoadLevel ("Ranking");
 				UnityChan2DController.gameflg = true;
+
 			}
 		}
 	}

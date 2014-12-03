@@ -13,11 +13,5 @@ public class Retry : MonoBehaviour {
 /*	void Update () {
 		if(Input.GetMouseButton(0)){
 			Application.LoadLevel("Start");
-<<<<<<< HEAD
-	}
 	}*/
 }
-=======
-	}*/
-	}
->>>>>>> origin/master

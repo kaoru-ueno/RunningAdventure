@@ -34,6 +34,7 @@ public class CameraControl2 : MonoBehaviour {
 			bonustart = 0;
 			UnityChan2DController.bonusflg = false;
 			UnityChan2DController.jumpconstraint = 0;
+			UnityChan2DController.bonusJump = 0;
 			FindObjectOfType<FeverGaugeControl>().init();
 		}
 

@@ -12,6 +12,9 @@ public class StopControl : MonoBehaviour {
 	public Texture2D icon;
 	
 	public GUISkin skin;
+	//public GUIStyle stopButtonStyle;
+	private int ButtonWidth = 80;
+	private int ButtonHeight = 80;
 
 	public Animator animator;
 
@@ -31,7 +34,7 @@ public class StopControl : MonoBehaviour {
 	//}
 	void Update () 
 	{
-	for (int i = 0; i < Input.touchCount; i++)
+	/*for (int i = 0; i < Input.touchCount; i++)
 		{
 			
 			// タッチ情報を取得する
@@ -86,7 +89,7 @@ public class StopControl : MonoBehaviour {
 					}
 				}
 			}
-		}
+		}*/
 	}
 
 /*public IEnumerator Stop()
@@ -104,12 +107,12 @@ public class StopControl : MonoBehaviour {
 		print ("Count2");
 		yield return new WaitForSeconds (2.0f);
 	}*/
-/*void OnGUI ()
+void OnGUI ()
 	{
-		GUI.skin = skin;
+		//GUI.skin = skin;
 		//print ("OnGUI");
 
-		if (GUI.Button (new Rect (630,10, 100, 50), "button"))
+		if (GUI.Button (new Rect(Screen.width - ButtonWidth, 0, ButtonWidth, ButtonHeight), ""))
 		{	
 
 			if(Count == 1)
@@ -150,5 +153,5 @@ public class StopControl : MonoBehaviour {
 				//print ("アイコンをクリックしました");
 			}
 		}
-	}*/
+	}
 }

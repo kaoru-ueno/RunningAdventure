@@ -151,10 +151,10 @@ MonoBehaviour:
       m_Background: {fileID: 2800000, guid: 36c0b7bd9f17e4df19a6522bd56554f7, type: 3}
       m_TextColor: {r: 1, g: 1, b: 1, a: 1}
     m_OnActive:
-      m_Background: {fileID: 2800000, guid: f8fc9b0266b1a4e1fa8482707ac3bcc2, type: 3}
+      m_Background: {fileID: 2800000, guid: cbe8a50b3d01f1545a2c8cae32a78bb2, type: 3}
       m_TextColor: {r: 1, g: 1, b: 1, a: 1}
     m_OnFocused:
-      m_Background: {fileID: 0}
+      m_Background: {fileID: 2800000, guid: cbe8a50b3d01f1545a2c8cae32a78bb2, type: 3}
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Border:
       m_Left: 21

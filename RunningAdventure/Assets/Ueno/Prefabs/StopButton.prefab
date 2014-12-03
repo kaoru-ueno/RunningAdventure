@@ -99,7 +99,7 @@ MonoBehaviour:
     m_StretchWidth: 1
     m_StretchHeight: 0
   btnStopTexture: {fileID: 2800000, guid: cbe8a50b3d01f1545a2c8cae32a78bb2, type: 3}
-  btnStartTexture: {fileID: 2800000, guid: 5a33c73dd5f9a4b439a48c6cf2bad70e, type: 3}
+  btnStartTexture: {fileID: 2800000, guid: 0332dbcc6a54af541b3065000daa19fa, type: 3}
   animator: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:

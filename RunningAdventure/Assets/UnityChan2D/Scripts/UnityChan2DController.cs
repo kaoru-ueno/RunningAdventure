@@ -277,6 +277,14 @@ public class UnityChan2DController : MonoBehaviour
 			Unikill.jumpplan = 0;
 
 		}
+
+		if(CameraControl2.bonusinv)
+		{
+			m_state = State.Invincible;
+			StartCoroutine (INTERNAL_OnInvincible ());
+			CameraControl2.bonusinv = false;
+		}
+
 	}
 
 	public void Moves (int s)
@@ -418,13 +426,15 @@ public class UnityChan2DController : MonoBehaviour
 						//Destroy(other.gameObject);
 						other.gameObject.renderer.enabled = false;
 						}
+
 				if (other.tag == "Item") {
 //						GetComponent<Item>("item");
 //						life += item;
 						transform.localScale = new Vector3 (1, 1, 1);
 						other.gameObject.renderer.enabled = false;
 						m_state = State.Invincible;
-					StartCoroutine (INTERNAL_OnInvincible ());
+						StartCoroutine (INTERNAL_OnInvincible ());
+						
 						
 				}
 				if (other.tag == "UniKill" || other.tag == "Unikill2") {
@@ -454,6 +464,7 @@ public class UnityChan2DController : MonoBehaviour
         //m_animator.SetTrigger("Invincible Mode");
        // m_state = State.Invincible;
     }
+
 	IEnumerator INTERNAL_OnInvincible()
 	{
 		m_animator.Play("Invincible Mode");
@@ -480,6 +491,7 @@ public class UnityChan2DController : MonoBehaviour
     void OnFinishedInvincibleMode()
    {
       m_state = State.Normal;
+		
     }
 
 

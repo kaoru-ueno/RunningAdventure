@@ -918,7 +918,14 @@ AnimationClip:
     script: {fileID: 0}
   m_EulerEditorCurves: []
   m_Events:
-  - time: 1
+  - time: -.0166666675
+    functionName: INTERNAL_OnInvincible
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 2
     functionName: OnFinishedInvincibleMode
     data: 
     objectReferenceParameter: {fileID: 0}

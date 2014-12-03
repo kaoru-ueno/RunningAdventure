@@ -427,7 +427,7 @@ public class UnityChan2DController : MonoBehaviour
 					StartCoroutine (INTERNAL_OnInvincible ());
 						
 				}
-				if (other.tag == "UniKill") {
+				if (other.tag == "UniKill" || other.tag == "Unikill2") {
 						other.gameObject.renderer.enabled = false;
 				}
 			}

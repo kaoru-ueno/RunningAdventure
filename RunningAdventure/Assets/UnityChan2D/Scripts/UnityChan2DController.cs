@@ -437,7 +437,7 @@ public class UnityChan2DController : MonoBehaviour
 						
 						
 				}
-				if (other.tag == "UniKill" || other.tag == "Unikill2") {
+				if (other.tag == "UniKill" || other.tag == "Unikill2" || other.tag == "Unikill3") {
 						other.gameObject.renderer.enabled = false;
 				}
 			}

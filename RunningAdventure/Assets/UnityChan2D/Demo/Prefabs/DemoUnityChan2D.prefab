@@ -150,10 +150,9 @@ MonoBehaviour:
   coin: 1
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 8192
-  speed: .200000003
+    m_Bits: 1024
+  speed: .119999997
   speedometer: 10
-  bonuscount: 1
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1

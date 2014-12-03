@@ -509,7 +509,7 @@ GameObject:
   - 58: {fileID: 5800000}
   - 50: {fileID: 5000000}
   - 114: {fileID: 11400044}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: partsCrystal5
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -529,7 +529,7 @@ GameObject:
   - 58: {fileID: 5800002}
   - 50: {fileID: 5000002}
   - 114: {fileID: 11400046}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: partsCrystal4
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -549,7 +549,7 @@ GameObject:
   - 58: {fileID: 5800004}
   - 50: {fileID: 5000004}
   - 114: {fileID: 11400048}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: partsCrystal3
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -569,7 +569,7 @@ GameObject:
   - 58: {fileID: 5800006}
   - 50: {fileID: 5000006}
   - 114: {fileID: 11400050}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: partsCrystal1
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -907,7 +907,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100056}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 224, y: 0, z: 0}
+  m_LocalPosition: {x: 205.399994, y: -5.19999981, z: -50}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400002}

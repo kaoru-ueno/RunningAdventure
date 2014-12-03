@@ -29,7 +29,7 @@ GameObject:
   - 58: {fileID: 5800004}
   - 50: {fileID: 5000004}
   - 114: {fileID: 11400004}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: partsCrystal1
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -134,9 +134,9 @@ GameObject:
   - 58: {fileID: 5800016}
   - 50: {fileID: 5000016}
   - 114: {fileID: 11400024}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: partsCrystal8
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -154,9 +154,9 @@ GameObject:
   - 58: {fileID: 5800024}
   - 50: {fileID: 5000024}
   - 114: {fileID: 11400032}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: partsCrystal10
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -191,9 +191,9 @@ GameObject:
   - 58: {fileID: 5800026}
   - 50: {fileID: 5000026}
   - 114: {fileID: 11400036}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: partsCrystal10
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -228,7 +228,7 @@ GameObject:
   - 58: {fileID: 5800028}
   - 50: {fileID: 5000028}
   - 114: {fileID: 11400040}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: partsCrystal1
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -282,7 +282,7 @@ GameObject:
   - 58: {fileID: 5800046}
   - 50: {fileID: 5000046}
   - 114: {fileID: 11400060}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: partsCrystal1
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -302,7 +302,7 @@ GameObject:
   - 58: {fileID: 5800048}
   - 50: {fileID: 5000048}
   - 114: {fileID: 11400062}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: partsCrystal1
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -340,9 +340,9 @@ GameObject:
   - 58: {fileID: 5800050}
   - 50: {fileID: 5000050}
   - 114: {fileID: 11400068}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: partsCrystal8
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -394,7 +394,7 @@ GameObject:
   - 58: {fileID: 5800056}
   - 50: {fileID: 5000056}
   - 114: {fileID: 11400078}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: partsCrystal1
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -533,7 +533,7 @@ GameObject:
   - 58: {fileID: 5800078}
   - 50: {fileID: 5000078}
   - 114: {fileID: 11400112}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: partsCrystal1
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -587,9 +587,9 @@ GameObject:
   - 58: {fileID: 5800082}
   - 50: {fileID: 5000082}
   - 114: {fileID: 11400120}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: partsCrystal10
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -607,9 +607,9 @@ GameObject:
   - 58: {fileID: 5800088}
   - 50: {fileID: 5000088}
   - 114: {fileID: 11400126}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: partsCrystal10
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -695,9 +695,9 @@ GameObject:
   - 58: {fileID: 5800108}
   - 50: {fileID: 5000108}
   - 114: {fileID: 11400152}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: partsCrystal8
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -954,7 +954,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100074}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 128, y: 0, z: 0}
+  m_LocalPosition: {x: 109.400002, y: -5.19999981, z: -50}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400172}
@@ -1233,7 +1233,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100168}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.94580507, y: .961564898, z: -.0324710011}
+  m_LocalPosition: {x: 2.94580078, y: .0520496368, z: -.0324707031}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400072}
@@ -1877,7 +1877,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
+  point: 1
 --- !u!114 &11400010
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1957,7 +1957,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
+  point: 1
 --- !u!114 &11400032
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1969,7 +1969,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
+  point: 1
 --- !u!114 &11400034
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1998,7 +1998,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
+  point: 1
 --- !u!114 &11400038
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2027,7 +2027,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
+  point: 1
 --- !u!114 &11400056
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2056,7 +2056,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
+  point: 1
 --- !u!114 &11400062
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2068,7 +2068,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
+  point: 1
 --- !u!114 &11400064
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2104,7 +2104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
+  point: 1
 --- !u!114 &11400070
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2150,7 +2150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
+  point: 1
 --- !u!114 &11400086
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2264,7 +2264,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
+  point: 1
 --- !u!114 &11400114
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2310,7 +2310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
+  point: 1
 --- !u!114 &11400126
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2322,7 +2322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
+  point: 1
 --- !u!114 &11400138
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2385,7 +2385,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05735c6a8f0ea52479331a303a6c8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
+  point: 1
 --- !u!212 &21200004
 SpriteRenderer:
   m_ObjectHideFlags: 1

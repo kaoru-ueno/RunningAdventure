@@ -152,7 +152,11 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 1024
+<<<<<<< HEAD
   speed: .200000003
+=======
+  speed: .119999997
+>>>>>>> origin/master
   speedometer: 10
 --- !u!114 &11400002
 MonoBehaviour:

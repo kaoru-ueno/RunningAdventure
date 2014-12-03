@@ -13,6 +13,7 @@ public class Unikill : MonoBehaviour {
 	public void Move (Vector2 direction) 
 	{
 		GameObject.Find ("Crow").rigidbody2D.velocity = direction * 4;
+
 	}
 
 	void OnTriggerStay2D(Collider2D other)
@@ -20,10 +21,10 @@ public class Unikill : MonoBehaviour {
 		if (gameObject.tag == "Unikill") {
 						GameObject.Find ("Uni").renderer.enabled = false;
 						GameObject.Find ("Uni").collider2D.enabled = false;
-				} else if (gameObject.tag == "Unikill2") {
+				}else if(gameObject.tag == "Unikill2") {
 						GameObject.Find ("Unisi").renderer.enabled = false;
 						GameObject.Find ("Unisi").collider2D.enabled = false;
-				} else {
+				}else{
 						GameObject.Find ("Crow").renderer.enabled = false;
 						GameObject.Find ("Crow").collider2D.enabled = false;
 				}

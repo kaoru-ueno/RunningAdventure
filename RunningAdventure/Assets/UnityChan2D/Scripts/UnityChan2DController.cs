@@ -42,10 +42,12 @@ public class UnityChan2DController : MonoBehaviour
 
 	//どれだけスコアが溜まったらボーナスステージにするかの値
 	public static  int bonuscount = 50;
-
+	
+	//ジャンプの制限時間カウント
 	public static int jumpconstraint = 0;
 
-	private int bonusJump = 0;
+	//ボーナスジャンプ回数
+	public static int bonusJump = 0;
 
 	private int GameSC = 0;
 
@@ -185,37 +187,38 @@ public class UnityChan2DController : MonoBehaviour
 
 
 		//移動のスクリプト--------------------------------------------------------------
-		if(speedlevel == 1)
-		{
-			transform.Translate (transform.right * speed);
-		}
+								//if(speedlevel == 1)
+								//{
+								//	Moves ();
+								//}
 
-		if(camera_position.x > speedometer && camera_position.x < speedometer + 1.0f )
-		{
-			speedlevel = 2;
-		}
+								if(camera_position.x > speedometer && camera_position.x < speedometer + 1.0f )
+								{
+									speedlevel = 2;
+								}
 
-		if(speedlevel == 2)
-		{
-			//Moves (transform.right * 1.5f);
-			transform.Translate (transform.right * speed * 1.2f);
-			
-			//print ("speedup");
-		}
-		
-		
-		if(camera_position.x > speedometer && camera_position.x < speedometer * 2 + 1.0f )
-		{
-			speedlevel = 3;
-		}
+								//if(speedlevel == 2)
+								//{
+									//Moves (transform.right * 1.5f);
+									//transform.Translate (transform.right * speed * 1.2f);
+									
+									//print ("speedup");
+								//}
+								
+								
+								if(camera_position.x > speedometer && camera_position.x < speedometer * 2 + 1.0f )
+								{
+									speedlevel = 3;
+								}
 
-		if(speedlevel == 3)
-		{
-			//Moves (transform.right * 2f);
-			transform.Translate (transform.right * speed * 1.5f);
-			
-			//print ("speedup");
-		}
+								//if(speedlevel == 3)
+								//{
+									//Moves (transform.right * 2f);
+									//transform.Translate (transform.right * speed * 1.5f);
+									
+									//print ("speedup");
+								//}
+		Moves (speedlevel);
 		//--------------------------------------------------------------
 
 		
@@ -274,13 +277,34 @@ public class UnityChan2DController : MonoBehaviour
 			Unikill.jumpplan = 0;
 
 		}
+
+		if(CameraControl2.bonusinv)
+		{
+			m_state = State.Invincible;
+			StartCoroutine (INTERNAL_OnInvincible ());
+			CameraControl2.bonusinv = false;
+		}
+
 	}
 
-	//public void Moves (transform.right speed)
-	//{
-	//	transform.Translate (transform.right * speed);
+	public void Moves (int s)
+	{
+		if(s == 1)
+		{
+			transform.Translate (transform.right * speed);
+		}
+
+		if(s == 2)
+		{
+			transform.Translate (transform.right * speed * 1.2f);
+		}
+
+		if(s == 3)
+		{
+			transform.Translate (transform.right * speed * 1.5f);
+		}
 		//rigidbody2D.AddForce(direction * speed);
-	//}
+	}
 
 
 	void Move(bool jump)
@@ -402,16 +426,18 @@ public class UnityChan2DController : MonoBehaviour
 						//Destroy(other.gameObject);
 						other.gameObject.renderer.enabled = false;
 						}
+
 				if (other.tag == "Item") {
 //						GetComponent<Item>("item");
 //						life += item;
 						transform.localScale = new Vector3 (1, 1, 1);
 						other.gameObject.renderer.enabled = false;
 						m_state = State.Invincible;
-					StartCoroutine (INTERNAL_OnInvincible ());
+						StartCoroutine (INTERNAL_OnInvincible ());
+						
 						
 				}
-				if (other.tag == "UniKill") {
+				if (other.tag == "UniKill" || other.tag == "Unikill2") {
 						other.gameObject.renderer.enabled = false;
 				}
 			}
@@ -438,6 +464,7 @@ public class UnityChan2DController : MonoBehaviour
         //m_animator.SetTrigger("Invincible Mode");
        // m_state = State.Invincible;
     }
+
 	IEnumerator INTERNAL_OnInvincible()
 	{
 		m_animator.Play("Invincible Mode");
@@ -464,6 +491,7 @@ public class UnityChan2DController : MonoBehaviour
     void OnFinishedInvincibleMode()
    {
       m_state = State.Normal;
+		
     }
 
 
@@ -473,7 +501,7 @@ public class UnityChan2DController : MonoBehaviour
 		if (gameflg != true && Input.GetMouseButtonDown (0) && GameSC == 0) 
 		{
 			FindObjectOfType<StageControl> ().gameEndSC ();
-			GameObject.Find("gray").renderer.enabled  = false;
+			GameObject.Find("gray").renderer.enabled  = true;
 			GameSC++;
 		}
 
@@ -487,7 +515,7 @@ public class UnityChan2DController : MonoBehaviour
 			if (gameflg != true && touch.phase == TouchPhase.Began && GameSC == 0)
 			{
 				FindObjectOfType<StageControl> ().gameEndSC ();
-				GameObject.Find("gray").renderer.enabled  = false;
+				GameObject.Find("gray").renderer.enabled  = true;
 				GameSC++;
 			}
 		}

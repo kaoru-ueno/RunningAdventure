@@ -10,13 +10,17 @@ public class Unikill : MonoBehaviour {
 
 	}
 	
-	void OnTriggerEnter2D(Collider2D other)
+	void OnTriggerStay2D(Collider2D other)
 	{
-		GameObject.Find("Uni").renderer.enabled = false;
-		GameObject.Find ("Uni").collider2D.enabled = false;
+		if (gameObject.tag == "Unikill") {
+						GameObject.Find ("Uni").renderer.enabled = false;
+						GameObject.Find ("Uni").collider2D.enabled = false;
+				} else {
+						GameObject.Find ("Unisi").renderer.enabled = false;
+						GameObject.Find ("Unisi").collider2D.enabled = false;
+				}
 		enemyjump = true;
 		jumpplan++; 
 		Debug.Log ("enemyjump" + enemyjump);
 	}
-
 }

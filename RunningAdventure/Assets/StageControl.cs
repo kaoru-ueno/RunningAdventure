@@ -8,6 +8,10 @@ public class StageControl : MonoBehaviour {
 	public GameObject GameEndGameObject;
 	//public GUITexture GameEndSCGUITexture;
 	private GameObject main_camera = null;
+	private int ButtonWidth = 250;
+	private int ButtonHeight = 65;
+	public GUIStyle retryButtonStyle;
+
 
 	void Start () {
 
@@ -15,24 +19,42 @@ public class StageControl : MonoBehaviour {
 
 		GameObject.Find("Dist").guiText.text = "";
 		GameObject.Find("GameEnd").guiText.text = "";
+		GameObject.Find("gray").renderer.enabled  = false;
 		//GameObject.Find("GameOver").renderer.enabled  = false;
 		//GameObject.Find("GameOver").guiTexture.enabled = false;
 	}
-	
+
+
 	void Update () {
 		Vector3	camera_position = this.main_camera.transform.position;
 		DistGUIText.text = camera_position.x.ToString("0") + " m";
 		  
 	}
 
+
 	public void gameEnd(){
 		GameEndGUIText.guiText.color = Color.red;
 		GameEndGUIText.text = "GAME OVER";
 	}
 
+
 	public void gameEndSC()
 	{
 		Instantiate (GameEndGameObject, transform.position, Quaternion.identity);
+	}
+
+
+	void OnGUI () 
+	{
+		//drawMenu();
+		if (GUI.Button(new Rect(Screen.width / 2 - ButtonWidth / 2, (Screen.height / 2 - ButtonHeight / 2)+150, ButtonWidth, ButtonHeight), "", retryButtonStyle))
+		{
+			print ("スタート画面に戻りまーす");
+			Application.LoadLevel ("Start");
+			FindObjectOfType<UnityChan2DController>().Reset();
+			Debug.Log("bonusgauge" + Score.bonusgauge);
+		}
+		
 	}
 }
 

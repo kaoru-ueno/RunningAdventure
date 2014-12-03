@@ -52,7 +52,7 @@ public class UnityChan2DController : MonoBehaviour
 	//private bool ypos = false;
 
 
-    void Reset()
+  public void Reset()
     {
         Awake();
 
@@ -75,9 +75,16 @@ public class UnityChan2DController : MonoBehaviour
 
         // Animator
         m_animator.applyRootMotion = false;
+
+		speedlevel = 1;
+		gameflg = true;
+		bonusflg = false;
+		jumpconstraint = 0;
+		bonusJump = 0;
+		GameSC = 0;
+		Score.bonusgauge = 0;
     }
-
-
+	
     void Awake()
     {
         m_animator = GetComponent<Animator>();
@@ -134,6 +141,7 @@ public class UnityChan2DController : MonoBehaviour
 		//	if(transform.position.y > 13) ypos = true;
 		//}
 		//------------------------------------------------------------------------------
+
 		if(bonusflg == true)
 		{
 			jumpconstraint++;
@@ -174,6 +182,7 @@ public class UnityChan2DController : MonoBehaviour
 		{
 			GameScreen();
 		}
+
 
 		//移動のスクリプト--------------------------------------------------------------
 		if(speedlevel == 1)
@@ -417,6 +426,7 @@ public class UnityChan2DController : MonoBehaviour
 		if (gameflg != true && Input.GetMouseButtonDown (0) && GameSC == 0) 
 		{
 			FindObjectOfType<StageControl> ().gameEndSC ();
+			GameObject.Find("gray").renderer.enabled  = false;
 			GameSC++;
 		}
 
@@ -430,6 +440,7 @@ public class UnityChan2DController : MonoBehaviour
 			if (gameflg != true && touch.phase == TouchPhase.Began && GameSC == 0)
 			{
 				FindObjectOfType<StageControl> ().gameEndSC ();
+				GameObject.Find("gray").renderer.enabled  = false;
 				GameSC++;
 			}
 		}

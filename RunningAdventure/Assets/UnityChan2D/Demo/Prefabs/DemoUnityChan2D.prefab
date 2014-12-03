@@ -13,8 +13,8 @@ GameObject:
   - 50: {fileID: 5000000}
   - 61: {fileID: 6100000}
   - 82: {fileID: 8200000}
-  - 114: {fileID: 11400000}
   - 114: {fileID: 11400002}
+  - 114: {fileID: 11400000}
   m_Layer: 8
   m_Name: DemoUnityChan2D
   m_TagString: Player
@@ -29,7 +29,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.31351376, y: -2, z: 10}
+  m_LocalPosition: {x: -5, y: -2, z: 10}
   m_LocalScale: {x: .699999988, y: .699999988, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -141,31 +141,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a0152e6c9da34b73a86cf8b63b544e0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxSpeed: 10
-  jumpPower: 12
-  backwardForce: {x: -4.5, y: 5.4000001}
-  coin: 1
-  life: 0
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 1024
-<<<<<<< HEAD
-  speed: .200000003
-=======
-  speed: .119999997
->>>>>>> origin/master
-  speedometer: 10
---- !u!114 &11400002
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5153fce4e03b24f98ae7fedc8e09fb79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -175,6 +150,27 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 91c291b784ff846febdd7e04e295f4fa, type: 3}
   clearVoice: {fileID: 8300000, guid: 752f3604d760a4929a1a81d203125e4f, type: 3}
   timeOverVoice: {fileID: 8300000, guid: 431f7b07d1e854f14860c28585f9b9d4, type: 3}
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a0152e6c9da34b73a86cf8b63b544e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxSpeed: 10
+  jumpPower: 10
+  backwardForce: {x: -4.5, y: 5.4000001}
+  coin: 1
+  life: 0
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 8192
+  speed: .100000001
+  speedometer: 10
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

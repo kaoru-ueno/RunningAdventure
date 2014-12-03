@@ -6,10 +6,15 @@ public class Unikill : MonoBehaviour {
 	public static bool enemyjump = false;
 	public static int jumpplan = 0;
 	// Use this for initialization
-	void Start () {
-
+/*	void Start () {
+		Move (transform.right * -1);
 	}
-	
+
+	public void Move (game) 
+	{
+		rigidbody2D.velocity = direction * 2;
+	}
+*/	
 	void OnTriggerStay2D(Collider2D other)
 	{
 		if (gameObject.tag == "Unikill") {

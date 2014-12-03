@@ -16,6 +16,8 @@ public class CameraControl2 : MonoBehaviour {
 
 	//ボーナスステージにいる時間
 	public int bonusrage = 200;
+
+	public static bool bonusinv = false;
 	
 	void Start () {
 		
@@ -36,13 +38,19 @@ public class CameraControl2 : MonoBehaviour {
 			UnityChan2DController.jumpconstraint = 0;
 			UnityChan2DController.bonusJump = 0;
 			FindObjectOfType<FeverGaugeControl>().init();
+			bonusinv = true;
+
+		}
+
+		if(StopControl.is_playing == true && UnityChan2DController.bonusflg == true)
+		{
+			bonustart++;
 		}
 
 		//ボーナスステージ中ならカメラを上に移す
 		if(UnityChan2DController.bonusflg == true)
 		{
-			bonustart++;
-
+		
 			//print("bonustart"+bonustart);
 
 			this.transform.position = new Vector3(player.transform.position.x + this.offset.x, this.homePosition.y + 11, this.transform.position.z);

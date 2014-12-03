@@ -8,7 +8,7 @@ public class StopControl : MonoBehaviour {
 	private GameObject Player = null;
 
 	//private int Count = 0;
-	private bool is_playing = true;
+	public static bool is_playing = true;
 
 	//public Texture2D icon;
 	

@@ -276,11 +276,11 @@ public class UnityChan2DController : MonoBehaviour
 		}
 	}
 
-		/*void Moves (Vector2 direction)
-	{
-		//rigidbody2D.velocity = direction * speed;
-		rigidbody2D.AddForce(direction * speed);
-	}*/
+	//public void Moves (transform.right speed)
+	//{
+	//	transform.Translate (transform.right * speed);
+		//rigidbody2D.AddForce(direction * speed);
+	//}
 
 
 	void Move(bool jump)

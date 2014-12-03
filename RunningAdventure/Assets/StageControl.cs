@@ -51,6 +51,7 @@ public class StageControl : MonoBehaviour {
 		{
 			print ("スタート画面に戻りまーす");
 			Application.LoadLevel ("Start");
+			FindObjectOfType<Score>(). Save ();
 			FindObjectOfType<UnityChan2DController>().Reset();
 			Debug.Log("bonusgauge" + Score.bonusgauge);
 		}

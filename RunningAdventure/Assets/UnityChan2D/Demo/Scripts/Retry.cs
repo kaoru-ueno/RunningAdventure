@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Retry : MonoBehaviour {
+public class Retry : MonoBehaviour 
+{
 
 //	public Texture2D star;
 	// Use this for initialization
@@ -13,5 +14,6 @@ public class Retry : MonoBehaviour {
 /*	void Update () {
 		if(Input.GetMouseButton(0)){
 			Application.LoadLevel("Start");
+	}
 	}*/
 }

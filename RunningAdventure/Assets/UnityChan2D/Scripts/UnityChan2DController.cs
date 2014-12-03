@@ -9,7 +9,7 @@ public class UnityChan2DController : MonoBehaviour
     public float jumpPower = 1000f;
     public Vector2 backwardForce = new Vector2(-4.5f, 5.4f);
 	public int coin = 1;
-
+	public int life = 0;
     public LayerMask whatIsGround;
 
     private Animator m_animator;
@@ -260,7 +260,21 @@ public class UnityChan2DController : MonoBehaviour
 			gameflg = false;
 
 		}
-    }
+		if(Unikill.enemyjump == true && Unikill.jumpplan < 2){
+
+			jumpPower = 6;
+			m_animator.SetTrigger("Jump");
+			SendMessage("Jump", SendMessageOptions.DontRequireReceiver);
+			float jumpHeight = jumpPower;
+			float gravity = Mathf.Abs(Physics.gravity.y);
+			float velocity = Mathf.Sqrt(2 * gravity * jumpHeight);
+			m_rigidbody2D.velocity = Vector2.up * velocity;
+			jumpPower = 12;
+			Unikill.enemyjump = false;
+			Unikill.jumpplan = 0;
+
+		}
+	}
 
 		/*void Moves (Vector2 direction)
 	{
@@ -388,7 +402,19 @@ public class UnityChan2DController : MonoBehaviour
 						//Destroy(other.gameObject);
 						other.gameObject.renderer.enabled = false;
 						}
+				if (other.tag == "Item") {
+//						GetComponent<Item>("item");
+//						life += item;
+						transform.localScale = new Vector3 (1, 1, 1);
+						other.gameObject.renderer.enabled = false;
+						m_state = State.Invincible;
+					StartCoroutine (INTERNAL_OnInvincible ());
+						
 				}
+				if (other.tag == "UniKill") {
+						other.gameObject.renderer.enabled = false;
+				}
+			}
 
 
 	IEnumerator INTERNAL_OnDamage()
@@ -412,11 +438,32 @@ public class UnityChan2DController : MonoBehaviour
         //m_animator.SetTrigger("Invincible Mode");
        // m_state = State.Invincible;
     }
+	IEnumerator INTERNAL_OnInvincible()
+	{
+		m_animator.Play("Invincible Mode");
+		m_animator.Play("Idle");
+		
+		
+		SendMessage("OnInvincible", SendMessageOptions.DontRequireReceiver);
+		
+		//m_rigidbody2D.velocity = new Vector2(transform.right.x * backwardForce.x, transform.up.y * backwardForce.y);
+		
+		yield return new WaitForSeconds(.5f);
+		
+		//Moves (transform.right);
+		
+		while (m_isGround == false)
+		{
+			yield return new WaitForFixedUpdate();
+		}
+		//m_animator.SetTrigger("Invincible Mode");
+		// m_state = State.Invincible;
+	}
 
 
     void OnFinishedInvincibleMode()
-    {
-        m_state = State.Normal;
+   {
+      m_state = State.Normal;
     }
 
 
@@ -445,8 +492,6 @@ public class UnityChan2DController : MonoBehaviour
 			}
 		}
 	}
-
-
     enum State
     {
         Normal,

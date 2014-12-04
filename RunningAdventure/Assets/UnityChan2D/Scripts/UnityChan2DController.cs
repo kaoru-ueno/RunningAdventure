@@ -446,12 +446,7 @@ public class UnityChan2DController : MonoBehaviour
 						other.gameObject.renderer.enabled = false;
 						m_state = State.Invincible;
 						StartCoroutine (INTERNAL_OnInvincible ());
-<<<<<<< HEAD
-//					GameObject.Find("kumo_0").renderer.enabled  = false;
-=======
 						GameObject.Find("kumo_0").renderer.enabled  = false;
->>>>>>> origin/master
-						
 						
 				}
 		if (other.tag == "UniKill" || other.tag == "Unikill2" || other.tag == "Unikill3")/*　|| other.tag == "Unikill4") */{

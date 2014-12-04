@@ -19,6 +19,7 @@ public class StageControl : MonoBehaviour {
 
 		GameObject.Find("Dist").guiText.text = "";
 		GameObject.Find("GameEnd").guiText.text = "";
+		GameObject.Find("GameEnd2").guiText.text = "";
 		GameObject.Find("gray").renderer.enabled  = false;
 		//GameObject.Find("GameOver").renderer.enabled  = false;
 		//GameObject.Find("GameOver").guiTexture.enabled = false;
@@ -35,6 +36,7 @@ public class StageControl : MonoBehaviour {
 	public void gameEnd(){
 		GameEndGUIText.guiText.color = Color.red;
 		GameEndGUIText.text = "GAME OVER";
+		GameObject.Find("GameEnd2").guiText.text = "画面タップで結果発表！";
 	}
 
 

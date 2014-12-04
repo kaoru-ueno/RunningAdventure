@@ -103,7 +103,7 @@ public class UnityChan2DController : MonoBehaviour
 
 		this.main_camera = GameObject.FindGameObjectWithTag("MainCamera");
 
-		GameObject.Find("Riskhedg").gameObject.collider2D.enabled = false;
+//		GameObject.Find("Riskhedg").gameObject.collider2D.enabled = false;
 
 	}
 
@@ -445,11 +445,11 @@ public class UnityChan2DController : MonoBehaviour
 						other.gameObject.renderer.enabled = false;
 						m_state = State.Invincible;
 						StartCoroutine (INTERNAL_OnInvincible ());
-					GameObject.Find("kumo_0").renderer.enabled  = false;
+//					GameObject.Find("kumo_0").renderer.enabled  = false;
 						
 						
 				}
-				if (other.tag == "UniKill" || other.tag == "Unikill2" || other.tag == "Unikill3") {
+		if (other.tag == "UniKill" || other.tag == "Unikill2" || other.tag == "Unikill3")/*　|| other.tag == "Unikill4") */{
 						other.gameObject.renderer.enabled = false;
 				}
 			}
@@ -485,8 +485,8 @@ public class UnityChan2DController : MonoBehaviour
 		
 		SendMessage("OnInvincible", SendMessageOptions.DontRequireReceiver);
 
-		GameObject.Find("Riskhedg").gameObject.collider2D.enabled = true;
-		GameObject.Find("kumo_0").renderer.enabled  = true;
+//		GameObject.Find("Riskhedg").gameObject.collider2D.enabled = true;
+//		GameObject.Find("kumo_0").renderer.enabled  = true;
 		
 		//m_rigidbody2D.velocity = new Vector2(transform.right.x * backwardForce.x, transform.up.y * backwardForce.y);
 		

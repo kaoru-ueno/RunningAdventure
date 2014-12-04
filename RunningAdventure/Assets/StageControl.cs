@@ -19,7 +19,7 @@ public class StageControl : MonoBehaviour {
 
 		GameObject.Find("Dist").guiText.text = "";
 		GameObject.Find("GameEnd").guiText.text = "";
-		GameObject.Find("gray").renderer.enabled  = false;
+//		GameObject.Find("gray").renderer.enabled  = false;
 		//GameObject.Find("GameOver").renderer.enabled  = false;
 		//GameObject.Find("GameOver").guiTexture.enabled = false;
 	}

@@ -7,10 +7,10 @@ public class CrystalsetControl : MonoBehaviour {
 	private GameObject main_camera = null;
 
 	// Waveプレハブを格納する
-	public GameObject[] crystal;
+	//public GameObject[] crystal;
 	
 	// 現在のWave
-	private int currentcrystal;
+	//private int currentcrystal;
 
 	// 初期位置.
 	//private Vector3	initial_position;
@@ -23,23 +23,23 @@ public class CrystalsetControl : MonoBehaviour {
 
 
 	
-	IEnumerator Start ()
+	void Start ()
 	{
 		
 		// Waveが存在しなければコルーチンを終了する
-		if (crystal.Length == 0) {
-			yield break;
-		}
+		//if (crystal.Length == 0) {
+			//yield break;
+		//}
 		// カメラのインスタンスを探しておく.
 		this.main_camera = GameObject.FindGameObjectWithTag("MainCamera");
 		
 		//this.initial_position = this.transform.position;
 		
 		//print (this.main_camera);
-		for (int i = 0; i < crystal.Length; i++) 
-		{
-		GameObject g = (GameObject)Instantiate (crystal [currentcrystal], transform.position, Quaternion.identity);
-		}
+		//for (int i = 0; i < crystal.Length; i++) 
+		//{
+		//GameObject g = (GameObject)Instantiate (crystal [currentcrystal], transform.position, Quaternion.identity);
+		//}
 	}
 	
 	void	Update()
@@ -71,15 +71,15 @@ public class CrystalsetControl : MonoBehaviour {
 
 			this.transform.position = floor_position;
 
-			GameObject g = (GameObject)Instantiate (crystal [currentcrystal], transform.position, Quaternion.identity);
+			//GameObject g = (GameObject)Instantiate (crystal [currentcrystal], transform.position, Quaternion.identity);
 			
 		}
 
 		// 格納されているWaveを全て実行したらcurrentWaveを0にする（最初から -> ループ）
-		if (crystal.Length <= ++currentcrystal) 
-		{
-			currentcrystal = 0;
-		}
+		//if (crystal.Length <= ++currentcrystal) 
+		//{
+		//	currentcrystal = 0;
+		//}
 			//print (this.transform.position);
 	}
 		

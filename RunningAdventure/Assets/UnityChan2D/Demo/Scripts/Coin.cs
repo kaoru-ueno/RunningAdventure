@@ -13,6 +13,8 @@ public class Coin : MonoBehaviour {
 
 			yield return new WaitForSeconds (Delay);
 			
-			gameObject.renderer.enabled = true;
+			if (gameObject.tag == "Player") {
+				gameObject.renderer.enabled = true;
+		}
 	}
 }

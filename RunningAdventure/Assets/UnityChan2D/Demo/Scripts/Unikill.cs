@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class Unikill : MonoBehaviour {
-
+	public GameObject CrowPrefab;
 	public static bool enemyjump = false;
 	public static int jumpplan = 0;
 	GameObject crow2;
@@ -10,6 +10,13 @@ public class Unikill : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		Move (transform.right * -1);
+		for (int i = 0; i < 20; i++) {
+			GameObject Crow = (GameObject)Instantiate(CrowPrefab);
+			Vector3 p = Crow.transform.position;
+			p.x = i * 20;
+			Crow.transform.position = p;
+			Move (transform.right * -1);
+		}
 	}
 
 	public void Move (Vector2 direction) 

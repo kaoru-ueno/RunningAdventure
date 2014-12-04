@@ -19,7 +19,7 @@ public class FloorControl : MonoBehaviour {
 	{
 		// カメラのインスタンスを探しておく.
 		this.main_camera = GameObject.FindGameObjectWithTag("MainCamera");
-		
+
 		//this.initial_position = this.transform.position;
 
 		//print (this.main_camera);

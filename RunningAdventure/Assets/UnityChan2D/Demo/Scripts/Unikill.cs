@@ -21,7 +21,7 @@ public class Unikill : MonoBehaviour {
 		if (gameObject.tag == "Unikill") {
 						GameObject.Find ("Uni").renderer.enabled = false;
 						GameObject.Find ("Uni").collider2D.enabled = false;
-				}else if(gameObject.tag == "Unikill2") {
+				} else if (gameObject.tag == "Unikill2") {
 						GameObject.Find ("Unisi").renderer.enabled = false;
 						GameObject.Find ("Unisi").collider2D.enabled = false;
 				}else{

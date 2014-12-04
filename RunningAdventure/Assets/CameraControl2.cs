@@ -18,6 +18,8 @@ public class CameraControl2 : MonoBehaviour {
 	public int bonusrage = 200;
 
 	public static bool bonusinv = false;
+
+	public Animator animator;
 	
 	void Start () {
 		
@@ -54,12 +56,30 @@ public class CameraControl2 : MonoBehaviour {
 			//print("bonustart"+bonustart);
 
 			this.transform.position = new Vector3(player.transform.position.x + this.offset.x, this.homePosition.y + 11, this.transform.position.z);
+
+			//animator.SetBool("LightStop", true);
 		}
 
 		else
 		{
 		// プレイヤーと一緒に移動.
 			this.transform.position = new Vector3(player.transform.position.x + this.offset.x, this.homePosition.y, this.transform.position.z);
+
+			//animator.SetBool("LightStop", false);
 		}
+
+		BackGround (UnityChan2DController.bonusflg);
+		Debug.Log ("bonusflg "+UnityChan2DController.bonusflg);
+
+	}
+
+	public void BackGround(bool BF)
+	{
+		GameObject.Find("bg_normal").renderer.enabled  = !BF;
+		GameObject.Find("mountain1").renderer.enabled  = !BF;
+		GameObject.Find("mountain2").renderer.enabled  = !BF;
+		GameObject.Find("bg_fever").renderer.enabled  = BF;
+		GameObject.Find("lighthouse").renderer.enabled  = BF;
+		Debug.Log ("!BF "+ !BF + BF);
 	}
 }

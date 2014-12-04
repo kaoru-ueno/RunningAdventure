@@ -485,8 +485,8 @@ public class UnityChan2DController : MonoBehaviour
 		
 		SendMessage("OnInvincible", SendMessageOptions.DontRequireReceiver);
 
-//		GameObject.Find("Riskhedg").gameObject.collider2D.enabled = true;
-//		GameObject.Find("kumo_0").renderer.enabled  = true;
+		GameObject.Find("Riskhedg").gameObject.collider2D.enabled = true;
+		GameObject.Find("kumo_0").renderer.enabled  = true;
 		
 		//m_rigidbody2D.velocity = new Vector2(transform.right.x * backwardForce.x, transform.up.y * backwardForce.y);
 		
@@ -506,7 +506,7 @@ public class UnityChan2DController : MonoBehaviour
     void OnFinishedInvincibleMode()
    {
     	m_state = State.Normal;
-		transform.localScale = new Vector3 (0.7f, 0.7f, 1f);
+		transform.localScale = new Vector3 (0.9f, 0.9f, 1f);
 		GameObject.Find("Riskhedg").gameObject.collider2D.enabled = false;
 		GameObject.Find("kumo_0").renderer.enabled  = false;
     }

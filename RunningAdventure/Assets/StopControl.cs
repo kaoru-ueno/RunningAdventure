@@ -10,6 +10,8 @@ public class StopControl : MonoBehaviour {
 	//private int Count = 0;
 	public static bool is_playing = true;
 
+	private float time = 0.0f;
+
 	//public Texture2D icon;
 	
 	//public GUISkin skin;
@@ -120,9 +122,12 @@ void OnGUI ()
 				{
 				Player.rigidbody2D.gravityScale = 0.0f;
 				Player.GetComponent<UnityChan2DController>().enabled = false;
-				Player.rigidbody2D.velocity = transform.right * 0;
+				//Player.rigidbody2D.velocity = transform.right * 0;
 				//Player.animation.Stop();
 				animator.SetBool("Stop", true);
+				Time.timeScale = 0f;
+			
+
 			//if(Count == 1)
 			//{
 
@@ -143,6 +148,8 @@ void OnGUI ()
 				//FindObjectOfType<UnityChan2DController>().Moves (UnityChan2DController.speedlevel);
 				//Player.animation.Play();
 				animator.SetBool("Stop", false);
+				Time.timeScale = 1f;
+			
 
 				is_playing = true;
 				//Count++;

@@ -446,7 +446,7 @@ public class UnityChan2DController : MonoBehaviour
 						other.gameObject.renderer.enabled = false;
 						m_state = State.Invincible;
 						StartCoroutine (INTERNAL_OnInvincible ());
-					GameObject.Find("kumo_0").renderer.enabled  = false;
+						GameObject.Find("kumo_0").renderer.enabled  = false;
 						
 						
 				}

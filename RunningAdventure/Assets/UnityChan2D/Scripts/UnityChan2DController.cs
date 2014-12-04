@@ -51,7 +51,7 @@ public class UnityChan2DController : MonoBehaviour
 
 	private int GameSC = 0;
 
-	//private bool ypos = false;
+	private bool gamed = true;
 
 
   public void Reset()
@@ -85,6 +85,7 @@ public class UnityChan2DController : MonoBehaviour
 		bonusJump = 0;
 		GameSC = 0;
 		Score.bonusgauge = 0;
+		gamed = true;
     }
 	
     void Awake()
@@ -263,7 +264,7 @@ public class UnityChan2DController : MonoBehaviour
         }
 
 		//ゲームオーバーの条件
-		if(transform.position.y < -8)
+		if(transform.position.y < -8 && gamed)
 		{
 			//ゲームオーバー画面表示
 			FindObjectOfType<StageControl>().gameEnd();
@@ -445,7 +446,11 @@ public class UnityChan2DController : MonoBehaviour
 						other.gameObject.renderer.enabled = false;
 						m_state = State.Invincible;
 						StartCoroutine (INTERNAL_OnInvincible ());
+<<<<<<< HEAD
 //					GameObject.Find("kumo_0").renderer.enabled  = false;
+=======
+						GameObject.Find("kumo_0").renderer.enabled  = false;
+>>>>>>> origin/master
 						
 						
 				}
@@ -519,7 +524,9 @@ public class UnityChan2DController : MonoBehaviour
 		{
 			FindObjectOfType<StageControl> ().gameEndSC ();
 			GameObject.Find("gray").renderer.enabled  = true;
-
+			gamed = false;
+			GameObject.Find("GameEnd").guiText.text = "";
+			GameObject.Find("GameEnd2").guiText.text = "";
 			GameSC++;
 		}
 
@@ -534,6 +541,9 @@ public class UnityChan2DController : MonoBehaviour
 			{
 				FindObjectOfType<StageControl> ().gameEndSC ();
 				GameObject.Find("gray").renderer.enabled  = true;
+				gamed = false;
+				GameObject.Find("GameEnd").guiText.text = "";
+				GameObject.Find("GameEnd2").guiText.text = "";
 				GameSC++;
 			}
 		}

@@ -6978,7 +6978,7 @@ Transform:
   - {fileID: 1446265124}
   - {fileID: 672603810}
   m_Father: {fileID: 2036217997}
-  m_RootOrder: 4
+  m_RootOrder: 5
 --- !u!212 &121026865
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20564,6 +20564,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70650a7a7db75834a98821e15c1480e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CrowPrefab: {fileID: 0}
 --- !u!23 &353600432
 Renderer:
   m_ObjectHideFlags: 0
@@ -23612,7 +23613,7 @@ Transform:
   - {fileID: 135267569}
   - {fileID: 400607319}
   m_Father: {fileID: 2036217997}
-  m_RootOrder: 6
+  m_RootOrder: 2
 --- !u!212 &411538434
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27096,6 +27097,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70650a7a7db75834a98821e15c1480e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CrowPrefab: {fileID: 0}
 --- !u!23 &470528627
 Renderer:
   m_ObjectHideFlags: 0
@@ -37674,7 +37676,7 @@ Transform:
   - {fileID: 953678535}
   - {fileID: 970071081}
   m_Father: {fileID: 2036217997}
-  m_RootOrder: 5
+  m_RootOrder: 9
 --- !u!212 &650942937
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -52481,6 +52483,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70650a7a7db75834a98821e15c1480e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CrowPrefab: {fileID: 0}
 --- !u!23 &872143219
 Renderer:
   m_ObjectHideFlags: 0
@@ -69158,7 +69161,7 @@ Transform:
   - {fileID: 587251540}
   - {fileID: 285688479}
   m_Father: {fileID: 2036217997}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!212 &1111971711
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -69219,7 +69222,7 @@ Transform:
   - {fileID: 174286192}
   - {fileID: 1943613861}
   m_Father: {fileID: 2036217997}
-  m_RootOrder: 9
+  m_RootOrder: 8
 --- !u!212 &1112331321
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -81684,6 +81687,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70650a7a7db75834a98821e15c1480e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CrowPrefab: {fileID: 0}
 --- !u!23 &1298777285
 Renderer:
   m_ObjectHideFlags: 0
@@ -100703,7 +100707,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: edaf1c71b0d9f1d44af8ca1cc87f3fdd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1.00239527}
 --- !u!4 &1617824602
 Transform:
   m_ObjectHideFlags: 0
@@ -100711,7 +100715,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1617824599}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.25140774, y: 1.90998995, z: -10}
+  m_LocalPosition: {x: -1.24968803, y: 1.90998983, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 256178841}
@@ -115545,7 +115549,7 @@ Transform:
   - {fileID: 686228135}
   - {fileID: 1211669937}
   m_Father: {fileID: 2036217997}
-  m_RootOrder: 8
+  m_RootOrder: 7
 --- !u!212 &1861356597
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -115746,7 +115750,7 @@ Transform:
   - {fileID: 548268670}
   - {fileID: 12471477}
   m_Father: {fileID: 2036217997}
-  m_RootOrder: 7
+  m_RootOrder: 6
 --- !u!212 &1864289004
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -117378,6 +117382,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70650a7a7db75834a98821e15c1480e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CrowPrefab: {fileID: 0}
 --- !u!23 &1886132521
 Renderer:
   m_ObjectHideFlags: 0
@@ -124730,7 +124735,7 @@ Transform:
   - {fileID: 600473169}
   - {fileID: 229435688}
   m_Father: {fileID: 2036217997}
-  m_RootOrder: 3
+  m_RootOrder: 4
 --- !u!212 &1999382406
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -124949,6 +124954,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70650a7a7db75834a98821e15c1480e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CrowPrefab: {fileID: 0}
 --- !u!23 &2002388699
 Renderer:
   m_ObjectHideFlags: 0
@@ -125972,6 +125978,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70650a7a7db75834a98821e15c1480e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CrowPrefab: {fileID: 0}
 --- !u!23 &2018796482
 Renderer:
   m_ObjectHideFlags: 0
@@ -126725,14 +126732,14 @@ Transform:
   m_Children:
   - {fileID: 1431490462}
   - {fileID: 104819819}
+  - {fileID: 411538433}
   - {fileID: 1111971710}
   - {fileID: 1999382405}
   - {fileID: 121026864}
-  - {fileID: 650942936}
-  - {fileID: 411538433}
   - {fileID: 1864289003}
   - {fileID: 1861356596}
   - {fileID: 1112331320}
+  - {fileID: 650942936}
   m_Father: {fileID: 0}
   m_RootOrder: 8
 --- !u!114 &2036217998
@@ -126746,7 +126753,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e39d319ed7c1ed3408f14389ad436a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WIDTH: 45
+  WIDTH: 38
   MODEL_NUM: 4
 --- !u!212 &2036217999
 SpriteRenderer:

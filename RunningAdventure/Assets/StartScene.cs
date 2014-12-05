@@ -108,7 +108,7 @@ public class StartScene : MonoBehaviour {
 			// ボタンを表示する
 			if (GUI.Button(new Rect(Screen.width / 2 - ButtonWidth / 2, (Screen.height / 2 - ButtonHeight / 2)+20, ButtonWidth, ButtonHeight),"", startButtonStyle)){
 				print ("スタートをクリックしました");
-				Application.LoadLevel ("Game");
+				Application.LoadLevel ("Test_kudo");
 				UnityChan2DController.gameflg = true;
 
 			}

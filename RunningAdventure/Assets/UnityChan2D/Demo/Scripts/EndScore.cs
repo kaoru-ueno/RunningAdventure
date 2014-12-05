@@ -8,6 +8,10 @@ public class EndScore : MonoBehaviour
 	public GUIText kmGUIText;
 	public GUIText clistalScoreGUIText;
 	private GameObject main_camera = null;
+	private float dist = 0;
+	private float total = 0;
+
+
 
 	void Start ()
 	{
@@ -19,11 +23,16 @@ public class EndScore : MonoBehaviour
 	{
 		if (UnityChan2DController.gameflg == false)
 		{
-			endHighScoreGUIText.text = Score.highScore.ToString ();
-			//endScoreGUIText.text = Score.score.ToString ((””));
-			clistalScoreGUIText.text = Score.score.ToString ("獲得したクリスタルは" + ("0") + "点です");
 			Vector3 camera_position = this.main_camera.transform.position;
+			dist = camera_position.x;
+			total = dist + Score.score;
+
+			endHighScoreGUIText.text = Score.highScore.ToString ("0");
+			endScoreGUIText.text = total.ToString ("0");
+			clistalScoreGUIText.text = Score.score.ToString ("獲得したクリスタルは" + ("0") + "点です");
 			kmGUIText.text = camera_position.x.ToString ("あなたの走行距離は" + ("0") + "mです");
+
+
 		}
 	}
 }

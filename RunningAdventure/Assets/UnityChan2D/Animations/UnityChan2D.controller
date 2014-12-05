@@ -218,7 +218,7 @@ Transition:
   m_SrcState: {fileID: 110200000}
   m_DstState: {fileID: 110289722}
   m_TransitionDuration: 0
-  m_TransitionOffset: 0
+  m_TransitionOffset: .0332813449
   m_Conditions:
   - m_ConditionMode: 1
     m_ConditionEvent: Stop
@@ -849,13 +849,13 @@ Transition:
   m_Name: 
   m_SrcState: {fileID: 110279588}
   m_DstState: {fileID: 110231026}
-  m_TransitionDuration: 1.56381416
-  m_TransitionOffset: .0093913069
+  m_TransitionDuration: 1.74314475
+  m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 5
     m_ConditionEvent: Invincible Mode
     m_EventTreshold: 0
-    m_ExitTime: .98792845
+    m_ExitTime: .864198387
   m_Atomic: 1
   m_Solo: 0
   m_Mute: 0
@@ -1118,7 +1118,7 @@ State:
   m_Speed: 1
   m_CycleOffset: 0
   m_Motions:
-  - {fileID: 7400000, guid: e4de0a8097920b34c89a2f930c3a4f04, type: 2}
+  - {fileID: 7400000, guid: 9e43a4e5914fb47dda3aceb7c0b6e7f2, type: 2}
   m_ParentStateMachine: {fileID: 110700000}
   m_Position: {x: 108, y: 84, z: 0}
   m_IKOnFeet: 0

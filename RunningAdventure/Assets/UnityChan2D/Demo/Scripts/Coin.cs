@@ -5,7 +5,7 @@ public class Coin : MonoBehaviour {
 
 	public int point;
 
-	private float Delay = 5;
+	private float Delay = 10;
 
 	IEnumerator OnTriggerEnter2D(Collider2D c){
 
@@ -13,6 +13,8 @@ public class Coin : MonoBehaviour {
 
 			yield return new WaitForSeconds (Delay);
 			
-			gameObject.renderer.enabled = true;
+			//if (gameObject.tag == "Player") {
+				gameObject.renderer.enabled = true;
+		//}
 	}
 }

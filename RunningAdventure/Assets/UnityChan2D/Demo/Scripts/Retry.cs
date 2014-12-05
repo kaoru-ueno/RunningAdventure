@@ -17,7 +17,3 @@ public class Retry : MonoBehaviour {
 	}
 	}*/
 }
-=======
-	}*/
-	}
->>>>>>> origin/master

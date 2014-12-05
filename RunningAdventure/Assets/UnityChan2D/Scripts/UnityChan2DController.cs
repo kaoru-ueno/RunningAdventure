@@ -41,7 +41,7 @@ public class UnityChan2DController : MonoBehaviour
 	public static bool bonusflg = false;
 
 	//どれだけスコアが溜まったらボーナスステージにするかの値
-	public static  int bonuscount = 50;
+	public static  int bonuscount = 200;
 	
 	//ジャンプの制限時間カウント
 	public static int jumpconstraint = 0;
@@ -308,12 +308,12 @@ public class UnityChan2DController : MonoBehaviour
 
 		if(s == 2)
 		{
-			transform.Translate (transform.right * speed * 1.2f);
+			transform.Translate (transform.right * speed * 2f);
 		}
 
 		if(s == 3)
 		{
-			transform.Translate (transform.right * speed * 1.5f);
+			transform.Translate (transform.right * speed * 2f);
 		}
 		//rigidbody2D.AddForce(direction * speed);
 	}

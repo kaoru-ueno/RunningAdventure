@@ -13,7 +13,7 @@ public class FloorControl : MonoBehaviour {
 	public static float	WIDTH = 32f;
 	
 	// 床モデルの数.
-	public static float	MODEL_NUM = 10;
+	public static float	MODEL_NUM = 12;
 
 	void	Start() 
 	{

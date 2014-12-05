@@ -9,7 +9,7 @@ public class EndScore : MonoBehaviour
 	public GUIText clistalScoreGUIText;
 	private GameObject main_camera = null;
 	private float dist = 0;
-	private float total = 0;
+	public static float total = 0;
 
 
 

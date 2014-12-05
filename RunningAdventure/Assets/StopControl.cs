@@ -114,47 +114,51 @@ public class StopControl : MonoBehaviour {
 	}*/
 void OnGUI ()
 	{
-		if (is_playing)
+		if(UnityChan2DController.gameflg)
 		{
-			if (GUI.Button (new Rect(Screen.width - ButtonWidth, 0, ButtonWidth, ButtonHeight), btnStopTexture, ButtonStyle))
-			{	
-				if(UnityChan2DController.jumpconstraint > 70 || UnityChan2DController.bonusflg == false)
-				{
-				Player.rigidbody2D.gravityScale = 0.0f;
-				Player.GetComponent<UnityChan2DController>().enabled = false;
-				//Player.rigidbody2D.velocity = transform.right * 0;
-				//Player.animation.Stop();
-				animator.SetBool("Stop", true);
-				Time.timeScale = 0f;
-			
+			if (is_playing)
+			{
+				if (GUI.Button (new Rect(Screen.width - ButtonWidth, 0, ButtonWidth, ButtonHeight), btnStopTexture, ButtonStyle))
+				{	
+					if(UnityChan2DController.jumpconstraint > 70 || UnityChan2DController.bonusflg == false)
+					{
+					Player.rigidbody2D.gravityScale = 0.0f;
+					Player.GetComponent<UnityChan2DController>().enabled = false;
+					//Player.rigidbody2D.velocity = transform.right * 0;
+					//Player.animation.Stop();
+					animator.SetBool("Stop", true);
+					Time.timeScale = 0f;
+				
 
-			//if(Count == 1)
-			//{
+				//if(Count == 1)
+				//{
 
-				is_playing = false;
-				//Count = 0;
-
-				//print ("アイコンをクリックしました");
-				}
-			}
-		} 
-		else {
-			if (GUI.Button (new Rect(Screen.width - ButtonWidth, 0, ButtonWidth, ButtonHeight), btnStartTexture, ButtonStyle))
-			{	
-				if(UnityChan2DController.jumpconstraint > 70 || UnityChan2DController.bonusflg == false)
-				{
-				Player.rigidbody2D.gravityScale = 3.5f;
-				Player.GetComponent<UnityChan2DController>().enabled = true;
-				//FindObjectOfType<UnityChan2DController>().Moves (UnityChan2DController.speedlevel);
-				//Player.animation.Play();
-				animator.SetBool("Stop", false);
-				Time.timeScale = 1f;
-			
-
-				is_playing = true;
-				//Count++;
+					is_playing = false;
+					//Count = 0;
 
 					//print ("アイコンをクリックしました");
+					}
+				}
+			}
+
+			else {
+				if (GUI.Button (new Rect(Screen.width - ButtonWidth, 0, ButtonWidth, ButtonHeight), btnStartTexture, ButtonStyle))
+				{	
+					if(UnityChan2DController.jumpconstraint > 70 || UnityChan2DController.bonusflg == false)
+					{
+					Player.rigidbody2D.gravityScale = 3.5f;
+					Player.GetComponent<UnityChan2DController>().enabled = true;
+					//FindObjectOfType<UnityChan2DController>().Moves (UnityChan2DController.speedlevel);
+					//Player.animation.Play();
+					animator.SetBool("Stop", false);
+					Time.timeScale = 1f;
+				
+
+					is_playing = true;
+					//Count++;
+
+						//print ("アイコンをクリックしました");
+					}
 				}
 			}
 		}

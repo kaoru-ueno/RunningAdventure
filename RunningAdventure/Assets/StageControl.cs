@@ -36,7 +36,7 @@ public class StageControl : MonoBehaviour {
 
 	void Update () {
 		Vector3	camera_position = this.main_camera.transform.position;
-		DistGUIText.text = camera_position.x.ToString("0") + " m";
+		DistGUIText.text = camera_position.x.ToString("0");
 		  
 	}
 

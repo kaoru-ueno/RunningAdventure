@@ -4,9 +4,7 @@ using System.Collections;
 public class StageControl : MonoBehaviour {
 
 	public GUIText DistGUIText;
-	public GUIText GameEndGUIText;
 	public GameObject GameEndGameObject;
-	//public GUITexture GameEndSCGUITexture;
 	private GameObject main_camera = null;
 	private int ButtonWidth = 250;
 	private int ButtonHeight = 65;
@@ -19,9 +17,9 @@ public class StageControl : MonoBehaviour {
 		this.main_camera = GameObject.FindGameObjectWithTag("MainCamera");
 
 		GameObject.Find("Dist").guiText.text = "";
-		GameObject.Find("GameEnd").guiText.text = "";
+		//GameObject.Find("GameEnd").guiText.text = "";
 		GameObject.Find("gray").renderer.enabled  = false;
-		GameObject.Find("GameEnd2").guiText.text = "";
+		//GameObject.Find("GameEnd2").guiText.text = "";
 
 	}
 
@@ -32,22 +30,19 @@ public class StageControl : MonoBehaviour {
 
 		if(UnityChan2DController.gameflg)
 		{
+			Debug.Log("gameflg " + UnityChan2DController.gameflg); 
 			DistGUIText.text = camera_position.x.ToString("0");
-		}
-
-		else
-		{
-			DistGUIText.text = "";
-		}
-		  
+		} 
 	}
 
 
 	public void gameEnd()
 	{
-		GameEndGUIText.guiText.color = Color.red;
-		GameEndGUIText.text = "GAME OVER";
-		GameObject.Find("GameEnd2").guiText.text = "画面タップで結果発表！";
+		//GameEndGUIText.guiText.color = Color.red;
+		//GameEndGUIText.text = "GAME OVER";
+		//GameObject.Find("GameEnd2").guiText.text = "画面タップで結果発表！";
+		GameObject.Find("gameoverTxt").renderer.enabled  = true;
+		GameObject.Find("Result").renderer.enabled  = true;
 	}
 
 

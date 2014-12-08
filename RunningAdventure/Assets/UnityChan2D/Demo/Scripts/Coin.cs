@@ -10,7 +10,8 @@ public class Coin : MonoBehaviour {
 	IEnumerator OnTriggerEnter2D(Collider2D c){
 
 			FindObjectOfType<Score> ().AddPoint(point);
-
+			audio.Play();
+			
 			yield return new WaitForSeconds (Delay);
 			
 			//if (gameObject.tag == "Player") {

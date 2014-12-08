@@ -40,7 +40,11 @@ public class Score : MonoBehaviour
 		
 		// スコア・ハイスコアを表示する
 		//scoreGUIText.text = "Score:" + score.ToString ();
-		scoreGUIText.text = score.ToString ();
+		if(UnityChan2DController.gameflg)
+		{
+			scoreGUIText.text = score.ToString ();
+		}
+
 		highScoreGUIText.text = "HighScore:" + highScore.ToString ();
 
 		//if(UnityChan2DController.gameflg == false)

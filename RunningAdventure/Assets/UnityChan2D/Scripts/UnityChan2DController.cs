@@ -524,9 +524,9 @@ public class UnityChan2DController : MonoBehaviour
 			GameObject.Find("GameEnd").guiText.text = "";
 			GameObject.Find("GameEnd2").guiText.text = "";
 			//GameObject.Find("Dist").guiText.text = "";
-			//GameObject.Find("score").guiText.text = "";
-			//GameObject.Find("ScoreBG").renderer.enabled  = false;
-			//GameObject.Find("DistBG").renderer.enabled  = false;
+			GameObject.Find("score").guiText.text = "";
+			GameObject.Find("ScoreBG").guiTexture.enabled  = false;
+			GameObject.Find("DistBG").guiTexture.enabled  = false;
 
 			GameSC++;
 		}
@@ -546,9 +546,9 @@ public class UnityChan2DController : MonoBehaviour
 				GameObject.Find("GameEnd").guiText.text = "";
 				GameObject.Find("GameEnd2").guiText.text = "";
 				//GameObject.Find("Dist").guiText.text = "";
-				//GameObject.Find("score").guiText.text = "";
-				//GameObject.Find("ScoreBG").renderer.enabled  = false;
-				//GameObject.Find("DistBG").renderer.enabled  = false;
+				GameObject.Find("score").guiText.text = "";
+				GameObject.Find("ScoreBG").guiTexture.enabled  = false;
+				GameObject.Find("DistBG").guiTexture.enabled  = false;
 				GameSC++;
 			}
 		}

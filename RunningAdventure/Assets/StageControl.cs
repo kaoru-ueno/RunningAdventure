@@ -13,35 +13,38 @@ public class StageControl : MonoBehaviour {
 	public GUIStyle retryButtonStyle;
 
 
-	void Start () {
+	void Start ()
+	{
 
 		this.main_camera = GameObject.FindGameObjectWithTag("MainCamera");
 
 		GameObject.Find("Dist").guiText.text = "";
 		GameObject.Find("GameEnd").guiText.text = "";
-
-
 		GameObject.Find("gray").renderer.enabled  = false;
 		GameObject.Find("GameEnd2").guiText.text = "";
-		GameObject.Find("gray").renderer.enabled  = false;
-
-		//GameObject.Find("GameOver").renderer.enabled  = false;
-		//GameObject.Find("GameOver").guiTexture.enabled = false;
-
-		GameObject.Find("GameEnd2").guiText.text = "";
-		GameObject.Find("gray").renderer.enabled  = false;
 
 	}
 
 
-	void Update () {
+	void Update () 
+	{
 		Vector3	camera_position = this.main_camera.transform.position;
-		DistGUIText.text = camera_position.x.ToString("0");
+
+		if(UnityChan2DController.gameflg)
+		{
+			DistGUIText.text = camera_position.x.ToString("0");
+		}
+
+		else
+		{
+			DistGUIText.text = "";
+		}
 		  
 	}
 
 
-	public void gameEnd(){
+	public void gameEnd()
+	{
 		GameEndGUIText.guiText.color = Color.red;
 		GameEndGUIText.text = "GAME OVER";
 		GameObject.Find("GameEnd2").guiText.text = "画面タップで結果発表！";
@@ -63,7 +66,7 @@ public class StageControl : MonoBehaviour {
 			Application.LoadLevel ("Start");
 			FindObjectOfType<Score>(). Save ();
 			FindObjectOfType<UnityChan2DController>().Reset();
-			Debug.Log("bonusgauge" + Score.bonusgauge);
+			//Debug.Log("bonusgauge" + Score.bonusgauge);
 		}
 		
 	}

@@ -41,7 +41,7 @@ public class UnityChan2DController : MonoBehaviour
 	public static bool bonusflg = false;
 
 	//どれだけスコアが溜まったらボーナスステージにするかの値
-	public static  int bonuscount = 200;
+	public static  int bonuscount = 2000;
 	
 	//ジャンプの制限時間カウント
 	public static int jumpconstraint = 0;

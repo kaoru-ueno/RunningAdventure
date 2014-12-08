@@ -2,36 +2,34 @@
 using System.Collections;
 
 public class Unikill : MonoBehaviour {
-
+	public GameObject CrowPrefab;
 	public static bool enemyjump = false;
 	public static int jumpplan = 0;
-	GameObject crow;
 	GameObject crow2;
-
-	void Start() {
-
-		}
-
-	void Update() {
-
+	GameObject crow;
+	// Use this for initialization
+	void Start () {
+		Move (transform.right * -1);
+		for (int i = 0; i < 20; i++) {
+			GameObject Crow = (GameObject)Instantiate(CrowPrefab);
+			Vector3 p = Crow.transform.position;
+			p.x = i * 20;
+			Crow.transform.position = p;
 			Move (transform.right * -1);
-
+		}
 	}
+
 	public void Move (Vector2 direction) 
 	{
-
-		crow = GameObject.Find ("Crow");
-		crow.rigidbody2D.velocity = direction * 2;
-		crow2 = GameObject.Find ("Crow2");
-		crow2.rigidbody2D.velocity = direction * 3;
-//		crow2.rigidbody2D.velocity = direction * 4;
-//		rigidbody2D.velocity = direction * 2;
-/*		float rnd = Random.Range (-1.0f, 2.0f);
+		float rnd = Random.Range (-1.0f, 2.0f);
+//		GameObject.Find ("Crow2").rigidbody2D.velocity = direction * 3;
+		crow = GameObject.Find("Crow");
 		crow.rigidbody2D.velocity = direction * 4;
 		crow.transform.position = new Vector2(10.0f ,rnd);
+		crow2 = GameObject.Find("Crow2");
 		crow2.rigidbody2D.velocity = direction * 3;
 		crow2.transform.position = new Vector2(10.0f ,rnd);
-*/	}
+	}
 
 	void OnTriggerStay2D(Collider2D other)
 	{
@@ -52,5 +50,6 @@ public class Unikill : MonoBehaviour {
 			}
 		enemyjump = true;
 		jumpplan++; 
+		Debug.Log ("enemyjump" + enemyjump);
 	}
 }

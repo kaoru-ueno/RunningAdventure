@@ -21,7 +21,6 @@ public class CrystalsetControl : MonoBehaviour {
 	// 床モデルの数.
 	public    float MODEL_NUM = 1;
 
-
 	
 	void Start ()
 	{

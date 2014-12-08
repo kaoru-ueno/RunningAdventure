@@ -69,7 +69,7 @@ public class CameraControl2 : MonoBehaviour {
 		}
 
 		BackGround (UnityChan2DController.bonusflg);
-		Debug.Log ("bonusflg "+UnityChan2DController.bonusflg);
+//		Debug.Log ("bonusflg "+UnityChan2DController.bonusflg);
 
 	}
 
@@ -80,6 +80,6 @@ public class CameraControl2 : MonoBehaviour {
 		GameObject.Find("mountain2").renderer.enabled  = !BF;
 		GameObject.Find("bg_fever").renderer.enabled  = BF;
 		GameObject.Find("lighthouse").renderer.enabled  = BF;
-		Debug.Log ("!BF "+ !BF + BF);
+//		Debug.Log ("!BF "+ !BF + BF);
 	}
 }

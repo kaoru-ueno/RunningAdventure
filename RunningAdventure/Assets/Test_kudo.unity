@@ -6371,7 +6371,7 @@ Transform:
   - {fileID: 1855148958}
   - {fileID: 1934990491}
   m_Father: {fileID: 2036217997}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!212 &104819820
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23613,7 +23613,7 @@ Transform:
   - {fileID: 135267569}
   - {fileID: 400607319}
   m_Father: {fileID: 2036217997}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!212 &411538434
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -126731,8 +126731,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1431490462}
-  - {fileID: 104819819}
   - {fileID: 411538433}
+  - {fileID: 104819819}
   - {fileID: 1111971710}
   - {fileID: 1999382405}
   - {fileID: 121026864}

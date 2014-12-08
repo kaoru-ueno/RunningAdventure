@@ -34,12 +34,17 @@ public class Score : MonoBehaviour
 	void Update ()
 	{
 		// スコアがハイスコアより大きければ
-		if (highScore < score) {
-			highScore = score;
+		if (highScore < (int)EndScore.total) {
+			highScore = (int)EndScore.total;
 		}
 		
 		// スコア・ハイスコアを表示する
-		scoreGUIText.text = "Score:" + score.ToString ();
+		//scoreGUIText.text = "Score:" + score.ToString ();
+		if(UnityChan2DController.gameflg)
+		{
+			scoreGUIText.text = score.ToString ();
+		}
+
 		highScoreGUIText.text = "HighScore:" + highScore.ToString ();
 
 		//if(UnityChan2DController.gameflg == false)

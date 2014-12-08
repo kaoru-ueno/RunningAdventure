@@ -41,7 +41,7 @@ public class UnityChan2DController : MonoBehaviour
 	public static bool bonusflg = false;
 
 	//どれだけスコアが溜まったらボーナスステージにするかの値
-	public static  int bonuscount = 50;
+	public static  int bonuscount = 2000;
 	
 	//ジャンプの制限時間カウント
 	public static int jumpconstraint = 0;
@@ -209,7 +209,7 @@ public class UnityChan2DController : MonoBehaviour
 								//}
 								
 								
-								if(camera_position.x > speedometer && camera_position.x < speedometer * 2 + 1.0f )
+								if(camera_position.x > speedometer * 5 && camera_position.x < speedometer * 5 + 1.0f )
 								{
 									speedlevel = 3;
 								}
@@ -308,12 +308,12 @@ public class UnityChan2DController : MonoBehaviour
 
 		if(s == 2)
 		{
-			transform.Translate (transform.right * speed * 1.2f);
+			transform.Translate (transform.right * speed * 1.3f);
 		}
 
 		if(s == 3)
 		{
-			transform.Translate (transform.right * speed * 1.5f);
+			transform.Translate (transform.right * speed * 1.7f);
 		}
 		//rigidbody2D.AddForce(direction * speed);
 	}
@@ -523,6 +523,11 @@ public class UnityChan2DController : MonoBehaviour
 			gamed = false;
 			GameObject.Find("GameEnd").guiText.text = "";
 			GameObject.Find("GameEnd2").guiText.text = "";
+			//GameObject.Find("Dist").guiText.text = "";
+			GameObject.Find("score").guiText.text = "";
+			GameObject.Find("ScoreBG").guiTexture.enabled  = false;
+			GameObject.Find("DistBG").guiTexture.enabled  = false;
+
 			GameSC++;
 		}
 
@@ -540,6 +545,10 @@ public class UnityChan2DController : MonoBehaviour
 				gamed = false;
 				GameObject.Find("GameEnd").guiText.text = "";
 				GameObject.Find("GameEnd2").guiText.text = "";
+				//GameObject.Find("Dist").guiText.text = "";
+				GameObject.Find("score").guiText.text = "";
+				GameObject.Find("ScoreBG").guiTexture.enabled  = false;
+				GameObject.Find("DistBG").guiTexture.enabled  = false;
 				GameSC++;
 			}
 		}

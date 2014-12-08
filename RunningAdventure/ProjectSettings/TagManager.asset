@@ -56,7 +56,7 @@ TagManager:
     userID: 0
     uniqueID: 0
     locked: 0
-  - name: Bullet
+  - name: BG
     userID: 1
     uniqueID: 3799605449
     locked: 0

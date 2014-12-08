@@ -436,7 +436,6 @@ public class UnityChan2DController : MonoBehaviour
 				}
 				if (other.tag == "Coin" || other.tag == "Scoin" || other.tag == "Goldcoin") {
 						//Destroy(other.gameObject);
-						audio.Play();
 						other.gameObject.renderer.enabled = false;
 						}
 

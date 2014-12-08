@@ -38,9 +38,9 @@ public class UniEmitter : MonoBehaviour {
 		
 			GameObject g = (GameObject)Instantiate (exsitCrows [currentCrow],new Vector2(camera_position.x + 10f ,rnd), Quaternion.identity);
 			if (bird %2 == 0){
-			g.rigidbody2D.velocity = transform.right * -6;
+			g.rigidbody2D.velocity = transform.right * -4;
 			}else{
-				g.rigidbody2D.velocity = transform.right * -8;
+				g.rigidbody2D.velocity = transform.right * -3;
 			}
 			bird++;
 //			Debug.Log ("exsitCrows" + exsitCrows);

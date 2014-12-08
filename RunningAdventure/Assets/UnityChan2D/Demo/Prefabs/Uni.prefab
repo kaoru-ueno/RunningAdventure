@@ -45,8 +45,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .0700001717, y: .578003645, z: 10}
-  m_LocalScale: {x: .870000005, y: .100000001, z: 1}
+  m_LocalPosition: {x: .070000641, y: .578003705, z: 0}
+  m_LocalScale: {x: 1.1527499, y: .16124998, z: 1}
   m_Children: []
   m_Father: {fileID: 400002}
   m_RootOrder: 0
@@ -57,7 +57,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.86969924, y: -2.57097149, z: 0}
+  m_LocalPosition: {x: 18.2021236, y: -2.09183264, z: 0}
   m_LocalScale: {x: 1.5773629, y: 1.57736361, z: 1}
   m_Children:
   - {fileID: 400000}
@@ -99,7 +99,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Radius: .300000012
+  m_Radius: .400000006
   m_Center: {x: 0, y: 0}
 --- !u!61 &6100000
 BoxCollider2D:
@@ -149,7 +149,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70650a7a7db75834a98821e15c1480e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CrowPrefab: {fileID: 100000, guid: bf00271b991c98b4eaf3bab55c76674b, type: 2}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -168,7 +167,7 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
+  m_SortingLayerID: 1602230041
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8752bfb9d62f6ee448ce86f562f00f01, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

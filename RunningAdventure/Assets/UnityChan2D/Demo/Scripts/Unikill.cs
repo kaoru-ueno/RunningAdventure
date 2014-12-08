@@ -35,21 +35,25 @@ public class Unikill : MonoBehaviour {
 
 	void OnTriggerStay2D(Collider2D other)
 	{
-		if (other.tag != "Player")return;{
+		if (other.tag != "Player")return;
+
 			if (gameObject.tag == "Unikill") {
 					GameObject.Find ("Uni").renderer.enabled = false;
-					GameObject.Find ("Uni").collider2D.enabled = false;
-				} else if (gameObject.tag == "Unikill2") {
+					GameObject.Find ("Uni").collider2D.enabled = false;		
+		}
+			if (gameObject.tag == "Unikill2") {
 					GameObject.Find ("Unisi").renderer.enabled = false;
 					GameObject.Find ("Unisi").collider2D.enabled = false;
-				} else if (gameObject.tag == "Unikill3") {
+		}
+			if (gameObject.tag == "Unikill3") {
 					GameObject.Find ("Crow").renderer.enabled = false;
 					GameObject.Find ("Crow").collider2D.enabled = false;
-				} else if (gameObject.tag == "Unikill4"){
+		}
+			if (gameObject.tag == "Unikill4"){
 					GameObject.Find ("Crow2").renderer.enabled = false;
 					GameObject.Find ("Crow2").collider2D.enabled = false;
 				}
-			}
+			
 		enemyjump = true;
 		jumpplan++; 
 	}

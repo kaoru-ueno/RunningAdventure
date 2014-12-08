@@ -15,5 +15,7 @@ EditorBuildSettings:
     path: Assets/Test.unity
   - enabled: 0
     path: Assets/Test_kudo.unity
+  - enabled: 0
+    path: Assets/kudo.unity
   - enabled: 1
     path: Assets/Game.unity

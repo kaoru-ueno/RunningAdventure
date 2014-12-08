@@ -138,7 +138,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70650a7a7db75834a98821e15c1480e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CrowPrefab: {fileID: 100000, guid: bf00271b991c98b4eaf3bab55c76674b, type: 2}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -436,7 +436,7 @@ public class UnityChan2DController : MonoBehaviour
 				}
 				if (other.tag == "Coin" || other.tag == "Scoin" || other.tag == "Goldcoin") {
 						//Destroy(other.gameObject);
-						audio.Play();
+						//audio.Play();
 						other.gameObject.renderer.enabled = false;
 						}
 
@@ -522,12 +522,15 @@ public class UnityChan2DController : MonoBehaviour
 			FindObjectOfType<StageControl> ().gameEndSC ();
 			GameObject.Find("gray").renderer.enabled  = true;
 			gamed = false;
-			GameObject.Find("GameEnd").guiText.text = "";
-			GameObject.Find("GameEnd2").guiText.text = "";
+			//GameObject.Find("GameEnd").guiText.text = "";
+			//GameObject.Find("GameEnd2").guiText.text = "";
 			//GameObject.Find("Dist").guiText.text = "";
+			GameObject.Find("gameoverTxt").renderer.enabled  = false;
+			GameObject.Find("Result").renderer.enabled  = false;
 			GameObject.Find("score").guiText.text = "";
 			GameObject.Find("ScoreBG").guiTexture.enabled  = false;
 			GameObject.Find("DistBG").guiTexture.enabled  = false;
+			GameObject.Find("Dist").guiText.text = "";
 
 			GameSC++;
 		}
@@ -544,12 +547,15 @@ public class UnityChan2DController : MonoBehaviour
 				FindObjectOfType<StageControl> ().gameEndSC ();
 				GameObject.Find("gray").renderer.enabled  = true;
 				gamed = false;
-				GameObject.Find("GameEnd").guiText.text = "";
-				GameObject.Find("GameEnd2").guiText.text = "";
+				//GameObject.Find("GameEnd").guiText.text = "";
+				//GameObject.Find("GameEnd2").guiText.text = "";
 				//GameObject.Find("Dist").guiText.text = "";
+				GameObject.Find("gameoverTxt").renderer.enabled  = false;
+				GameObject.Find("Result").renderer.enabled  = false;
 				GameObject.Find("score").guiText.text = "";
 				GameObject.Find("ScoreBG").guiTexture.enabled  = false;
 				GameObject.Find("DistBG").guiTexture.enabled  = false;
+				GameObject.Find("Dist").guiText.text = "";
 				GameSC++;
 			}
 		}
